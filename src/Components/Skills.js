@@ -19,10 +19,10 @@ const useStyles = makeStyles((theme) => ({
   skillContainer: {
     backgroundColor: "rgb(230, 230,230)",
     width: "100%",
-    height: "100%",
+    height: "120vh",
   },
   card: {
-    maxWidth: 250,
+    maxWidth: "100%",
     minWidth: 250,
   },
   image: {
@@ -64,6 +64,9 @@ const useStyles = makeStyles((theme) => ({
   cardContent: {
     minHeight: "120px",
     textAlign: "center"
+  },
+  skillCaption: {
+    color: "gray"
   }
 }));
 
@@ -74,7 +77,7 @@ export default function About() {
     <Grid item xs={12} className={classes.skillContainer} justify="center">
       <a id="About">
         <Container maxWidth="md">
-          <Grid container spacing={5} direction="row" alignItems="center" justify="center">
+          <Grid container spacing={4} direction="row" alignItems="center" justify="center">
             <Grid item xs={12} className={classes.titleContainer}>
               <Typography variant="h4" component="h4" className={classes.title}>
                 My Skills
@@ -105,8 +108,8 @@ export default function About() {
                     >
                       Back End Development
                     </Typography>
-                    <Typography gutterBottom variant="body2" component="p">
-                      blah blah
+                    <Typography variant="caption" className={classes.skillCaption}>
+                      I develop and maintain back end solutions using a variety of technologies such as Node.JS, Express, Python, and Flask. My back end work using these technologies can be seen in the Projects section.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -135,10 +138,10 @@ export default function About() {
                       component="p"
                       fontWeight="fontWeightBold"
                     >
-                      Database Development
+                      DB Architecture Creation
                     </Typography>
-                    <Typography gutterBottom variant="body2" component="p">
-                      blah blah
+                    <Typography variant="caption" className={classes.skillCaption}>
+                      I am well versed in SQL database development from queries to design. I've enjoyed creating projects utlizing SQL technologies and tools such as Node-PostgreSQL, SQL Alchemy, and Sequelize.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -169,8 +172,8 @@ export default function About() {
                     >
                       API Development
                     </Typography>
-                    <Typography gutterBottom variant="body2" component="p">
-                      blah blah
+                    <Typography variant="caption" className={classes.skillCaption}>
+                      I have developed intuitive APIs allowing users to retreive and manipulate API information. I also have experience communicating with external APIs through various technologies such as Axios.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -202,8 +205,8 @@ export default function About() {
                     >
                       Frontend Development
                     </Typography>
-                    <Typography gutterBottom variant="body2" component="p">
-                      blah blah
+                    <Typography variant="caption" className={classes.skillCaption}>
+                      I use HTML, CSS, and Javascript to build attractive responsive front end for websites. My front end work can be seen in the Projects section.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -235,8 +238,8 @@ export default function About() {
                     >
                       React + Redux
                     </Typography>
-                    <Typography gutterBottom variant="body2" component="p">
-                      blah blah
+                    <Typography variant="caption" className={classes.skillCaption}>
+                      Frameworks supporting state management are essential to building interactive apps. I have strong experience with React as well as the state container, Redux.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -267,8 +270,8 @@ export default function About() {
                     >
                       Front End Design
                     </Typography>
-                    <Typography gutterBottom variant="body2" component="p">
-                      Front End Design
+                    <Typography variant="caption" className={classes.skillCaption}>
+                      The look and feel of applications are important in every project. I have built a variety of front end projects utilizing the CSS toolkits, Material UI and Bootstrap.
                     </Typography>
                   </CardContent>
                 </CardActionArea>

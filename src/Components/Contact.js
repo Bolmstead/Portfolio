@@ -5,7 +5,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button";
 import MailIcon from "@material-ui/icons/Mail";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
+import PhoneIcon from "@material-ui/icons/Phone";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles(() => ({
   container: {
@@ -19,19 +22,19 @@ const useStyles = makeStyles(() => ({
     fontFamily: "Roboto",
     marginTop: "0px",
     marginBottom: "10px",
+    color: "white",
   },
   contactContainer: {
     marginTop: "25px",
   },
   icon: {
     fontSize: 50,
+    color: "white",
   },
   contactLink: {
     textDecoration: "none",
     color: "white",
   },
-  
-  
 }));
 
 export default function About() {
@@ -57,35 +60,13 @@ export default function About() {
             <Grid
               item
               xs={12}
-              md={6}
+              md={4}
               align="center"
               justify="center"
               className={classes.contactContainer}
             >
               <a
-                href="https://g.page/idahocapitol?share"
-                className={classes.contactLink}
-              >
-                <LocationOnIcon className={classes.icon} />
-                <Typography
-                  variant="h6"
-                  component="h6"
-                  className={classes.contact}
-                >
-                  700 W JEFFERSON ST. BOISE ID, 83702
-                </Typography>
-              </a>
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              md={6}
-              align="center"
-              justify="center"
-              className={classes.contactContainer}
-            >
-              <a
-                href="mailto:someone@yoursite.com"
+                href="mailto:olms2074@gmail.com"
                 className={classes.contactLink}
               >
                 <MailIcon className={classes.icon} />
@@ -95,7 +76,51 @@ export default function About() {
                   className={classes.contact}
                 >
                   {" "}
-                  MURPHY@WITTMEYERASSOCIATES.COM
+                  olms2074@gmail.com
+                </Typography>
+              </a>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              md={4}
+              align="center"
+              justify="center"
+              className={classes.contactContainer}
+            >
+              <a
+                href="https://github.com/Bolmstead"
+                className={classes.contactLink}
+              >
+                <GitHubIcon className={classes.icon} />
+                <Typography
+                  variant="h6"
+                  component="h6"
+                  className={classes.contact}
+                >
+                  github.com/Bolmstead
+                </Typography>
+              </a>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              md={4}
+              align="center"
+              justify="center"
+              className={classes.contactContainer}
+            >
+              <a
+                href="https://github.com/Bolmstead"
+                className={classes.contactLink}
+              >
+                <LinkedInIcon className={classes.icon} />
+                <Typography
+                  variant="h6"
+                  component="h6"
+                  className={classes.contact}
+                >
+                  linkedin.com/in/berkleyolmstead
                 </Typography>
               </a>
             </Grid>

@@ -96,7 +96,7 @@ export default function About() {
     <Grid item xs={12} className={classes.aboutContainer} justify="center">
       <a id="About">
         <Container maxWidth="md">
-          <Grid container spacing={5} direction="row">
+          <Grid container spacing={5} direction="row" alignItems="center">
             <Grid item xs={12} className={classes.aboutTitle}>
               <Typography variant="h4" component="h4" className={classes.title}>
                 About me
@@ -173,15 +173,16 @@ export default function About() {
                   </Grid>
                 </CardContent>
                 <CardActions>
-
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    className={classes.noTextTransform}
-                    startIcon={<GetAppIcon />}
-                    >
-                    Download Resume
-                  </Button>
+                  <a href="resume.pdf" download>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      className={classes.noTextTransform}
+                      startIcon={<GetAppIcon />}
+                      >
+                      Download Resume
+                    </Button>
+                  </a>
                   <Button
                     variant="contained"
                     color="default"

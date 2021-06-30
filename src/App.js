@@ -1,33 +1,28 @@
-import './App.css';
+import "./App.css";
 import React, { useState, useEffect } from "react";
-import NavigationBar from './Components/NavigationBar'
-import Home from './Components/Home'
-import About from './Components/About'
-import Press from './Components/Press'
-import RandomCard from './Components/RandomCard'
+import NavigationBar from "./Components/NavigationBar";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Projects from "./Components/Projects";
 
-import Skills from './Components/Skills'
-import Contact from './Components/Contact'
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
+import Skills from "./Components/Skills";
+import Contact from "./Components/Contact";
+import Grid from "@material-ui/core/Grid";
+import Card from "@material-ui/core/Card";
 
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Fade from '@material-ui/core/Fade';
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Fade from "@material-ui/core/Fade";
 
-
-
-import { makeStyles } from '@material-ui/core/styles';
-import Routes from './Routes.js'
-
+import { makeStyles } from "@material-ui/core/styles";
+import Routes from "./Routes.js";
 
 const useStyles = makeStyles(() => ({
   app: {
-    display: "flex"
+    display: "flex",
   },
-  remainingApp:{
-    width: "100%"
-  }
-
+  remainingApp: {
+    width: "100%",
+  },
 }));
 
 function App() {
@@ -39,26 +34,21 @@ function App() {
     async function fadeInHomeScreen() {
       setFadedIn((prev) => !prev);
     }
-    fadeInHomeScreen()
+    fadeInHomeScreen();
   }, []);
   return (
     <Fade in={fadedIn} {...(fadedIn ? { timeout: 1000 } : {})}>
       <div className={classes.app}>
-            <NavigationBar/>
-            <div className={classes.remainingApp}>
-              <Home/>
-              <About/>
-              <Skills/>
-              <Press/>
-              <Contact/>
-
-
-
-            </div>
-
+        <NavigationBar />
+        <div className={classes.remainingApp}>
+          <Home />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </div>
       </div>
     </Fade>
-
   );
 }
 
