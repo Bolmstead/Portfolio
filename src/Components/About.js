@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   aboutContainer: {
     backgroundColor: `#FCFCFC`,
     width: "100%",
-    height: "100%"
+    height: "25%"
   },
   aboutTitle: {
     marginTop: "0px",
