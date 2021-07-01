@@ -128,7 +128,7 @@ export default function Projects() {
 
             <Grid
               item
-              xs={12}
+              xs={11}
               sm={9}
               md={6}
               className={classes.projectsMeTextContainer}
@@ -367,7 +367,7 @@ export default function Projects() {
 
             <Grid
               item
-              xs={12}
+              xs={11}
               sm={9}
               md={6}
               className={classes.projectsMeTextContainer}

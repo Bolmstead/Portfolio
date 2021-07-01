@@ -18,11 +18,20 @@ const useStyles = makeStyles((theme) => ({
   aboutContainer: {
     backgroundColor: `#FCFCFC`,
     width: "100%",
-    height: "25%"
+    paddingBottom: "60px",
+    alignItems: "center",
+    [theme.breakpoints.up('md')]: {
+      paddingTop: "130px",
+      paddingBottom: "190px",
+
+
+    },
   },
   aboutTitle: {
     marginTop: "0px",
     marginBottom: "0px"
+  },
+  aboutMeTextContainer:{
   },
   homeButton: {
     background: "rgb(100, 100 ,100, 0.5)",
@@ -60,7 +69,6 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     backgroundSize: "cover",
     backgroundImage: `url(/images/business.jpg)`,
-    height: "100vh",
   },
   businessPhotoMobile: {
     width: "100%",
@@ -74,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
   },
   headshotContainer: {},
   headshotPic: {
-    width: "100%",
+    width: "270px",
     padding: "2px",
     border: "1px solid lightgray",
     
@@ -82,6 +90,7 @@ const useStyles = makeStyles((theme) => ({
   aboutCardContainer: {
     border: "none",
     boxShadow: "none",
+
 
   },
   lineBreak: {
@@ -112,9 +121,9 @@ export default function About() {
   const classes = useStyles();
 
   return (
-    <Grid item xs={12} className={classes.aboutContainer} justify="center">
+    <Grid item xs={12} className={classes.aboutContainer} justify="center" >
       <a id="About">
-        <Container maxWidth="md">
+        <Container maxWidth="md" >
           <Grid container spacing={5} direction="row" alignItems="center" justify="center">
             <Grid item xs={12} className={classes.aboutTitle}>
               <Typography variant="h4" component="h4" className={classes.title}>
@@ -130,7 +139,7 @@ export default function About() {
               ></img>
             </Grid>
 
-            <Grid item xs={12} md={8} className={classes.aboutMeTextContainer} alignItems="center" justify="center">
+            <Grid item xs={11} md={8} className={classes.aboutMeTextContainer} alignItems="center" justify="center">
               <Card className={classes.aboutCardContainer} alignItems="center" justify="center">
                 <CardContent>
                   <Typography

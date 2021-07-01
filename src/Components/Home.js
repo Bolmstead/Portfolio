@@ -15,9 +15,9 @@ import MailIcon from "@material-ui/icons/Mail";
 const useStyles = makeStyles((theme) => ({
   homeContainer: {
     backgroundImage: `url(/images/home2.jpg)`,
-    width: "100%",
     height: "103vh",
     backgroundSize: "cover",
+    backgoundPosition: "center right"
   },
   overlay: {
     zIndex: 1,

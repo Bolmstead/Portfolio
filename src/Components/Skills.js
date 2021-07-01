@@ -19,7 +19,9 @@ const useStyles = makeStyles((theme) => ({
   skillContainer: {
     backgroundColor: "rgb(230, 230,230)",
     width: "100%",
-    height: "30%",
+    paddingBottom: "80px",
+    paddingTop: "30px"
+
   },
   card: {
     maxWidth: "100%",
