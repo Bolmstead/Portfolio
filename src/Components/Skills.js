@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   skillContainer: {
     backgroundColor: "rgb(230, 230,230)",
     width: "100%",
-    height: "120vh",
+    height: "100%",
   },
   card: {
     maxWidth: "100%",
@@ -75,7 +75,7 @@ export default function About() {
 
   return (
     <Grid item xs={12} className={classes.skillContainer} justify="center">
-      <a id="About">
+      <a id="Skills">
         <Container maxWidth="md">
           <Grid container spacing={4} direction="row" alignItems="center" justify="center">
             <Grid item xs={12} className={classes.titleContainer}>
@@ -85,7 +85,7 @@ export default function About() {
             </Grid>
 
             <Grid
-              item md={4} sm={6} xs={12}
+              item md={4} sm={6} xs={8}
               className={classes.cardContainer}
               alignItems="center"
               justify="center"
@@ -117,7 +117,7 @@ export default function About() {
             </Grid>
 
             <Grid
-              item md={4} sm={6} xs={12}
+              item md={4} sm={6} xs={8}
               className={classes.cardContainer}
               alignItems="center"
               justify="center"
@@ -150,7 +150,7 @@ export default function About() {
 
             <Grid
               item
-              md={4} sm={6} xs={12}              className={classes.cardContainer}
+              md={4} sm={6} xs={8}              className={classes.cardContainer}
               alignItems="center"
               justify="center"
             >
@@ -183,7 +183,7 @@ export default function About() {
 
             <Grid
               item
-              md={4} sm={6} xs={12}              className={classes.cardContainer}
+              md={4} sm={6} xs={8}              className={classes.cardContainer}
               alignItems="center"
               justify="center"
             >
@@ -216,7 +216,7 @@ export default function About() {
 
             <Grid
               item
-              md={4} sm={6} xs={12}              className={classes.cardContainer}
+              md={4} sm={6} xs={8}              className={classes.cardContainer}
               alignItems="center"
               justify="center"
             >
@@ -248,7 +248,7 @@ export default function About() {
 
             <Grid
               item
-              md={4} sm={6} xs={12}              className={classes.cardContainer}
+              md={4} sm={6} xs={8}              className={classes.cardContainer}
               alignItems="center"
               justify="center"
             >

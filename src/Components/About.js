@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   aboutContainer: {
     backgroundColor: `#FCFCFC`,
     width: "100%",
-    height: "600px"
+    height: "100%"
   },
   aboutTitle: {
     marginTop: "0px",
@@ -34,12 +34,27 @@ const useStyles = makeStyles((theme) => ({
   homeButtonLink: {
     textTransform: "none",
   },
+  resumeButton: {
+    textTransform: "none",
+
+    backgroundColor: "#FFC220"
+
+
+  },
+  link: {
+    textTransform: "none",
+    textDecoration: "none",
+
+
+  },
   root: {
     minWidth: 275,
   },
   title: {
     fontFamily: "Roboto",
     fontWeight: "bold",
+    color: "#FFC220",
+
   },
   businessPhoto: {
     width: "100%",
@@ -62,6 +77,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     padding: "2px",
     border: "1px solid lightgray",
+    
   },
   aboutCardContainer: {
     border: "none",
@@ -69,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
 
   },
   lineBreak: {
-    backgroundColor: "lightgray",
+    backgroundColor: "#ECECEC",
     height: "1px",
     borderWidth: 0,
     color: "gray",
@@ -86,6 +102,9 @@ const useStyles = makeStyles((theme) => ({
 
     fontWeight: "bold",
 
+  },
+  emailLink: {
+    color: "#212121",
   }
 }));
 
@@ -96,14 +115,14 @@ export default function About() {
     <Grid item xs={12} className={classes.aboutContainer} justify="center">
       <a id="About">
         <Container maxWidth="md">
-          <Grid container spacing={5} direction="row" alignItems="center">
+          <Grid container spacing={5} direction="row" alignItems="center" justify="center">
             <Grid item xs={12} className={classes.aboutTitle}>
               <Typography variant="h4" component="h4" className={classes.title}>
                 About me
               </Typography>
             </Grid>
 
-            <Grid item xs={4} className={classes.headshotContainer} alignItems="center" justify="center">
+            <Grid item xs={8} sm={6} md={4}className={classes.headshotContainer} alignItems="center" justify="center">
               {" "}
               <img
                 src="images/headshot.jpg"
@@ -111,7 +130,7 @@ export default function About() {
               ></img>
             </Grid>
 
-            <Grid item xs={8} className={classes.aboutMeTextContainer} alignItems="center" justify="center">
+            <Grid item xs={12} md={8} className={classes.aboutMeTextContainer} alignItems="center" justify="center">
               <Card className={classes.aboutCardContainer} alignItems="center" justify="center">
                 <CardContent>
                   <Typography
@@ -123,11 +142,11 @@ export default function About() {
                   </Typography>
                   <Typography variant="h5" component="h2"></Typography>
                   <Typography variant="h5" component="h5">
-                    I'm Berkley Olmstead, a Full-Stack Developer
+                    Berkley Olmstead, Full-Stack Developer
                   </Typography>
                   <Typography variant="body2" component="p">
-                    I am devoted software developer based in the United States
-                    with professional experience in Tax and Accounting. I have
+                    I am a devoted software developer based in the United States
+                    with 4 years of professional experience in Tax and Accounting. I
                     recently graduated from the Springboard Software Engineering
                     program and have a strong technical acumen in developing
                     full-stack web applications, SQL databases, and REST API’s.
@@ -161,35 +180,33 @@ export default function About() {
                       >
                         Email: {"  "}
                       </Typography>
+                      <a
+                href="mailto:olms2074@gmail.com"
+                className={classes.link}
+              >
                       <Typography
                         variant="body2"
                         component="p"
                         display="inline"
+                        className={classes.emailLink}
                       >
                         {" "}
                         olms2074@gmail.com
                       </Typography>
+                      </a>
                     </Grid>
                   </Grid>
                 </CardContent>
                 <CardActions>
-                  <a href="resume.pdf" download>
+                  <a href="resume.pdf" download className={classes.link}>
                     <Button
                       variant="contained"
-                      color="primary"
-                      className={classes.noTextTransform}
+                      className={classes.resumeButton}
                       startIcon={<GetAppIcon />}
                       >
                       Download Resume
                     </Button>
                   </a>
-                  <Button
-                    variant="contained"
-                    color="default"
-                    className={classes.noTextTransform}
-                    >
-                    View Projects
-                  </Button>
                 </CardActions>
               </Card>
             </Grid>

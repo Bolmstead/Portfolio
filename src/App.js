@@ -1,6 +1,8 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import NavigationBar from "./Components/NavigationBar";
+import NavigationBarMobile from "./Components/NavigationBarMobile";
+
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
@@ -37,10 +39,13 @@ function App() {
     fadeInHomeScreen();
   }, []);
   return (
+
     <Fade in={fadedIn} {...(fadedIn ? { timeout: 1000 } : {})}>
       <div className={classes.app}>
         <NavigationBar />
         <div className={classes.remainingApp}>
+        <NavigationBarMobile />
+
           <Home />
           <About />
           <Skills />

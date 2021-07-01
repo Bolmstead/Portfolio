@@ -14,7 +14,7 @@ import MailIcon from "@material-ui/icons/Mail";
 
 const useStyles = makeStyles((theme) => ({
   homeContainer: {
-    backgroundImage: `url(/images/Boise.jpg)`,
+    backgroundImage: `url(/images/home2.jpg)`,
     height: "100vh",
     width: "100%",
     backgroundSize: "cover",
@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
   },
   lastName: {
     fontWeight: "bold",
-    color: "orange"
+    color: "#FFC220"
   },
   caption: {
     fontWeight: "bold",
@@ -100,6 +100,7 @@ export default function Home() {
 
   return (
     <Grid item xs={12} className={classes.homeContainer}>
+      <a id="Home">
       <Grid
         container
         alignItems="center"
@@ -138,6 +139,7 @@ export default function Home() {
           </Container>
         </Grid>       
       </Grid>
+      </a>
     </Grid>
   );
 }
