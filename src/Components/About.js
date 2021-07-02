@@ -161,7 +161,7 @@ export default function About() {
                   </Typography><br/>
                   <Typography variant="body2" component="p">
                     
-                    I understand how to collaborate in a professional environment and enjoy working in teams. Building and maintaining  relationships is something I value and believe is necessary in a professional environment. When I'm not coding, I like to play tennis, snowboard, and make decent attempts to golf.
+                    I understand how to collaborate in a professional environment and enjoy working in teams. Building and maintaining  relationships is something I value and believe is necessary in a professional environment. When I'm not coding, I like to play tennis, snowboard, and make decent attempts at golf.
                   </Typography>
                   <hr className={classes.lineBreak} />
                   <Grid container>
