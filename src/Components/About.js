@@ -155,13 +155,13 @@ export default function About() {
                   </Typography>
                   <Typography variant="body2" component="p">
                     I am a Software Developer based in the United States
-                    with 4 years of professional experience in Tax and Accounting. I decided to switch careers after enjoying the process of creating a few small apps in Javascript. I just graduated from the Springboard Software Engineering
-                    program have refined my skills in developing full-stack web applications, SQL databases, and REST API’s.                      I'm looking for Full-Stack positions based in Boise, Idaho or remote.
+                    with 4 years of professional experience in Tax and Accounting. I decided to transition my career to software engineering after really enjoying the process of creating a few apps with Javascript. In April 2021, I graduated from the Springboard Software Engineering
+                    program where I built upon my skills  developing full-stack web applications, SQL databases, and REST API’s.      
                     
-                  </Typography>
+                  </Typography><br/>
                   <Typography variant="body2" component="p">
                     
-                    I understand how to collaborate in a professional environment and enjoy supporting a team to achieve set goals. I like to work hard and have always enjoyed an active lifestyle playing golf, tennis, and snowboarding.
+                    I understand how to collaborate in a professional environment and enjoy working in teams. Building and maintaining  relationships is something I value and believe is necessary in a professional environment. When I'm not coding, I like to play tennis, snowboard, and make decent attempts to golf.
                   </Typography>
                   <hr className={classes.lineBreak} />
                   <Grid container>

@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   cpaSection:{
     order: 1,
 
-    [theme.breakpoints.down(`md`)]: {
+    [theme.breakpoints.down(`sm`)]: {
       order: 2,
     },
   },
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   ghanaSection:{
     order: 5,
 
-    [theme.breakpoints.down(`md`)]: {
+    [theme.breakpoints.down(`sm`)]: {
       order: 6,
     },
   },
@@ -100,7 +100,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     order: 2,
 
-    [theme.breakpoints.down(`md`)]: {
+    [theme.breakpoints.down(`sm`)]: {
       order: 1,
     },
   },
@@ -112,7 +112,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     order: 6,
 
-    [theme.breakpoints.down(`md`)]: {
+    [theme.breakpoints.down(`sm`)]: {
       order: 5,
     },
   },
@@ -176,14 +176,14 @@ export default function About() {
     <Grid item xs={12} className={classes.aboutContainer} justify="center" >
       <a id="About">
         <Container maxWidth="md" >
-          <Grid container spacing={1} direction="row" alignItems="center" justify="center">
+          <Grid container spacing={3} direction="row" alignItems="center" justify="center">
             <Grid item xs={12} className={classes.titleContainer}>
               <Typography variant="h4" component="h4" className={classes.title}>
                 My Education
               </Typography>
             </Grid>
 
-            <Grid item xs={11} md={8} className={classes.cpaSection} alignItems="center" justify="center">
+            <Grid item xs={12} sm={10} md={8} className={classes.cpaSection} alignItems="center" justify="center">
               <Card className={classes.educationCard} alignItems="center" justify="center">
                 <CardContent>
                   <Typography variant="h5" component="h2"></Typography>
@@ -218,7 +218,7 @@ export default function About() {
               ></img>
             </Grid>
 
-            <Grid item xs={11} md={8} className={classes.vandalSection} alignItems="center" justify="center">
+            <Grid item xs={12} sm={10} md={8} className={classes.vandalSection} alignItems="center" justify="center">
               <Card className={classes.educationCard} alignItems="center" justify="center">
                 <CardContent>
                   <Typography variant="h5" component="h2"></Typography>
@@ -230,7 +230,7 @@ export default function About() {
                     color="textSecondary"
                     
                   >
-                    Degrees in Accounting (Mar 2012) and Finance (Dec 2012)
+                    Degrees in Accounting (Mar 2012) & Finance (Dec 2012)
                   </Typography>
 
                   <hr className={classes.lineBreak} />
@@ -283,7 +283,7 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={11} md={8} className={classes.ghanaSection} alignItems="center" justify="center">
+            <Grid item xs={12} sm={10} md={8} className={classes.ghanaSection} alignItems="center" justify="center">
               <Card className={classes.educationCard} alignItems="center" justify="center">
                 <CardContent>
                   <Typography variant="h5" component="h2"></Typography>
