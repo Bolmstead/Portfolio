@@ -174,7 +174,7 @@ export default function About() {
 
   return (
     <Grid item xs={12} className={classes.aboutContainer} justify="center" >
-      <a id="About">
+      <a id="Education">
         <Container maxWidth="md" >
           <Grid container spacing={3} direction="row" alignItems="center" justify="center">
             <Grid item xs={12} className={classes.titleContainer}>

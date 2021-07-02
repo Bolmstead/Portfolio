@@ -72,12 +72,14 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
+        <a href="#Home" className={classes.navLink}>
         <Avatar
                 alt="Avatar"
                 src="/images/avatar.jpg"
                 className={classes.avatar}
               />
-        {["Home", "About", "Skills", "Projects"].map((text) => (
+        </a>
+        {["About", "Education", "Skills", "Projects"].map((text) => (
           <a href={"#" + text} className={classes.navLink}>
             <Button className={classes.listItem} key={text}>
               <ListItemText primary={text} className={classes.listItemText} />
