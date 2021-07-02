@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `url(/images/home2.jpg)`,
     height: "103vh",
     backgroundSize: "cover",
-    backgoundPosition: "center right"
+    backgroundPosition: "center right"
   },
   overlay: {
     zIndex: 1,
