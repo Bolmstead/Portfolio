@@ -23,6 +23,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: `white`,
     width: "100%",
     paddingBottom: "50px",
+    [theme.breakpoints.up('md')]: {
+      paddingTop: "80px",
+      paddingBottom: "80px",
+
+
+    },
   },
   titleContainer: {
     marginTop: "0px",

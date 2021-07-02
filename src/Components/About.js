@@ -154,11 +154,14 @@ export default function About() {
                     Berkley Olmstead, Full-Stack Developer
                   </Typography>
                   <Typography variant="body2" component="p">
-                    I am a devoted software developer based in the United States
-                    with 4 years of professional experience in Tax and Accounting. I
-                    recently graduated from the Springboard Software Engineering
-                    program and have a strong technical acumen in developing
-                    full-stack web applications, SQL databases, and REST API’s.
+                    I am a Software Developer based in the United States
+                    with 4 years of professional experience in Tax and Accounting. I decided to switch careers after enjoying the process of creating a few small apps in Javascript. I just graduated from the Springboard Software Engineering
+                    program have refined my skills in developing full-stack web applications, SQL databases, and REST API’s.                      I'm looking for Full-Stack positions based in Boise, Idaho or remote.
+                    
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    
+                    I understand how to collaborate in a professional environment and enjoy supporting a team to achieve set goals. I like to work hard and have always enjoyed an active lifestyle playing golf, tennis, and snowboarding.
                   </Typography>
                   <hr className={classes.lineBreak} />
                   <Grid container>

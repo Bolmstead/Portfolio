@@ -7,7 +7,7 @@ import Container from "@material-ui/core/Container";
 
 const useStyles = makeStyles((theme) => ({
   homeContainer: {
-    backgroundImage: `url(/images/home2.jpg)`,
+    backgroundImage: `url(/images/background.jpg)`,
     height: "103vh",
     backgroundSize: "cover",
     backgroundPosition: "center right"

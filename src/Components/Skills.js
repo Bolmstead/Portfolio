@@ -20,7 +20,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgb(230, 230,230)",
     width: "100%",
     paddingBottom: "80px",
-    paddingTop: "30px"
+    paddingTop: "30px",
+    [theme.breakpoints.up('md')]: {
+      paddingTop: "80px",
+      paddingBottom: "130px",
+
+
+    },
 
   },
   card: {
