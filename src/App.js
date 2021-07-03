@@ -1,24 +1,15 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import NavigationBar from "./Components/NavigationBar";
 import NavigationBarMobile from "./Components/NavigationBarMobile";
-
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Education from "./Components/Education";
-
-
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
-import Grid from "@material-ui/core/Grid";
-import Card from "@material-ui/core/Card";
-
-import CssBaseline from "@material-ui/core/CssBaseline";
 import Fade from "@material-ui/core/Fade";
-
 import { makeStyles } from "@material-ui/core/styles";
-import Routes from "./Routes.js";
 
 const useStyles = makeStyles(() => ({
   app: {
@@ -41,12 +32,11 @@ function App() {
     fadeInHomeScreen();
   }, []);
   return (
-
     <Fade in={fadedIn} {...(fadedIn ? { timeout: 1000 } : {})}>
       <div className={classes.app}>
         <NavigationBar />
         <div className={classes.remainingApp}>
-        <NavigationBarMobile />
+          <NavigationBarMobile />
 
           <Home />
           <About />

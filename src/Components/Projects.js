@@ -1,21 +1,12 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button";
-import Box from "@material-ui/core/Box";
-import Link from "@material-ui/core/Link";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-
 import "./FadeIn.css";
-import GetAppIcon from "@material-ui/icons/GetApp";
-import Icon from "@material-ui/core/Icon";
-
-import FadeInSection from "./FadeInSection";
 import Hidden from "@material-ui/core/Hidden";
 
 const useStyles = makeStyles((theme) => ({

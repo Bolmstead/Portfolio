@@ -6,14 +6,8 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Container from "@material-ui/core/Container";
-import Button from "@material-ui/core/Button";
 import "./FadeIn.css";
-import GetAppIcon from "@material-ui/icons/GetApp";
-import Icon from "@material-ui/core/Icon";
 import CardActionArea from "@material-ui/core/CardActionArea";
-
-import FadeInSection from "./FadeInSection";
-import Hidden from "@material-ui/core/Hidden";
 
 const useStyles = makeStyles((theme) => ({
   skillContainer: {
@@ -24,8 +18,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       paddingTop: "80px",
       paddingBottom: "130px",
-
-
     },
 
   },
