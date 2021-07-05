@@ -26,21 +26,24 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "0px",
     color: "white"
   },
+  springboardSection:{
+    order: 2,
+  },
   cpaSection:{
-    order: 1,
+    order: 3,
 
     [theme.breakpoints.down(`sm`)]: {
-      order: 2,
+      order: 4,
     },
   },
   vandalSection:{
-    order: 4,
+    order: 6,
   },
   ghanaSection:{
-    order: 5,
+    order: 7,
 
     [theme.breakpoints.down(`sm`)]: {
-      order: 6,
+      order: 8,
     },
   },
   homeButton: {
@@ -90,25 +93,33 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "white",
     borderRadius: "0px",
   },
+  springboardLogoContainer: {
+    textAlign: "center",
+    order: 1
+  },
   cpaLogoContainer: {
     textAlign: "center",
-    order: 2,
+    order: 4,
 
     [theme.breakpoints.down(`sm`)]: {
-      order: 1,
+      order: 3,
     },
   },
   vandalLogoContainer: {
     textAlign: "center",
-    order: 3
+    order: 5
   },
   ghanaLogoContainer: {
     textAlign: "center",
-    order: 6,
+    order: 8,
 
     [theme.breakpoints.down(`sm`)]: {
-      order: 5,
+      order: 7,
     },
+  },
+  springboardLogo: {
+    width: "175px",
+
   },
   cpaLogo: {
     width: "250px",
@@ -176,6 +187,35 @@ export default function About() {
                 My Education
               </Typography>
             </Grid>
+
+            <Grid item xs={8} sm={6} md={4} className={classes.springboardLogoContainer} alignItems="center" justify="center">
+              <img
+                src="images/education/springboard.png"
+                className={classes.springboardLogo}
+              ></img>
+            </Grid>
+
+            <Grid item xs={12} sm={10} md={8} className={classes.springboardSection} alignItems="center" justify="center">
+              <Card className={classes.educationCard} alignItems="center" justify="center">
+                <CardContent>
+                  <Typography variant="h5" component="h2"></Typography>
+                  <Typography variant="h5" component="h5">
+                    Springboard Software Engineering Program
+                  </Typography>
+                  <Typography
+                    className={classes.title}
+                    color="textSecondary"
+                    
+                  >
+                    Certificate of Completion (April 2021)
+                  </Typography>
+
+                  
+                </CardContent>
+
+              </Card>
+            </Grid>
+
 
             <Grid item xs={12} sm={10} md={8} className={classes.cpaSection} alignItems="center" justify="center">
               <Card className={classes.educationCard} alignItems="center" justify="center">
