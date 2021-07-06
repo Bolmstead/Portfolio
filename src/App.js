@@ -40,9 +40,10 @@ function App() {
 
           <Home />
           <About />
-          <Education />
           <Skills />
           <Projects />
+          <Education />
+
           <Contact />
         </div>
       </div>
