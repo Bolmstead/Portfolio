@@ -76,7 +76,7 @@ export default function ButtonAppBar() {
                 className={classes.avatar}
               />
         </a>
-        {["About", "Education", "Skills", "Projects"].map((text) => (
+        {["About", "Skills", "Projects", "Education"].map((text) => (
           <a href={"#" + text} className={classes.navLink}>
             <Button className={classes.listItem} key={text}>
               <ListItemText primary={text} className={classes.listItemText} />

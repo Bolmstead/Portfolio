@@ -178,7 +178,7 @@ export default function About() {
                     I am a Software Developer based in the United States with 4
                     years of professional experience in Tax and Accounting. I
                     decided to transition my career to software engineering
-                    after really enjoying the process of creating a few apps
+                    after enjoying the process of creating a few apps
                     with Javascript. In April 2021, I graduated from the
                     Springboard Software Engineering program where I built upon
                     my skills developing full-stack web applications, SQL

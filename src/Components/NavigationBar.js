@@ -79,7 +79,7 @@ export default function PermanentDrawerRight() {
                 className={classes.avatar}
               />
               <Typography variant="h6" className={classes.name}>Berkley Olmstead</Typography>
-              {["Home", "About", "Education", "Skills", "Projects"].map((text) => (
+              {["Home", "About", "Skills", "Projects", "Education"].map((text) => (
                   <a href={"#" + text} className={classes.navLink}>
                     <ListItem button className={classes.listItem} key={text}>
                       <ListItemText primary={text} />
