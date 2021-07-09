@@ -74,7 +74,8 @@ const useStyles = makeStyles((theme) => ({
   },
   headshotContainer: {},
   headshotPic: {
-    width: "270px",
+    maxHeight: "400px",
+    maxWidth: "270px",
     padding: "2px",
     border: "1px solid lightgray",
   },
@@ -105,12 +106,17 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: "25px",
     fontSize: 30,
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       marginRight: "15px",
 
     },
   },
-  iconContainer: {},
+  iconContainer: {
+    [theme.breakpoints.down("xs")]: {
+      textAlign: "center",
+
+    },
+  },
   contactLink: {
     textDecoration: "none",
     color: "black",
@@ -139,7 +145,7 @@ export default function About() {
 
             <Grid
               item
-              xs={8}
+              xs={10}
               sm={6}
               md={4}
               className={classes.headshotContainer}
