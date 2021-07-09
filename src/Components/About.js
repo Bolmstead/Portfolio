@@ -151,7 +151,7 @@ export default function About() {
 
             <Grid
               item
-              xs={11}
+              xs={12}
               md={8}
               className={classes.aboutMeTextContainer}
               alignItems="center"
@@ -265,6 +265,7 @@ export default function About() {
                       >
                         <GitHubIcon className={classes.icon} />
                       </a>
+                      
                       <a
                         href="tel:208-871-3882"
                         className={classes.contactLink}
