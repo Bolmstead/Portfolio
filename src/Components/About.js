@@ -105,6 +105,10 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: "25px",
     fontSize: 30,
+    [theme.breakpoints.down("sm")]: {
+      marginRight: "15px",
+
+    },
   },
   iconContainer: {},
   contactLink: {
