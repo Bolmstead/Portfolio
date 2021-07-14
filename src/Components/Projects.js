@@ -14,11 +14,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: `white`,
     width: "100%",
     paddingBottom: "50px",
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up("md")]: {
       paddingTop: "80px",
       paddingBottom: "80px",
-
-
     },
   },
   titleContainer: {
@@ -105,6 +103,13 @@ const useStyles = makeStyles((theme) => ({
   marginTop: {
     marginTop: "8px",
   },
+  joblyTitle: {
+    fontFamily: "Roboto",
+    fontWeight: "bold",
+    paddingTop: "0px",
+    textDecoration: "none",
+    color: "black",
+  },
 }));
 
 export default function Projects() {
@@ -112,152 +117,148 @@ export default function Projects() {
 
   return (
     <Grid item xs={12} className={classes.projectsContainer} justify="center">
-        <Container maxWidth="md">
-          <Grid container spacing={8} direction="row" alignItems="center" justify="center">
-            <Grid item xs={12} className={classes.titleContainer}>
-            <a id="Projects" >
-
+      <Container maxWidth="md">
+        <Grid
+          container
+          spacing={8}
+          direction="row"
+          alignItems="center"
+          justify="center"
+        >
+          <Grid item xs={12} className={classes.titleContainer}>
+            <a id="Projects">
               <Typography variant="h4" component="h4" className={classes.title}>
                 My Projects
               </Typography>
             </a>
-            </Grid>
+          </Grid>
 
-            <Grid
-              item
-              xs={11}
-              sm={9}
-              md={6}
-              className={classes.projectsMeTextContainer}
+          <Grid
+            item
+            xs={11}
+            sm={9}
+            md={6}
+            className={classes.projectsMeTextContainer}
+            alignItems="center"
+            justify="center"
+          >
+            <Card
+              className={classes.projectsCardContainer}
               alignItems="center"
               justify="center"
             >
-              <Card
-                className={classes.projectsCardContainer}
-                alignItems="center"
-                justify="center"
-              >
-                <Grid container spacing={2} >
-                  <Grid item xs={12}>
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
                   <CardContent className={classes.logoContainer}>
-
+                    <a
+                      href="https://freebay.netlify.app/"
+                      className={classes.noTextDecoration}
+                    >
+                      <img
+                        src="images/projectPics/freebay-logo.png"
+                        className={classes.projectLogo}
+                      />
+                    </a>
+                  </CardContent>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    FreeBay is a fake product bidding site that allows users to
+                    bid on fake products. Users can search and browse for fake
+                    products that are up for auction and compete with other
+                    users by placing bids. Each user can view other bidder's
+                    profiles to view the products they have won or have the
+                    highest bid on.
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    Product data was web scraped from varioius Amazon product
+                    sites using Python then hosted in an API I created. This API
+                    utilizes search query functionality to find products,
+                    supplies a JSON web token upon user validation, and provides
+                    most recent wins/products.
+                  </Typography>
+                </Grid>
+                <br />{" "}
+                <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Technologies: {"  "}
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    {" "}
+                    Node.JS, Node-PostgreSQL, Express, React, HTML, CSS,
+                    Material-UI, Axios, bcrypt, Python
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Repositories: {"  "}
+                  </Typography>
+                  <a
+                    href="https://github.com/Bolmstead/Freebay"
+                    className={classes.repoLink}
+                  >
+                    <Typography variant="body2" component="p" display="inline">
+                      {" "}
+                      Front End
+                    </Typography>
+                  </a>
+                  <Typography variant="body2" component="p" display="inline">
+                    {" "}
+                    /{" "}
+                  </Typography>
+                  <a
+                    href="https://github.com/Bolmstead/Freebay-API"
+                    className={classes.repoLink}
+                  >
+                    <Typography variant="body2" component="p" display="inline">
+                      {" "}
+                      API & Back End
+                    </Typography>
+                  </a>
+                </Grid>
+                <Grid item xs={12}>
+                  <Grid container justify="center">
+                    <Grid item xs={8}>
                       <a
                         href="https://freebay.netlify.app/"
                         className={classes.noTextDecoration}
                       >
-                        <img
-                          src="images/projectPics/freebay-logo.png"
-                          className={classes.projectLogo}
-                        />
-                      </a>
-                    </CardContent>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Typography variant="body2" component="p">
-                      FreeBay is a fake product bidding site that allows users
-                      to bid on fake products. Users can search and browse for
-                      fake products that are up for auction and compete with
-                      other users by placing bids. Each user can view other
-                      bidder's profiles to view the products they have won or
-                      have the highest bid on.
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Typography variant="body2" component="p">
-                      Product data was web scraped from varioius Amazon product
-                      sites using Python then hosted in an API I created. This
-                      API utilizes search query functionality to find products,
-                      supplies a JSON web token upon user validation, and
-                      provides most recent wins/products.
-                    </Typography>
-                  </Grid>
-                  <br />{" "}
-                  <Grid item xs={12}>
-                    <Typography
-                      variant="body2"
-                      component="p"
-                      className={classes.boldText}
-                    >
-                      Technologies: {"  "}
-                    </Typography>
-                    <Typography variant="body2" component="p">
-                      {" "}
-                      Node.JS, Node-PostgreSQL, Express, React, HTML, CSS,
-                      Material-UI, Axios, bcrypt, Python
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Typography
-                      variant="body2"
-                      component="p"
-                      className={classes.boldText}
-                    >
-                      Repositories: {"  "}
-                    </Typography>
-                    <a
-                      href="https://github.com/Bolmstead/Freebay"
-                      className={classes.repoLink}
-                    >
-                      <Typography
-                        variant="body2"
-                        component="p"
-                        display="inline"
-                      >
-                        {" "}
-                        Front End
-                      </Typography>
-                    </a>
-                    <Typography variant="body2" component="p" display="inline">
-                      {" "}
-                      /{" "}
-                    </Typography>
-                    <a
-                      href="https://github.com/Bolmstead/Freebay-API"
-                      className={classes.repoLink}
-                    >
-                      <Typography
-                        variant="body2"
-                        component="p"
-                        display="inline"
-                      >
-                        {" "}
-                        API & Back End
-                      </Typography>
-                    </a>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Grid container justify="center">
-                      <Grid item xs={8}>
-                        <a
-                          href="https://freebay.netlify.app/"
-                          className={classes.noTextDecoration}
+                        <Button
+                          className={classes.freeBaySiteBtn}
+                          fullWidth
+                          variant="contained"
+                          disableRipple
                         >
-                          <Button
-                            className={classes.freeBaySiteBtn}
-                            fullWidth
-                            variant="contained"
-                            disableRipple
-                          >
-                            Visit Site
-                          </Button>
-                        </a>
-                      </Grid>
+                          Visit Site
+                        </Button>
+                      </a>
                     </Grid>
                   </Grid>
                 </Grid>
-              </Card>
-            </Grid>
-            <Hidden smDown>
-              <Grid item md={6}>
-                <a href="https://freebay.netlify.app/">
-                  <img
-                    src="images/projectPics/freebay.png"
-                    className={classes.websitePic}
-                  />
-                </a>
               </Grid>
-            </Hidden>
-            {/* 
+            </Card>
+          </Grid>
+          <Hidden smDown>
+            <Grid item md={6}>
+              <a href="https://freebay.netlify.app/">
+                <img
+                  src="images/projectPics/freebay.png"
+                  className={classes.websitePic}
+                />
+              </a>
+            </Grid>
+          </Hidden>
+          {/* 
             <Grid
               item
               xs={12}
@@ -362,115 +363,226 @@ export default function Projects() {
                 </a>
               </Grid> */}
 
-            <Grid
-              item
-              xs={11}
-              sm={9}
-              md={6}
-              className={classes.projectsMeTextContainer}
+          <Grid
+            item
+            xs={11}
+            sm={9}
+            md={6}
+            className={classes.projectsMeTextContainer}
+            alignItems="center"
+            justify="center"
+          >
+            <Card
+              className={classes.projectsCardContainer}
               alignItems="center"
               justify="center"
             >
-              <Card
-                className={classes.projectsCardContainer}
-                alignItems="center"
-                justify="center"
-              >
-                <Grid container spacing={2} >
-
+              <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <CardContent className={classes.logoContainer}>
-
-                      <a
-                    href="https://yoga-website.herokuapp.com/"
-                    className={classes.noTextDecoration}
-                      >
-                        <img
-                      src="images/projectPics/yoga-logo.png"
-                      className={classes.projectLogo}
-                        />
-                      </a>
-                    </CardContent>
-                  </Grid>
-                  <Grid item xs={12}>
-
-                <Typography variant="body2" component="p">
-                  This project is a prototype website for the local yoga
-                  organization, Lunchtime Yoga for Professionals. The site
-                  allows users to sign up for yoga classes through an
-                  interactive Javascript calendar. Yoga instructors are provided
-                  with a dashboard to create yoga classes and grab all users
-                  contact information. Upon signing up for classes, an email is
-                  sent to the user confirming signup, date, and location of the
-                  class.
-                </Typography>
-                </Grid>
-                  <Grid item xs={12}>
-                    <Typography
-                      variant="body2"
-                      component="p"
-                      className={classes.boldText}
+                    <a
+                      href="https://yoga-website.herokuapp.com/"
+                      className={classes.noTextDecoration}
                     >
-                      Technologies: {"  "}
-                    </Typography>
-                    <Typography variant="body2" component="p">
-                      {" "}
-                      Python, Flask, SQL Alchemy, JS, JQuery, Jinja, WTForms,
-                      HTML, CSS, Bootstrap, Axios, SendGrid API
-                    </Typography>
-                  </Grid>
+                      <img
+                        src="images/projectPics/yoga-logo.png"
+                        className={classes.projectLogo}
+                      />
+                    </a>
+                  </CardContent>
                 </Grid>
-                <Grid item xs={12} className={classes.marginTop}>
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    This Full-Stack website was created as a prototype for the
+                    local yoga organization, Lunchtime Yoga for Professionals.
+                    The site allows users to sign up for yoga classes through an
+                    interactive Javascript calendar. Yoga instructors are
+                    provided with a dashboard to create yoga classes and grab
+                    all users contact information. Upon signing up for classes,
+                    an email is sent to the user confirming signup, date, and
+                    location of the class.
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
                   <Typography
                     variant="body2"
                     component="p"
                     className={classes.boldText}
                   >
-                    Repositories: {"  "}
+                    Technologies: {"  "}
                   </Typography>
-                  <a
-                    href="https://github.com/Bolmstead"
-                    className={classes.repoLink}
-                  >
-                    <Typography variant="body2" component="p" display="inline">
-                      {" "}
-                      Full-Stack
-                    </Typography>
-                  </a>
+                  <Typography variant="body2" component="p">
+                    {" "}
+                    Python, Javascript, JQuery, HTML, CSS, Bootstrap, Axios,
+                    Jinja, Flask, Postgres, SQL Alchemy, Flask-Bcrypt, WTForms,
+                    Font Awesome, Simple Calendar Source Code, SendGrid Email
+                    API
+                  </Typography>
                 </Grid>
-                <Grid item xs={12}>
-                  <Grid container justify="center">
-                    <Grid item xs={8}>
-                      <a
-                        href="https://yoga-website.herokuapp.com/"
-                        className={classes.noTextDecoration}
-                      >
-                        <Button
-                          className={classes.yogaSiteBtn}
-                          fullWidth
-                          variant="contained"
-                          disableRipple
-                        >
-                          Visit Site
-                        </Button>
-                      </a>
-                    </Grid>
-                  </Grid>
-                </Grid>
-              </Card>
-            </Grid>
-            <Hidden smDown>
-              <Grid item xs={12} md={6}>
-                <a href="https://yoga-website.herokuapp.com/">
-                  <img
-                    src="images/projectPics/yoga.png"
-                    className={classes.websitePic}
-                  />
+              </Grid>
+              <Grid item xs={12} className={classes.marginTop}>
+                <Typography
+                  variant="body2"
+                  component="p"
+                  className={classes.boldText}
+                >
+                  Repositories: {"  "}
+                </Typography>
+                <a
+                  href="https://github.com/Bolmstead/Yoga-for-Professionals"
+                  className={classes.repoLink}
+                >
+                  <Typography variant="body2" component="p" display="inline">
+                    {" "}
+                    Full-Stack
+                  </Typography>
                 </a>
               </Grid>
-            </Hidden>
+              <Grid item xs={12}>
+                <Grid container justify="center">
+                  <Grid item xs={8}>
+                    <a
+                      href="https://yoga-website.herokuapp.com/"
+                      className={classes.noTextDecoration}
+                    >
+                      <Button
+                        className={classes.yogaSiteBtn}
+                        fullWidth
+                        variant="contained"
+                        disableRipple
+                      >
+                        Visit Site
+                      </Button>
+                    </a>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Card>
           </Grid>
-        </Container>
+          <Hidden smDown>
+            <Grid item xs={12} md={6}>
+              <a href="https://yoga-website.herokuapp.com/">
+                <img
+                  src="images/projectPics/yoga.png"
+                  className={classes.websitePic}
+                />
+              </a>
+            </Grid>
+          </Hidden>
+
+          <Grid
+            item
+            xs={11}
+            sm={9}
+            md={6}
+            className={classes.projectsMeTextContainer}
+            alignItems="center"
+            justify="center"
+          >
+            <Card
+              className={classes.projectsCardContainer}
+              alignItems="center"
+              justify="center"
+            >
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <CardContent className={classes.logoContainer}>
+                    <Typography
+                      variant="h3"
+                      component="h3"
+                      className={classes.title}
+                    >
+                      Jobly
+                    </Typography>
+                  </CardContent>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    Jobly is a website that allows users to view fake companies
+                    along with their job postings. Applications can be submitted
+                    and are saved to a SQL database. Users can also utilize a
+                    search bar which provides results as a user types.
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Technologies: {"  "}
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    {" "}
+                    Node.JS, PostgreSQL, Express, JWT, JSON Schema, bcrypt,
+                    ReactJS, HTML, CSS, Material-UI, React-Bootstrap, Axios
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item xs={12} className={classes.marginTop}>
+                <Typography
+                  variant="body2"
+                  component="p"
+                  className={classes.boldText}
+                >
+                  Repositories: {"  "}
+                </Typography>
+                <a
+                  href="https://github.com/Bolmstead/jobly-front"
+                  className={classes.repoLink}
+                >
+                  <Typography variant="body2" component="p" display="inline">
+                    {" "}
+                    Front-End
+                  </Typography>
+                </a>
+                <Typography variant="body2" component="p" display="inline">
+                  {" "}
+                  /{" "}
+                </Typography>
+                <a
+                  href="https://github.com/Bolmstead/jobly-back"
+                  className={classes.repoLink}
+                >
+                  <Typography variant="body2" component="p" display="inline">
+                    {" "}
+                    Back-End
+                  </Typography>
+                </a>
+              </Grid>
+              <Grid item xs={12}>
+                <Grid container justify="center">
+                  <Grid item xs={8}>
+                    <a
+                      href="https://jobly-front.netlify.app/"
+                      className={classes.noTextDecoration}
+                    >
+                      <Button
+                        className={classes.yogaSiteBtn}
+                        fullWidth
+                        variant="contained"
+                        disableRipple
+                      >
+                        Visit Site
+                      </Button>
+                    </a>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Card>
+          </Grid>
+          <Hidden smDown>
+            <Grid item xs={12} md={6}>
+              <a href="https://jobly-front.netlify.app/">
+                <img
+                  src="images/projectPics/jobly.png"
+                  className={classes.websitePic}
+                />
+              </a>
+            </Grid>
+          </Hidden>
+        </Grid>
+      </Container>
     </Grid>
   );
 }

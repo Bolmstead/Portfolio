@@ -201,7 +201,7 @@ export default function About() {
                     maintaining relationships is something I value and believe
                     is necessary in a professional environment. When I'm not
                     coding, I like to play tennis, snowboard, and make decent
-                    attempts at golf.
+                    attempts at golf. Thanks for visiting!
                   </Typography>
                   <hr className={classes.lineBreak} />
                   <Grid container>
