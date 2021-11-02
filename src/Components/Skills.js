@@ -15,11 +15,10 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     paddingBottom: "80px",
     paddingTop: "30px",
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up("md")]: {
       paddingTop: "80px",
       paddingBottom: "130px",
     },
-
   },
   card: {
     maxWidth: "100%",
@@ -63,11 +62,11 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContent: {
     minHeight: "120px",
-    textAlign: "center"
+    textAlign: "center",
   },
   skillCaption: {
-    color: "gray"
-  }
+    color: "gray",
+  },
 }));
 
 export default function About() {
@@ -77,7 +76,13 @@ export default function About() {
     <Grid item xs={12} className={classes.skillContainer} justify="center">
       <a id="Skills">
         <Container maxWidth="md">
-          <Grid container spacing={4} direction="row" alignItems="center" justify="center">
+          <Grid
+            container
+            spacing={4}
+            direction="row"
+            alignItems="center"
+            justify="center"
+          >
             <Grid item xs={12} className={classes.titleContainer}>
               <Typography variant="h4" component="h4" className={classes.title}>
                 My Skills
@@ -85,7 +90,10 @@ export default function About() {
             </Grid>
 
             <Grid
-              item md={4} sm={6} xs={8}
+              item
+              md={4}
+              sm={6}
+              xs={8}
               className={classes.cardContainer}
               alignItems="center"
               justify="center"
@@ -99,8 +107,12 @@ export default function About() {
                       title="logo"
                     />
                   </div>
-                  <CardContent className={classes.cardContent} alignItems="center" justify="center">
-                  <Typography
+                  <CardContent
+                    className={classes.cardContent}
+                    alignItems="center"
+                    justify="center"
+                  >
+                    <Typography
                       variant="h6"
                       color="body2"
                       component="p"
@@ -108,8 +120,14 @@ export default function About() {
                     >
                       Back End Development
                     </Typography>
-                    <Typography variant="caption" className={classes.skillCaption}>
-                      I develop and maintain back end solutions using a variety of technologies such as Node.JS, Express, Python, and Flask. My back end work using these technologies can be seen in the Projects section.
+                    <Typography
+                      variant="caption"
+                      className={classes.skillCaption}
+                    >
+                      I develop and maintain back end solutions using a variety
+                      of technologies such as Node.JS, Express, Python, and
+                      Flask. My back end work using these technologies can be
+                      seen in the Projects section.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -117,7 +135,10 @@ export default function About() {
             </Grid>
 
             <Grid
-              item md={4} sm={6} xs={8}
+              item
+              md={4}
+              sm={6}
+              xs={8}
               className={classes.cardContainer}
               alignItems="center"
               justify="center"
@@ -131,8 +152,12 @@ export default function About() {
                       title="logo"
                     />
                   </div>
-                  <CardContent className={classes.cardContent} alignItems="center" justify="center">
-                  <Typography
+                  <CardContent
+                    className={classes.cardContent}
+                    alignItems="center"
+                    justify="center"
+                  >
+                    <Typography
                       variant="h6"
                       color="body2"
                       component="p"
@@ -140,8 +165,14 @@ export default function About() {
                     >
                       DB Architecture Creation
                     </Typography>
-                    <Typography variant="caption" className={classes.skillCaption}>
-                      I am well versed in SQL database development from queries to design. I've enjoyed creating projects utlizing SQL technologies and tools such as Node-PostgreSQL, SQL Alchemy, and Sequelize.
+                    <Typography
+                      variant="caption"
+                      className={classes.skillCaption}
+                    >
+                      I am well versed in SQL and MongoDB database development
+                      and refactoring. I've enjoyed creating projects utlizing
+                      libraries that communicate with these databases such as
+                      Mongoose, Node-PostgreSQL, SQL Alchemy, and Sequelize.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -150,7 +181,10 @@ export default function About() {
 
             <Grid
               item
-              md={4} sm={6} xs={8}              className={classes.cardContainer}
+              md={4}
+              sm={6}
+              xs={8}
+              className={classes.cardContainer}
               alignItems="center"
               justify="center"
             >
@@ -163,8 +197,12 @@ export default function About() {
                       title="logo"
                     />
                   </div>
-                  <CardContent className={classes.cardContent} alignItems="center" justify="center">
-                  <Typography
+                  <CardContent
+                    className={classes.cardContent}
+                    alignItems="center"
+                    justify="center"
+                  >
+                    <Typography
                       variant="h6"
                       color="body2"
                       component="p"
@@ -172,18 +210,26 @@ export default function About() {
                     >
                       API Development
                     </Typography>
-                    <Typography variant="caption" className={classes.skillCaption}>
-                      I have developed intuitive APIs allowing users to retreive and manipulate API information. I also have experience communicating with external APIs through various technologies such as Axios.
+                    <Typography
+                      variant="caption"
+                      className={classes.skillCaption}
+                    >
+                      I have developed APIs allowing users to create, retrieve,
+                      update, and delete the data. I also have experience
+                      communicating with external APIs through various
+                      technologies such as Axios.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
             </Grid>
 
-
             <Grid
               item
-              md={4} sm={6} xs={8}              className={classes.cardContainer}
+              md={4}
+              sm={6}
+              xs={8}
+              className={classes.cardContainer}
               alignItems="center"
               justify="center"
             >
@@ -196,8 +242,12 @@ export default function About() {
                       title="logo"
                     />
                   </div>
-                  <CardContent className={classes.cardContent} alignItems="center" justify="center">
-                  <Typography
+                  <CardContent
+                    className={classes.cardContent}
+                    alignItems="center"
+                    justify="center"
+                  >
+                    <Typography
                       variant="h6"
                       color="body2"
                       component="p"
@@ -205,18 +255,25 @@ export default function About() {
                     >
                       Frontend Development
                     </Typography>
-                    <Typography variant="caption" className={classes.skillCaption}>
-                      I use HTML, CSS, and Javascript to build attractive responsive front end for websites. My front end work can be seen in the Projects section.
+                    <Typography
+                      variant="caption"
+                      className={classes.skillCaption}
+                    >
+                      I use HTML, CSS, and Javascript to build attractive
+                      responsive website frontends. This work can
+                      be seen in the Projects section below.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
             </Grid>
 
-
             <Grid
               item
-              md={4} sm={6} xs={8}              className={classes.cardContainer}
+              md={4}
+              sm={6}
+              xs={8}
+              className={classes.cardContainer}
               alignItems="center"
               justify="center"
             >
@@ -229,8 +286,12 @@ export default function About() {
                       title="logo"
                     />
                   </div>
-                  <CardContent className={classes.cardContent} alignItems="center" justify="center">
-                  <Typography
+                  <CardContent
+                    className={classes.cardContent}
+                    alignItems="center"
+                    justify="center"
+                  >
+                    <Typography
                       variant="h6"
                       color="body2"
                       component="p"
@@ -238,8 +299,13 @@ export default function About() {
                     >
                       React + Redux
                     </Typography>
-                    <Typography variant="caption" className={classes.skillCaption}>
-                      Frameworks supporting state management are essential to building interactive apps. I have strong experience with React as well as the state container, Redux.
+                    <Typography
+                      variant="caption"
+                      className={classes.skillCaption}
+                    >
+                      Frameworks supporting state management are essential to
+                      building interactive apps. I have strong experience with
+                      React as well as the state container, Redux.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -248,7 +314,10 @@ export default function About() {
 
             <Grid
               item
-              md={4} sm={6} xs={8}              className={classes.cardContainer}
+              md={4}
+              sm={6}
+              xs={8}
+              className={classes.cardContainer}
               alignItems="center"
               justify="center"
             >
@@ -261,8 +330,12 @@ export default function About() {
                       title="logo"
                     />
                   </div>
-                  <CardContent className={classes.cardContent} alignItems="center" justify="center">
-                  <Typography
+                  <CardContent
+                    className={classes.cardContent}
+                    alignItems="center"
+                    justify="center"
+                  >
+                    <Typography
                       variant="h6"
                       color="body2"
                       component="p"
@@ -270,15 +343,18 @@ export default function About() {
                     >
                       Front End Design
                     </Typography>
-                    <Typography variant="caption" className={classes.skillCaption}>
-                      The look and feel of applications are important in every project. I have built a variety of front end projects utilizing the CSS toolkits, Material UI and Bootstrap.
+                    <Typography
+                      variant="caption"
+                      className={classes.skillCaption}
+                    >
+                      The look and feel of applications are important in every
+                      project. I have built a variety of front end projects
+                      utilizing CSS frameworks such as Material UI, Ant Design, and Bootstrap.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
             </Grid>
-
-
           </Grid>
         </Container>
       </a>

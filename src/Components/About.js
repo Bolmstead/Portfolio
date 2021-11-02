@@ -13,7 +13,6 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import PhoneIcon from "@material-ui/icons/Phone";
 
-
 const useStyles = makeStyles((theme) => ({
   aboutContainer: {
     backgroundColor: `#FCFCFC`,
@@ -108,13 +107,11 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 30,
     [theme.breakpoints.down("xs")]: {
       marginRight: "15px",
-
     },
   },
   iconContainer: {
     [theme.breakpoints.down("xs")]: {
       textAlign: "center",
-
     },
   },
   contactLink: {
@@ -185,14 +182,16 @@ export default function About() {
                     Berkley Olmstead, Full-Stack Developer
                   </Typography>
                   <Typography variant="body2" component="p">
-                    I am a Software Developer based in the United States with 4
-                    years of professional experience in Tax and Accounting. I
-                    decided to transition my career to software engineering
-                    after enjoying the process of creating a few apps
-                    with Javascript. In April 2021, I graduated from the
-                    Springboard Software Engineering program where I built upon
-                    my skills developing full-stack web applications, SQL
-                    databases, and REST API’s.
+                    I am a Full-Stack Software Engineer currently working remote
+                    for TEKware, a softare company in Boise, Idaho. Our current
+                    project is building a CRM website application that enables
+                    managers and employees of trucking companies to complete
+                    their day-to-day tasks. I enjoy the Full-Stack experience
+                    and working with a team to solve problems that come
+                    along. In April 2021, I graduated from the Springboard
+                    Software Engineering program where I built upon my skills
+                    developing full-stack web applications, SQL databases, and
+                    REST API’s.
                   </Typography>
                   <br />
                   <Typography variant="body2" component="p">
@@ -275,7 +274,7 @@ export default function About() {
                       >
                         <GitHubIcon className={classes.icon} />
                       </a>
-                      
+
                       <a
                         href="tel:208-871-3882"
                         className={classes.contactLink}
