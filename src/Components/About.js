@@ -170,37 +170,26 @@ export default function About() {
                 justify="center"
               >
                 <CardContent>
-                  <Typography
-                    className={classes.title}
-                    color="textSecondary"
-                    gutterBottom
-                  >
-                    Who am I?
-                  </Typography>
                   <Typography variant="h5" component="h2"></Typography>
                   <Typography variant="h5" component="h5">
-                    Berkley Olmstead, Full-Stack Developer
+                    Who am I?
                   </Typography>
                   <Typography variant="body2" component="p">
-                    I am a Full-Stack Software Engineer currently working remote
-                    for TEKware, a softare company in Boise, Idaho. Our current
-                    project is building a CRM website application that enables
-                    managers and employees of trucking companies to complete
-                    their day-to-day tasks. I enjoy the Full-Stack experience
-                    and working with a team to solve problems that come
-                    along. In April 2021, I graduated from the Springboard
-                    Software Engineering program where I built upon my skills
-                    developing full-stack web applications, SQL databases, and
-                    REST API’s.
+                    A Full-Stack Software Engineer working remote for TEKware, a
+                    software development company in Boise, Idaho. Our current
+                    project, at TEKware, is building a CRM website application
+                    that enables managers and employees of trucking companies to
+                    complete their day-to-day tasks.
                   </Typography>
                   <br />
                   <Typography variant="body2" component="p">
-                    I understand how to collaborate in a professional
-                    environment and enjoy working in teams. Building and
-                    maintaining relationships is something I value and believe
-                    is necessary in a professional environment. When I'm not
+                    I enjoy the Full-Stack experience and collaborating with
+                    teams in a professional and trusting environment. Building
+                    and maintaining relationships is something I value and
+                    believe is necessary for a team to thrive. When I'm not
                     coding, I like to play tennis, snowboard, and make decent
-                    attempts at golf. Thanks for visiting!
+                    attempts at golf. I appreciate you visiting my site and am
+                    open to opportunities!
                   </Typography>
                   <hr className={classes.lineBreak} />
                   <Grid container>
