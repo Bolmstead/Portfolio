@@ -124,7 +124,7 @@ export default function About() {
                       variant="caption"
                       className={classes.skillCaption}
                     >
-                      I develop and maintain back end solutions using a variety
+                      I develop and maintain back end logic using a variety
                       of technologies such as Node.JS, Express, Python, and
                       Flask. My back end work using these technologies can be
                       seen in the Projects section.
@@ -170,9 +170,9 @@ export default function About() {
                       className={classes.skillCaption}
                     >
                       I am well versed in SQL and MongoDB database development
-                      and refactoring. I've enjoyed creating projects utlizing
-                      libraries that communicate with these databases such as
-                      Mongoose, Node-PostgreSQL, SQL Alchemy, and Sequelize.
+                      and refactoring. I enjoy using technologies that interact
+                      with these databases such as Mongoose, Node-PostgreSQL,
+                      SQL Alchemy, and Sequelize.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -214,9 +214,9 @@ export default function About() {
                       variant="caption"
                       className={classes.skillCaption}
                     >
-                      I have developed APIs allowing users to create, retrieve,
-                      update, and delete the data. I also have experience
-                      communicating with external APIs through various
+                      I create API routes and models allowing users to create,
+                      retrieve, update, and delete the data. I create code to
+                      communicate with external APIs through various
                       technologies such as Axios.
                     </Typography>
                   </CardContent>
@@ -260,8 +260,8 @@ export default function About() {
                       className={classes.skillCaption}
                     >
                       I use HTML, CSS, and Javascript to build attractive
-                      responsive website frontends. This work can
-                      be seen in the Projects section below.
+                      responsive website frontends. This work can be seen in the
+                      Projects section below.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -304,8 +304,9 @@ export default function About() {
                       className={classes.skillCaption}
                     >
                       Frameworks supporting state management are essential to
-                      building interactive apps. I have strong experience with
-                      React as well as the state container, Redux.
+                      building dynamic, interactive apps. I have strong
+                      experience with React as well as the state container,
+                      Redux.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -348,8 +349,8 @@ export default function About() {
                       className={classes.skillCaption}
                     >
                       The look and feel of applications are important in every
-                      project. I have built a variety of front end projects
-                      utilizing CSS frameworks such as Material UI, Ant Design, and Bootstrap.
+                      project. I understand and utilize many CSS frameworks such
+                      as Material UI, Ant Design, and Bootstrap.
                     </Typography>
                   </CardContent>
                 </CardActionArea>

@@ -170,26 +170,27 @@ export default function About() {
                 justify="center"
               >
                 <CardContent>
-                  <Typography variant="h5" component="h2"></Typography>
-                  <Typography variant="h5" component="h5">
+                  <Typography variant="h4" component="h4">
                     Who am I?
                   </Typography>
                   <Typography variant="body2" component="p">
                     A Full-Stack Software Engineer working remote for TEKware, a
                     software development company in Boise, Idaho. Our current
-                    project, at TEKware, is building a CRM website application
-                    that enables managers and employees of trucking companies to
-                    complete their day-to-day tasks.
+                    project is to build a CRM website application that enables
+                    managers and employees of trucking companies to complete
+                    their day-to-day tasks. In April of 2021, I graduated from
+                    the Springboard software engineering program refining my
+                    Full-Stack development skills.
                   </Typography>
                   <br />
                   <Typography variant="body2" component="p">
-                    I enjoy the Full-Stack experience and collaborating with
-                    teams in a professional and trusting environment. Building
+                    I enjoy creating software projects and collaborating with
+                    teams in a professional, trusting environment. Building
                     and maintaining relationships is something I value and
                     believe is necessary for a team to thrive. When I'm not
                     coding, I like to play tennis, snowboard, and make decent
                     attempts at golf. I appreciate you visiting my site and am
-                    open to opportunities!
+                    open to professional opportunities!
                   </Typography>
                   <hr className={classes.lineBreak} />
                   <Grid container>
