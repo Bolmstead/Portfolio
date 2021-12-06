@@ -180,17 +180,20 @@ export default function About() {
                     managers and employees of trucking companies to complete
                     their day-to-day tasks. In April of 2021, I graduated from
                     the Springboard software engineering program refining my
-                    Full-Stack development skills.
+                    Full-Stack development skills. I also have 4 years
+                    experience in individual & business income tax research and
+                    have passed all 4 sections of the CPA exam.
                   </Typography>
                   <br />
                   <Typography variant="body2" component="p">
                     I enjoy creating full-stack projects and collaborating with
-                    teams in a professional, trusting environment. Building
-                    and maintaining relationships is something I value and
-                    believe is necessary for a team to thrive. When I'm not
-                    coding, I like to play tennis, research cryptocurrencies & NFTs, and make decent
-                    attempts at golf. I appreciate you visiting my site and am
-                    open to professional opportunities!
+                    teams in a professional, trusting environment. Building and
+                    maintaining relationships is something I value and believe
+                    is necessary for a team to thrive. When I'm not coding, I
+                    like to play tennis, snowboard, and make decent attempts at
+                    golf. I am very passionate in cryptocurrencies and NFTs and
+                    believe blockchain is the future. I appreciate you visiting
+                    my site and am open to professional opportunities!
                   </Typography>
                   <hr className={classes.lineBreak} />
                   <Grid container>
