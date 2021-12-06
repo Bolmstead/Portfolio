@@ -174,9 +174,9 @@ export default function About() {
                     Who am I?
                   </Typography>
                   <Typography variant="body2" component="p">
-                    A Full-Stack Software Engineer working remote for TEKware, a
+                    A Full-Stack Software Engineer working for TEKware, a
                     software development company in Boise, Idaho. Our current
-                    project is to build a CRM website application that enables
+                    project is building a CRM website application that enables
                     managers and employees of trucking companies to complete
                     their day-to-day tasks. In April of 2021, I graduated from
                     the Springboard software engineering program refining my
@@ -184,11 +184,11 @@ export default function About() {
                   </Typography>
                   <br />
                   <Typography variant="body2" component="p">
-                    I enjoy creating software projects and collaborating with
+                    I enjoy creating full-stack projects and collaborating with
                     teams in a professional, trusting environment. Building
                     and maintaining relationships is something I value and
                     believe is necessary for a team to thrive. When I'm not
-                    coding, I like to play tennis, snowboard, and make decent
+                    coding, I like to play tennis, research cryptocurrencies & NFTs, and make decent
                     attempts at golf. I appreciate you visiting my site and am
                     open to professional opportunities!
                   </Typography>

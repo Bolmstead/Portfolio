@@ -62,6 +62,10 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "300px",
     minWidth: "200px",
   },
+  projectLogoCheese: {
+    maxWidth: "400px",
+    minWidth: "300px",
+  },
   websitePic: {
     height: "600px",
     boxShadow: "0px 0px 20px gray",
@@ -88,11 +92,19 @@ const useStyles = makeStyles((theme) => ({
   freeBaySiteBtn: {
     textTransform: "none",
     marginTop: "15px",
+    marginBottom: "5px"
   },
 
   yogaSiteBtn: {
     textTransform: "none",
     marginTop: "30px",
+    marginBottom: "5px"
+  },
+
+  cheeseSiteBtn: {
+    textTransform: "none",
+    marginTop: "10px",
+    marginBottom: "5px"
   },
 
   repoLink: {
@@ -363,6 +375,136 @@ export default function Projects() {
                 </a>
               </Grid> */}
 
+  
+
+          <Grid
+            item
+            xs={11}
+            sm={9}
+            md={6}
+            className={classes.projectsMeTextContainer}
+            alignItems="center"
+            justify="center"
+          >
+            <Card
+              className={classes.projectsCardContainer}
+              alignItems="center"
+              justify="center"
+            >
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <CardContent className={classes.logoContainer}>
+                    <a
+                      href="https://cardano-cheese.netlify.app"
+                      className={classes.noTextDecoration}
+                    >
+                      <img
+                        src="images/projectPics/full-cheese-title.jpg"
+                        className={classes.projectLogoCheese}
+                      />
+                    </a>
+                  </CardContent>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    Cardano Cheese is a project of 100 unique Non-Fungible Tokens (NFTs) on the Cardano cryptocurrency blockchain. All cheese were purchased and randomly minted from the site by integrating with the nft-maker.io API.
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    Visitors of the site can view all of the individually designed NFTs and whether an NFT was minted. Links to the Discord, Twitter, and other information is also available on the site. Cardano Cheese has now been verified by CNFT.io.</Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Technologies: {"  "}
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    {" "}
+                    Node.JS,
+                    ReactJS, NFT API Tools (pro.nft-maker.io), HTML, CSS, Material-UI, Axios
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item xs={12} className={classes.marginTop}>
+                <Typography
+                  variant="body2"
+                  component="p"
+                  className={classes.boldText}
+                >
+                  Repositories: {"  "}
+                </Typography>
+                <a
+                  href="https://github.com/Bolmstead/Cardano-Cheese-Frontend"
+                  className={classes.repoLink}
+                >
+                  <Typography variant="body2" component="p" display="inline">
+                    {" "}
+                    Front-End
+                  </Typography>
+                </a>
+
+              </Grid>
+              <Grid item xs={12}>
+                <Grid container justify="center">
+                  <Grid item xs={8}>
+                    <a
+                      href="https://cardano-cheese.netlify.app"
+                      className={classes.noTextDecoration}
+                    >
+                      <Button
+                        className={classes.cheeseSiteBtn}
+                        fullWidth
+                        variant="contained"
+                        disableRipple
+                      >
+                        Visit Site
+                      </Button>
+                    </a>
+                    <a
+                      href="https://opencnft.io/BV6pEJykjQi9RX34xRjjH9xdE"
+                      className={classes.noTextDecoration}
+                    >
+                      <Button
+                        className={classes.cheeseSiteBtn}
+                        fullWidth
+                        variant="contained"
+                        disableRipple
+                      >
+                        View Sales Data
+                      </Button>
+                    </a>
+                    <a
+                      href="https://cnft.io/marketplace?project=Cardano%20Cheese"
+                      className={classes.noTextDecoration}
+                    >
+                      <Button
+                        className={classes.cheeseSiteBtn}
+                        fullWidth
+                        variant="contained"
+                        disableRipple
+                      >
+                        Purchase on CNFT.io
+                      </Button>
+                    </a>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Card>
+          </Grid>
+          <Hidden smDown>
+            <Grid item xs={12} md={6}>
+              <a href="https://cardano-cheese.netlify.app/">
+                <img
+                  src="images/projectPics/cardano-cheese.jpg"
+                  className={classes.websitePic}
+                />
+              </a>
+            </Grid>
+          </Hidden>
           <Grid
             item
             xs={11}
@@ -582,6 +724,8 @@ export default function Projects() {
             </Grid>
           </Hidden>
         </Grid>
+
+        
       </Container>
     </Grid>
   );

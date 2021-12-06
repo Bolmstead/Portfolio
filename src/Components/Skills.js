@@ -124,7 +124,7 @@ export default function About() {
                       variant="caption"
                       className={classes.skillCaption}
                     >
-                      I develop and maintain back end logic using a variety
+                      I develop and maintain Back-End logic using a variety
                       of technologies such as Node.JS, Express, Python, and
                       Flask. My back end work using these technologies can be
                       seen in the Projects section.
@@ -148,7 +148,7 @@ export default function About() {
                   <div className={classes.imageContainer}>
                     <img
                       className={classes.image}
-                      src="images/skillPics/sql.jpg"
+                      src="images/skillPics/sql_mongodb.png"
                       title="logo"
                     />
                   </div>
@@ -215,7 +215,7 @@ export default function About() {
                       className={classes.skillCaption}
                     >
                       I create API routes and models allowing users to create,
-                      retrieve, update, and delete the data. I create code to
+                      retrieve, update, and delete stored data. I also develop code to
                       communicate with external APIs through various
                       technologies such as Axios.
                     </Typography>
