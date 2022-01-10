@@ -7,18 +7,15 @@ import CardContent from "@material-ui/core/CardContent";
 import Container from "@material-ui/core/Container";
 import "./FadeIn.css";
 
-
 const useStyles = makeStyles((theme) => ({
   aboutContainer: {
     backgroundColor: "rgb(125, 125 ,125)",
     width: "100%",
     paddingBottom: "60px",
     alignItems: "center",
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up("md")]: {
       paddingTop: "80px",
       paddingBottom: "80px",
-
-
     },
   },
   titleContainer: {
@@ -26,20 +23,20 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "30px",
     color: "white",
   },
-  springboardSection:{
+  springboardSection: {
     order: 2,
   },
-  cpaSection:{
+  cpaSection: {
     order: 3,
 
     [theme.breakpoints.down(`sm`)]: {
       order: 4,
     },
   },
-  vandalSection:{
+  vandalSection: {
     order: 6,
   },
-  ghanaSection:{
+  ghanaSection: {
     order: 7,
 
     [theme.breakpoints.down(`sm`)]: {
@@ -59,15 +56,11 @@ const useStyles = makeStyles((theme) => ({
   resumeButton: {
     textTransform: "none",
 
-    backgroundColor: "#FFC220"
-
-
+    backgroundColor: "#FFC220",
   },
   link: {
     textTransform: "none",
     textDecoration: "none",
-
-
   },
   root: {
     minWidth: 275,
@@ -76,7 +69,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Roboto",
     fontWeight: "bold",
     color: "#FFC220",
-
   },
   businessPhoto: {
     width: "100%",
@@ -95,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
   },
   springboardLogoContainer: {
     textAlign: "center",
-    order: 1
+    order: 1,
   },
   cpaLogoContainer: {
     textAlign: "center",
@@ -107,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
   },
   vandalLogoContainer: {
     textAlign: "center",
-    order: 5
+    order: 5,
   },
   ghanaLogoContainer: {
     textAlign: "center",
@@ -119,7 +111,6 @@ const useStyles = makeStyles((theme) => ({
   },
   springboardLogo: {
     width: "175px",
-
   },
   cpaLogo: {
     width: "250px",
@@ -138,16 +129,18 @@ const useStyles = makeStyles((theme) => ({
     border: "none",
     boxShadow: "none",
     textAlign: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   cpaCard: {
     border: "none",
     boxShadow: "none",
     textAlign: "center",
-
+  },
+  cardContent: {
+    height: "100px",
   },
   cpaText: {
-    color: "white"
+    color: "white",
   },
   lineBreak: {
     backgroundColor: "#ECECEC",
@@ -164,80 +157,106 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "none",
   },
   title: {
-
     fontWeight: "bold",
-
   },
   emailLink: {
     color: "#212121",
   },
-  
 }));
 
 export default function About() {
   const classes = useStyles();
 
   return (
-    <Grid item xs={12} className={classes.aboutContainer} justify="center" >
+    <Grid item xs={12} className={classes.aboutContainer} justify="center">
       <a id="Education">
-        <Container maxWidth="md" >
-          <Grid container spacing={1} direction="row" alignItems="center" justify="center">
+        <Container maxWidth="md">
+          <Grid
+            container
+            spacing={1}
+            direction="row"
+            alignItems="center"
+            justify="center"
+          >
             <Grid item xs={12} className={classes.titleContainer}>
               <Typography variant="h4" component="h4" className={classes.title}>
                 My Education
               </Typography>
             </Grid>
 
-            <Grid item xs={8} sm={6} md={4} className={classes.springboardLogoContainer} alignItems="center" justify="center">
+            <Grid
+              item
+              xs={8}
+              sm={6}
+              md={4}
+              className={classes.springboardLogoContainer}
+              alignItems="center"
+              justify="center"
+            >
               <img
                 src="images/education/springboard.png"
                 className={classes.springboardLogo}
               ></img>
             </Grid>
 
-            <Grid item xs={12} sm={10} md={8} className={classes.springboardSection} alignItems="center" justify="center">
-              <Card className={classes.educationCard} alignItems="center" justify="center">
-                <CardContent>
-                  <Typography variant="h5" component="h2"></Typography>
-                  <Typography variant="h5" component="h5">
+            <Grid
+              item
+              xs={12}
+              sm={10}
+              md={8}
+              className={classes.springboardSection}
+              alignItems="center"
+              justify="center"
+            >
+              <Card
+                className={classes.educationCard}
+                alignItems="center"
+                justify="center"
+              >
+                <CardContent className={classes.cardContent}>
+                  <Typography variant="h5" component="h5" style={{marginTop: "25px"}}>
                     Springboard Software Engineering Program
                   </Typography>
-                  <Typography
-                    className={classes.title}
-                    color="textSecondary"
-                    
-                  >
+                  <Typography className={classes.title} color="textSecondary">
                     Certificate of Completion (April 2021)
                   </Typography>
-
-                  
                 </CardContent>
-
               </Card>
             </Grid>
 
-
-            <Grid item xs={12} sm={10} md={8} className={classes.cpaSection} alignItems="center" justify="center">
-              <Card className={classes.educationCard} alignItems="center" justify="center">
-                <CardContent>
-                  <Typography variant="h5" component="h2"></Typography>
-                  <Typography variant="h5" component="h5">
+            <Grid
+              item
+              xs={12}
+              sm={10}
+              md={8}
+              className={classes.cpaSection}
+              alignItems="center"
+              justify="center"
+            >
+              <Card
+                className={classes.educationCard}
+                alignItems="center"
+                justify="center"
+              >
+                <CardContent className={classes.cardContent}>
+                  <Typography variant="h5" component="h5" style={{marginTop: "25px"}}>
                     Passed all 4 sections of the CPA exam
                   </Typography>
-                  <Typography
-                    className={classes.title}
-                    color="textSecondary"
-                    
-                  >
+                  <Typography className={classes.title} color="textSecondary">
                     * Not currently an active CPA
                   </Typography>
-
-                  
                 </CardContent>
-
               </Card>
             </Grid>
-            <Grid item xs={8} sm={6} md={4}className={classes.cpaLogoContainer} alignItems="center" justify="center">
+            <Grid
+              item
+              xs={8}
+              sm={6}
+              md={4}
+              className={classes.cpaLogoContainer}
+              alignItems="center"
+              justify="center"
+            >
               {" "}
               <img
                 src="images/education/cpa.png"
@@ -245,25 +264,41 @@ export default function About() {
               ></img>
             </Grid>
 
-            <Grid item xs={8} sm={6} md={4} className={classes.vandalLogoContainer} alignItems="center" justify="center">
+            <Grid
+              item
+              xs={8}
+              sm={6}
+              md={4}
+              className={classes.vandalLogoContainer}
+              alignItems="center"
+              justify="center"
+            >
               <img
                 src="images/education/uofi.png"
                 className={classes.vandalLogo}
               ></img>
             </Grid>
 
-            <Grid item xs={12} sm={10} md={8} className={classes.vandalSection} alignItems="center" justify="center">
-              <Card className={classes.educationCard} alignItems="center" justify="center">
-                <CardContent>
+            <Grid
+              item
+              xs={12}
+              sm={10}
+              md={8}
+              className={classes.vandalSection}
+              alignItems="center"
+              justify="center"
+            >
+              <Card
+                className={classes.educationCard}
+                alignItems="center"
+                justify="center"
+              >
+                <CardContent className={classes.cardContent}>
                   <Typography variant="h5" component="h2"></Typography>
                   <Typography variant="h5" component="h5">
                     University of Idaho (B.S. in Business)
                   </Typography>
-                  <Typography
-                    className={classes.title}
-                    color="textSecondary"
-                    
-                  >
+                  <Typography className={classes.title} color="textSecondary">
                     Degrees in Accounting (Mar 2012) & Finance (Dec 2012)
                   </Typography>
 
@@ -297,38 +332,45 @@ export default function About() {
                         Location: {"  "}
                       </Typography>
                       <a
-                href="mailto:olms2074@gmail.com"
-                className={classes.link}
-              >
-                      <Typography
-                        variant="body2"
-                        component="p"
-                        display="inline"
-                        className={classes.emailLink}
+                        href="mailto:olms2074@gmail.com"
+                        className={classes.link}
                       >
-                        {" "}
-                        Moscow, Idaho
-                      </Typography>
+                        <Typography
+                          variant="body2"
+                          component="p"
+                          display="inline"
+                          className={classes.emailLink}
+                        >
+                          {" "}
+                          Moscow, Idaho
+                        </Typography>
                       </a>
                     </Grid>
                   </Grid>
                 </CardContent>
-
               </Card>
             </Grid>
 
-            <Grid item xs={12} sm={10} md={8} className={classes.ghanaSection} alignItems="center" justify="center">
-              <Card className={classes.educationCard} alignItems="center" justify="center">
-                <CardContent>
+            <Grid
+              item
+              xs={12}
+              sm={10}
+              md={8}
+              className={classes.ghanaSection}
+              alignItems="center"
+              justify="center"
+            >
+              <Card
+                className={classes.educationCard}
+                alignItems="center"
+                justify="center"
+              >
+                <CardContent className={classes.cardContent}>
                   <Typography variant="h5" component="h2"></Typography>
                   <Typography variant="h5" component="h5">
                     University of Ghana
                   </Typography>
-                  <Typography
-                    className={classes.title}
-                    color="textSecondary"
-                    
-                  >
+                  <Typography className={classes.title} color="textSecondary">
                     Study abroad semester (Spring 2010)
                   </Typography>
 
@@ -362,26 +404,33 @@ export default function About() {
                         Location: {"  "}
                       </Typography>
                       <a
-                href="mailto:olms2074@gmail.com"
-                className={classes.link}
-              >
-                      <Typography
-                        variant="body2"
-                        component="p"
-                        display="inline"
-                        className={classes.emailLink}
+                        href="mailto:olms2074@gmail.com"
+                        className={classes.link}
                       >
-                        {" "}
-                        Accra, Ghana, Africa
-                      </Typography>
+                        <Typography
+                          variant="body2"
+                          component="p"
+                          display="inline"
+                          className={classes.emailLink}
+                        >
+                          {" "}
+                          Accra, Ghana, Africa
+                        </Typography>
                       </a>
                     </Grid>
                   </Grid>
                 </CardContent>
-
               </Card>
             </Grid>
-            <Grid item xs={8} sm={6} md={4}className={classes.ghanaLogoContainer} alignItems="center" justify="center">
+            <Grid
+              item
+              xs={8}
+              sm={6}
+              md={4}
+              className={classes.ghanaLogoContainer}
+              alignItems="center"
+              justify="center"
+            >
               {" "}
               <img
                 src="images/education/ghana.png"
