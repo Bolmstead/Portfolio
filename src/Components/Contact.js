@@ -16,8 +16,7 @@ const useStyles = makeStyles(() => ({
     paddingTop: "30px",
   },
   contact: {
-    fontFamily: "Roboto",
-    marginTop: "0px",
+    marginTop: "10px",
     marginBottom: "10px",
     color: "white",
   },
@@ -25,8 +24,14 @@ const useStyles = makeStyles(() => ({
     marginTop: "25px",
   },
   icon: {
-    fontSize: 50,
+    fontSize: 60,
     color: "white",
+    marginBottom: "10px"
+  },
+  githubIcon: {
+    fontSize: 53,
+    color: "white",
+    marginBottom: "10px"
   },
   contactLink: {
     textDecoration: "none",
@@ -66,10 +71,10 @@ export default function About() {
                 href="mailto:olms2074@gmail.com"
                 className={classes.contactLink}
               >
-                <MailIcon className={classes.icon} />
+                <MailIcon className={classes.icon} /><br/>
                 <Typography
-                  variant="h6"
-                  component="h6"
+                  variant="h7"
+                  component="h7"
                   className={classes.contact}
                 >
                   {" "}
@@ -89,10 +94,10 @@ export default function About() {
                 href="https://github.com/Bolmstead"
                 className={classes.contactLink}
               >
-                <GitHubIcon className={classes.icon} />
+                <GitHubIcon className={classes.githubIcon} /><br/>
                 <Typography
-                  variant="h6"
-                  component="h6"
+                  variant="h7"
+                  component="h7"
                   className={classes.contact}
                 >
                   github.com/Bolmstead
@@ -111,10 +116,10 @@ export default function About() {
                 href="https://www.linkedin.com/in/berkleyolmstead/"
                 className={classes.contactLink}
               >
-                <LinkedInIcon className={classes.icon} />
+                <LinkedInIcon className={classes.icon} /><br/>
                 <Typography
-                  variant="h6"
-                  component="h6"
+                  variant="h7"
+                  component="h7"
                   className={classes.contact}
                 >
                   linkedin.com/in/berkleyolmstead

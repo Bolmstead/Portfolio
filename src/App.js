@@ -10,6 +10,8 @@ import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Fade from "@material-ui/core/Fade";
 import { makeStyles } from "@material-ui/core/styles";
+import "./index.css";
+
 
 const useStyles = makeStyles(() => ({
   app: {
