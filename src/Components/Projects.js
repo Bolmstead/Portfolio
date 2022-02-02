@@ -181,10 +181,12 @@ export default function Projects() {
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
                     Working as a Senior Full-Stack Developer on this project
-                    building the UI and necessary backend logic for managers to assign
-                    tractor/trailer units to drivers, functionality for managers to provide
-                    privledges for employees, the entire Authorize.NET &
-                    Quest external API integration, and other functionality.
+                    building the manager's homepage dashboard, the UI and
+                    necessary backend logic for managers to assign
+                    tractor/trailer units to drivers, functionality for managers
+                    to provide privledges for employees, the entire
+                    Authorize.NET & Quest external API integration, and other
+                    functionality.
                   </Typography>
                 </Grid>
                 <br />{" "}
