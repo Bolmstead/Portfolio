@@ -174,7 +174,7 @@ export default function About() {
                     Who am I?
                   </Typography>
                   <Typography variant="body2" component="p">
-                    A Full-Stack Software Engineer working for TEKware, a
+                    A Senior Full-Stack Software Engineer working for TEKware, a
                     software development company in Boise, Idaho. Our current
                     project is building a CRM website application that enables
                     managers and employees of trucking companies to complete

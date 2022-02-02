@@ -92,19 +92,19 @@ const useStyles = makeStyles((theme) => ({
   freeBaySiteBtn: {
     textTransform: "none",
     marginTop: "15px",
-    marginBottom: "5px"
+    marginBottom: "5px",
   },
 
   yogaSiteBtn: {
     textTransform: "none",
     marginTop: "30px",
-    marginBottom: "5px"
+    marginBottom: "5px",
   },
 
   cheeseSiteBtn: {
     textTransform: "none",
     marginTop: "10px",
-    marginBottom: "5px"
+    marginBottom: "5px",
   },
 
   repoLink: {
@@ -145,6 +145,89 @@ export default function Projects() {
             </a>
           </Grid>
 
+          <Grid
+            item
+            xs={11}
+            sm={9}
+            md={6}
+            className={classes.projectsMeTextContainer}
+            alignItems="center"
+            justify="center"
+          >
+            <Card
+              className={classes.projectsCardContainer}
+              alignItems="center"
+              justify="center"
+            >
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <CardContent className={classes.logoContainer}>
+                    <img
+                      src="images/projectPics/safety-audit-prep-logo.png"
+                      className={classes.projectLogo}
+                    />
+                  </CardContent>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    Safety Audit Prep, an online CRM site built for trucking
+                    companies. Site functions as a tool for Employee & Fleet
+                    Management, Drug & Alcohol Consortium and
+                    Compliance/Registration Management. Site is currently in
+                    Beta testing by our client's customers for 90 days before
+                    the final product is released.
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    Working as a Senior Full-Stack Developer on this project
+                    building the UI and necessary backend logic for managers to assign
+                    tractor/trailer units to drivers, functionality for managers to provide
+                    privledges for employees, the entire Authorize.NET &
+                    Quest external API integration, and other functionality.
+                  </Typography>
+                </Grid>
+                <br />{" "}
+                <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Technologies: {"  "}
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    {" "}
+                    React, Redux, Node.JS, Express, Mongoose, Ant Design, Figma,
+                    Axios, Authorize.Net & Quest API integration
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Grid container justify="center">
+                    <Grid item xs={8}>
+                      <Button
+                        className={classes.freeBaySiteBtn}
+                        fullWidth
+                        variant="contained"
+                        disableRipple
+                        disabled
+                      >
+                        Site in Beta
+                      </Button>
+                    </Grid>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Card>
+          </Grid>
+          <Hidden smDown>
+            <Grid item md={6}>
+              <img
+                src="images/projectPics/safety-audit-prep.png"
+                className={classes.websitePic}
+              />
+            </Grid>
+          </Hidden>
           <Grid
             item
             xs={11}
@@ -375,8 +458,6 @@ export default function Projects() {
                 </a>
               </Grid> */}
 
-  
-
           <Grid
             item
             xs={11}
@@ -407,12 +488,19 @@ export default function Projects() {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    Cardano Cheese is a project of 100 unique Non-Fungible Tokens (NFTs) on the Cardano cryptocurrency blockchain. All cheese were purchased and randomly minted from the site by integrating with the nft-maker.io API.
+                    Cardano Cheese is a project of 100 unique Non-Fungible
+                    Tokens (NFTs) on the Cardano cryptocurrency blockchain. All
+                    cheese were purchased and randomly minted from the site by
+                    integrating with the nft-maker.io API.
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    Visitors of the site can view all of the individually designed NFTs and whether an NFT was minted. Links to the Discord, Twitter, and other information is also available on the site. Cardano Cheese has now been verified by CNFT.io.</Typography>
+                    Visitors of the site can view all of the individually
+                    designed NFTs and whether an NFT was minted. Links to the
+                    Discord, Twitter, and other information is also available on
+                    the site. Cardano Cheese has now been verified by CNFT.io.
+                  </Typography>
                 </Grid>
                 <Grid item xs={12}>
                   <Typography
@@ -424,8 +512,8 @@ export default function Projects() {
                   </Typography>
                   <Typography variant="body2" component="p">
                     {" "}
-                    Node.JS,
-                    ReactJS, NFT API Tools (pro.nft-maker.io), HTML, CSS, Material-UI, Axios
+                    Node.JS, ReactJS, NFT API Tools (pro.nft-maker.io), HTML,
+                    CSS, Material-UI, Axios
                   </Typography>
                 </Grid>
               </Grid>
@@ -446,7 +534,6 @@ export default function Projects() {
                     Front-End
                   </Typography>
                 </a>
-
               </Grid>
               <Grid item xs={12}>
                 <Grid container justify="center">
@@ -724,8 +811,6 @@ export default function Projects() {
             </Grid>
           </Hidden>
         </Grid>
-
-        
       </Container>
     </Grid>
   );
