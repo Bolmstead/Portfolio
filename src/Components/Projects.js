@@ -200,8 +200,8 @@ export default function Projects() {
                   </Typography>
                   <Typography variant="body2" component="p">
                     {" "}
-                    React, Redux, Node.JS, Express, Mongoose, Ant Design, Figma,
-                    Axios, Authorize.Net & Quest API integration
+                    React, Redux, Node.JS, Express, Mongoose, MongoDB, Ant Design, Figma,
+                    Axios, REST & SOAP API Integration
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
