@@ -170,8 +170,8 @@ export default function Projects() {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    Safety Audit Prep, an online CRM site built for trucking
-                    companies. Site functions as a tool for Employee & Fleet
+                    Safety Audit Prep is an online CRM site built for trucking
+                    companies. The web application functions as a tool for Employee & Fleet
                     Management, Drug & Alcohol Consortium and
                     Compliance/Registration Management. Site is currently in
                     Beta testing by our client's customers for 90 days before
