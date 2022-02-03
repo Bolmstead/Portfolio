@@ -173,20 +173,20 @@ export default function Projects() {
                     Safety Audit Prep is an online CRM site built for trucking
                     companies. The web application functions as a tool for Employee & Fleet
                     Management, Drug & Alcohol Consortium and
-                    Compliance/Registration Management. Site is currently in
-                    Beta testing by our client's customers for 90 days before
+                    Compliance/Registration Management. This site is currently in
+                    Beta testing for our client's customers for 90 days before
                     the final product is released.
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    Working as a Senior Full-Stack Developer on this project
-                    building the manager's homepage dashboard, the UI and
+                    Working as a Senior Full-Stack Developer on this project, I built
+                     the manager's homepage dashboard, the UI and
                     necessary backend logic for managers to assign
-                    tractor/trailer units to drivers, functionality for managers
+                    tractor/trailer units to drivers, the functionality for managers
                     to provide privledges for employees, the entire
                     Authorize.NET & Quest external API integration, and other
-                    functionality.
+                    functionalities.
                   </Typography>
                 </Grid>
                 <br />{" "}
