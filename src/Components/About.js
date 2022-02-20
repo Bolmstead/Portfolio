@@ -258,12 +258,16 @@ export default function About() {
                       <a
                         href="https://www.linkedin.com/in/berkleyolmstead/"
                         className={classes.contactLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <LinkedInIcon className={classes.icon} />
                       </a>
                       <a
                         href="https://github.com/Bolmstead"
                         className={classes.contactLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <GitHubIcon className={classes.icon} />
                       </a>

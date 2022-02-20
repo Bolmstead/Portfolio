@@ -70,6 +70,8 @@ export default function About() {
               <a
                 href="mailto:olms2074@gmail.com"
                 className={classes.contactLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <MailIcon className={classes.icon} /><br/>
                 <Typography
@@ -93,6 +95,8 @@ export default function About() {
               <a
                 href="https://github.com/Bolmstead"
                 className={classes.contactLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <GitHubIcon className={classes.githubIcon} /><br/>
                 <Typography
@@ -115,6 +119,8 @@ export default function About() {
               <a
                 href="https://www.linkedin.com/in/berkleyolmstead/"
                 className={classes.contactLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <LinkedInIcon className={classes.icon} /><br/>
                 <Typography

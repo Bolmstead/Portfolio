@@ -162,31 +162,37 @@ export default function Projects() {
               <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <CardContent className={classes.logoContainer}>
-                    <img
-                      src="images/projectPics/safety-audit-prep-logo.png"
-                      className={classes.projectLogo}
-                    />
+                    <a
+                      href="https://www.safetyauditprep.net/"
+                      className={classes.noTextDecoration}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="images/projectPics/safety-audit-prep-logo.png"
+                        className={classes.projectLogo}
+                      />
+                    </a>
                   </CardContent>
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
                     Safety Audit Prep is an online CRM site built for trucking
-                    companies. The web application functions as a tool for Employee & Fleet
-                    Management, Drug & Alcohol Consortium and
-                    Compliance/Registration Management. This site is currently in
-                    Beta testing for our client's customers for 90 days before
-                    the final product is released.
+                    companies. The web application functions as a tool for
+                    Employee & Fleet Management, Drug & Alcohol Consortium and
+                    Compliance/Registration Management. This site is currently
+                    in Beta testing for our client's customers for 90 days
+                    before the final product is released.
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    Working as a Senior Full-Stack Developer on this project, I built
-                     the manager's homepage dashboard, the UI and
-                    necessary backend logic for managers to assign
-                    tractor/trailer units to drivers, the functionality for managers
-                    to provide privledges for employees, the entire
-                    Authorize.NET & Quest external API integration, and other
-                    functionalities.
+                    Working as a Senior Full-Stack Developer on this project, I
+                    built the manager's homepage dashboard, the UI and necessary
+                    backend logic for managers to assign tractor/trailer units
+                    to drivers, the functionality for managers to provide
+                    privledges for employees, the entire Authorize.NET & Quest
+                    external API integration, and other functionalities.
                   </Typography>
                 </Grid>
                 <br />{" "}
@@ -200,22 +206,28 @@ export default function Projects() {
                   </Typography>
                   <Typography variant="body2" component="p">
                     {" "}
-                    React, Redux, Node.JS, Express, Mongoose, MongoDB, Ant Design, Figma,
-                    Axios, REST & SOAP API Integration
+                    React, Redux, Node.JS, Express, Mongoose, MongoDB, Ant
+                    Design, Figma, Axios, REST & SOAP API Integration
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
                   <Grid container justify="center">
                     <Grid item xs={8}>
-                      <Button
-                        className={classes.freeBaySiteBtn}
-                        fullWidth
-                        variant="contained"
-                        disableRipple
-                        disabled
+                      <a
+                        href="https://www.safetyauditprep.net/"
+                        className={classes.noTextDecoration}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        Site in Beta
-                      </Button>
+                        <Button
+                          className={classes.freeBaySiteBtn}
+                          fullWidth
+                          variant="contained"
+                          disableRipple
+                        >
+                          Visit Beta Site
+                        </Button>
+                      </a>
                     </Grid>
                   </Grid>
                 </Grid>
@@ -224,10 +236,19 @@ export default function Projects() {
           </Grid>
           <Hidden smDown>
             <Grid item md={6}>
-              <img
-                src="images/projectPics/safety-audit-prep.png"
-                className={classes.websitePic}
-              />
+              <a
+                href="https://www.safetyauditprep.net/"
+                className={classes.noTextDecoration}
+                target="_blank"
+                rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/projectPics/safety-audit-prep.png"
+                  className={classes.websitePic}
+                />
+              </a>
             </Grid>
           </Hidden>
           <Grid
@@ -250,6 +271,8 @@ export default function Projects() {
                     <a
                       href="https://freebay.netlify.app/"
                       className={classes.noTextDecoration}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
                         src="images/projectPics/freebay-logo.png"
@@ -303,6 +326,8 @@ export default function Projects() {
                   <a
                     href="https://github.com/Bolmstead/Freebay"
                     className={classes.repoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Typography variant="body2" component="p" display="inline">
                       {" "}
@@ -316,6 +341,8 @@ export default function Projects() {
                   <a
                     href="https://github.com/Bolmstead/Freebay-API"
                     className={classes.repoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Typography variant="body2" component="p" display="inline">
                       {" "}
@@ -329,6 +356,8 @@ export default function Projects() {
                       <a
                         href="https://freebay.netlify.app/"
                         className={classes.noTextDecoration}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <Button
                           className={classes.freeBaySiteBtn}
@@ -347,7 +376,11 @@ export default function Projects() {
           </Grid>
           <Hidden smDown>
             <Grid item md={6}>
-              <a href="https://freebay.netlify.app/">
+              <a
+                href="https://freebay.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src="images/projectPics/freebay.png"
                   className={classes.websitePic}
@@ -373,6 +406,8 @@ export default function Projects() {
                 <a
                 href="https://github.com/Bolmstead"
                 className={classes.noTextDecoration}
+                                target="_blank"
+                rel="noopener noreferrer"
               >
                   <img
                     src="images/projectPics/wittmeyer-logo.png"
@@ -432,6 +467,8 @@ export default function Projects() {
                           <a
                             href="https://github.com/Bolmstead"
                             className={classes.noTextDecoration}
+                                            target="_blank"
+                rel="noopener noreferrer"
                           >
                             <Button
                               className={classes.liveSiteButton}
@@ -480,6 +517,8 @@ export default function Projects() {
                     <a
                       href="https://cardano-cheese.netlify.app"
                       className={classes.noTextDecoration}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
                         src="images/projectPics/full-cheese-title.jpg"
@@ -529,6 +568,8 @@ export default function Projects() {
                 </Typography>
                 <a
                   href="https://github.com/Bolmstead/Cardano-Cheese-Frontend"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={classes.repoLink}
                 >
                   <Typography variant="body2" component="p" display="inline">
@@ -543,6 +584,8 @@ export default function Projects() {
                     <a
                       href="https://cardano-cheese.netlify.app"
                       className={classes.noTextDecoration}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Button
                         className={classes.cheeseSiteBtn}
@@ -556,6 +599,8 @@ export default function Projects() {
                     <a
                       href="https://opencnft.io/BV6pEJykjQi9RX34xRjjH9xdE"
                       className={classes.noTextDecoration}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Button
                         className={classes.cheeseSiteBtn}
@@ -569,6 +614,8 @@ export default function Projects() {
                     <a
                       href="https://cnft.io/marketplace?project=Cardano%20Cheese"
                       className={classes.noTextDecoration}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Button
                         className={classes.cheeseSiteBtn}
@@ -586,7 +633,11 @@ export default function Projects() {
           </Grid>
           <Hidden smDown>
             <Grid item xs={12} md={6}>
-              <a href="https://cardano-cheese.netlify.app/">
+              <a
+                href="https://cardano-cheese.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src="images/projectPics/cardano-cheese.jpg"
                   className={classes.websitePic}
@@ -614,6 +665,8 @@ export default function Projects() {
                     <a
                       href="https://yoga-website.herokuapp.com/"
                       className={classes.noTextDecoration}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
                         src="images/projectPics/yoga-logo.png"
@@ -662,6 +715,8 @@ export default function Projects() {
                 <a
                   href="https://github.com/Bolmstead/Yoga-for-Professionals"
                   className={classes.repoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Typography variant="body2" component="p" display="inline">
                     {" "}
@@ -675,6 +730,8 @@ export default function Projects() {
                     <a
                       href="https://yoga-website.herokuapp.com/"
                       className={classes.noTextDecoration}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Button
                         className={classes.yogaSiteBtn}
@@ -692,121 +749,13 @@ export default function Projects() {
           </Grid>
           <Hidden smDown>
             <Grid item xs={12} md={6}>
-              <a href="https://yoga-website.herokuapp.com/">
+              <a
+                href="https://yoga-website.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src="images/projectPics/yoga.png"
-                  className={classes.websitePic}
-                />
-              </a>
-            </Grid>
-          </Hidden>
-
-          <Grid
-            item
-            xs={11}
-            sm={9}
-            md={6}
-            className={classes.projectsMeTextContainer}
-            alignItems="center"
-            justify="center"
-          >
-            <Card
-              className={classes.projectsCardContainer}
-              alignItems="center"
-              justify="center"
-            >
-              <Grid container spacing={2}>
-                <Grid item xs={12}>
-                  <CardContent className={classes.logoContainer}>
-                    <Typography
-                      variant="h3"
-                      component="h3"
-                      className={classes.title}
-                    >
-                      Jobly
-                    </Typography>
-                  </CardContent>
-                </Grid>
-                <Grid item xs={12}>
-                  <Typography variant="body2" component="p">
-                    Jobly is a website that allows users to view fake companies
-                    along with their job postings. Applications can be submitted
-                    and are saved to a SQL database. Users can also utilize a
-                    search bar which provides results as a user types.
-                  </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                  <Typography
-                    variant="body2"
-                    component="p"
-                    className={classes.boldText}
-                  >
-                    Technologies: {"  "}
-                  </Typography>
-                  <Typography variant="body2" component="p">
-                    {" "}
-                    Node.JS, PostgreSQL, Express, JWT, JSON Schema, bcrypt,
-                    ReactJS, HTML, CSS, Material-UI, React-Bootstrap, Axios
-                  </Typography>
-                </Grid>
-              </Grid>
-              <Grid item xs={12} className={classes.marginTop}>
-                <Typography
-                  variant="body2"
-                  component="p"
-                  className={classes.boldText}
-                >
-                  Repositories: {"  "}
-                </Typography>
-                <a
-                  href="https://github.com/Bolmstead/jobly-front"
-                  className={classes.repoLink}
-                >
-                  <Typography variant="body2" component="p" display="inline">
-                    {" "}
-                    Front-End
-                  </Typography>
-                </a>
-                <Typography variant="body2" component="p" display="inline">
-                  {" "}
-                  /{" "}
-                </Typography>
-                <a
-                  href="https://github.com/Bolmstead/jobly-back"
-                  className={classes.repoLink}
-                >
-                  <Typography variant="body2" component="p" display="inline">
-                    {" "}
-                    Back-End
-                  </Typography>
-                </a>
-              </Grid>
-              <Grid item xs={12}>
-                <Grid container justify="center">
-                  <Grid item xs={8}>
-                    <a
-                      href="https://jobly-front.netlify.app/"
-                      className={classes.noTextDecoration}
-                    >
-                      <Button
-                        className={classes.yogaSiteBtn}
-                        fullWidth
-                        variant="contained"
-                        disableRipple
-                      >
-                        Visit Site
-                      </Button>
-                    </a>
-                  </Grid>
-                </Grid>
-              </Grid>
-            </Card>
-          </Grid>
-          <Hidden smDown>
-            <Grid item xs={12} md={6}>
-              <a href="https://jobly-front.netlify.app/">
-                <img
-                  src="images/projectPics/jobly.png"
                   className={classes.websitePic}
                 />
               </a>
