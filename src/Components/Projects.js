@@ -62,6 +62,10 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "300px",
     minWidth: "200px",
   },
+  projectLogoWittmeyer: {
+    maxWidth: "350px",
+    minWidth: "200px",
+  },
   projectLogoCheese: {
     maxWidth: "400px",
     minWidth: "300px",
@@ -211,6 +215,30 @@ export default function Projects() {
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Repositories: {"  "}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    style={{ color: "#677787" }}
+                    display="inline"
+                  >
+                    <a
+                      className={classes.noTextDecoration}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      Private
+                    </a>
+                  </Typography>{" "}
+                </Grid>
+                <Grid item xs={12}>
                   <Grid container justify="center">
                     <Grid item xs={8}>
                       <a
@@ -239,8 +267,6 @@ export default function Projects() {
               <a
                 href="https://www.safetyauditprep.net/"
                 className={classes.noTextDecoration}
-                target="_blank"
-                rel="noopener noreferrer"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -388,379 +414,130 @@ export default function Projects() {
               </a>
             </Grid>
           </Hidden>
-          {/* 
-            <Grid
-              item
-              xs={12}
-              md={6}
-              className={classes.projectsMeTextContainer}
+
+          <Grid
+            item
+            xs={12}
+            md={6}
+            className={classes.projectsMeTextContainer}
+            alignItems="center"
+            justify="center"
+          >
+            <Card
+              className={classes.projectsCardContainer}
               alignItems="center"
               justify="center"
             >
-              <Card
-                className={classes.projectsCardContainer}
-                alignItems="center"
-                justify="center"
+              <CardContent
+                className={classes.logoContainer}
+                style={{ marginBottom: "30px" }}
               >
-                <CardContent className={classes.logoContainer}>
                 <a
-                href="https://github.com/Bolmstead"
-                className={classes.noTextDecoration}
-                                target="_blank"
-                rel="noopener noreferrer"
-              >
+                  href="https://wittmeyerandassociates.com/"
+                  className={classes.noTextDecoration}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     src="images/projectPics/wittmeyer-logo.png"
-                    className={classes.projectLogo}
+                    className={classes.projectLogoWittmeyer}
                   />
-                  </a>
-                </CardContent>
-                <CardContent>
+                </a>
+              </CardContent>
+              <CardContent>
+                <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    I am devoted software developer based in the United States
-                    with professional experience in Tax and Accounting. I have
-                    recently graduated from the Springboard Software Engineering
-                    program and have a strong technical acumen in developing
-                    full-stack web applications, SQL databases, and REST API’s.
+                    Built the website for the Wittmeyer and Associates, LLC
+                    lobbying firm using React. Website provides information
+                    about the services they offer and built based on the design
+                    requested from the client.
                   </Typography>
-                  <br />{" "}
-                  <Grid container>
-                    <Grid item xs={12}>
+                </Grid>
+                <br />{" "}
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    Site utilizes the EmailJS API allowing for potential clients
+                    to contact my client by using the form on the site
+                    (currently inactive). Site is fully mobile responsive.
+                  </Typography>
+                </Grid>
+                <br />{" "}
+                <Grid container>
+                  <Grid item xs={12}>
+                    <Typography
+                      variant="body2"
+                      component="p"
+                      className={classes.boldText}
+                    >
+                      Technologies: {"  "}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      component="p"
+                      style={{ marginBottom: "15px" }}
+                    >
+                      {" "}
+                      React, HTML, CSS, Material-UI
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} style={{ marginBottom: "15px" }}>
+                    <Typography
+                      variant="body2"
+                      component="p"
+                      className={classes.boldText}
+                    >
+                      Repositories: {"  "}
+                    </Typography>
+                    <a
+                      href="https://github.com/Bolmstead/murph-lobby"
+                      className={classes.repoLink}
+                      target="_blank"
+                    >
                       <Typography
                         variant="body2"
                         component="p"
-                        className={classes.boldText}
+                        display="inline"
                       >
-                        Technologies: {"  "}
-                      </Typography>
-                      <Typography variant="body2" component="p">
                         {" "}
-                        React, HTML, CSS, Material-UI
+                        Front End
                       </Typography>
-                    </Grid>
-                    <Grid item xs={12}>
-                      <Typography
-                        variant="body2"
-                        component="p"
-                        className={classes.boldText}
-                      >
-                        Repositories: {"  "}
-                      </Typography>
-                      <a
-                        href="https://github.com/Bolmstead"
-                        className={classes.repoLink}
-                      >
-                        <Typography
-                          variant="body2"
-                          component="p"
-                          display="inline"
-                        >
-                          {" "}
-                          Front End
-                        </Typography>
-                      </a>
-                    </Grid>
+                    </a>
+                  </Grid>
 
-                    <Grid item xs={12}>
-                      <Grid container justify="center">
-                        <Grid item xs={8}>
-                          <a
-                            href="https://github.com/Bolmstead"
-                            className={classes.noTextDecoration}
-                                            target="_blank"
-                rel="noopener noreferrer"
+                  <Grid item xs={12}>
+                    <Grid container justify="center">
+                      <Grid item xs={8}>
+                        <a
+                          href="https://wittmeyerandassociates.com/"
+                          className={classes.noTextDecoration}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Button
+                            className={classes.freeBaySiteBtn}
+                            fullWidth
+                            variant="contained"
+                            disableRipple
                           >
-                            <Button
-                              className={classes.liveSiteButton}
-                              fullWidth
-                              variant="contained"
-                            >
-                              Visit Site
-                            </Button>
-                          </a>
-                        </Grid>
+                            Visit Site
+                          </Button>
+                        </a>
                       </Grid>
                     </Grid>
                   </Grid>
-                </CardContent>
-              </Card>
-            </Grid>
-
-              <Grid item xs={12} md={6}>
-              <a
-                href="https://github.com/Bolmstead"
-              >
-                <img
-                  src="images/projectPics/wittmeyer.png"
-                  className={classes.websitePic}
-                />
-                </a>
-              </Grid> */}
-
-          <Grid
-            item
-            xs={11}
-            sm={9}
-            md={6}
-            className={classes.projectsMeTextContainer}
-            alignItems="center"
-            justify="center"
-          >
-            <Card
-              className={classes.projectsCardContainer}
-              alignItems="center"
-              justify="center"
-            >
-              <Grid container spacing={2}>
-                <Grid item xs={12}>
-                  <CardContent className={classes.logoContainer}>
-                    <a
-                      href="https://cardano-cheese.netlify.app"
-                      className={classes.noTextDecoration}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src="images/projectPics/full-cheese-title.jpg"
-                        className={classes.projectLogoCheese}
-                      />
-                    </a>
-                  </CardContent>
                 </Grid>
-                <Grid item xs={12}>
-                  <Typography variant="body2" component="p">
-                    Cardano Cheese is a project of 100 unique Non-Fungible
-                    Tokens (NFTs) on the Cardano cryptocurrency blockchain. All
-                    cheese were purchased and randomly minted from the site by
-                    integrating with the nft-maker.io API.
-                  </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                  <Typography variant="body2" component="p">
-                    Visitors of the site can view all of the individually
-                    designed NFTs and whether an NFT was minted. Links to the
-                    Discord, Twitter, and other information is also available on
-                    the site. Cardano Cheese has now been verified by CNFT.io.
-                  </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                  <Typography
-                    variant="body2"
-                    component="p"
-                    className={classes.boldText}
-                  >
-                    Technologies: {"  "}
-                  </Typography>
-                  <Typography variant="body2" component="p">
-                    {" "}
-                    Node.JS, ReactJS, NFT API Tools (pro.nft-maker.io), HTML,
-                    CSS, Material-UI, Axios
-                  </Typography>
-                </Grid>
-              </Grid>
-              <Grid item xs={12} className={classes.marginTop}>
-                <Typography
-                  variant="body2"
-                  component="p"
-                  className={classes.boldText}
-                >
-                  Repositories: {"  "}
-                </Typography>
-                <a
-                  href="https://github.com/Bolmstead/Cardano-Cheese-Frontend"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={classes.repoLink}
-                >
-                  <Typography variant="body2" component="p" display="inline">
-                    {" "}
-                    Front-End
-                  </Typography>
-                </a>
-              </Grid>
-              <Grid item xs={12}>
-                <Grid container justify="center">
-                  <Grid item xs={8}>
-                    <a
-                      href="https://cardano-cheese.netlify.app"
-                      className={classes.noTextDecoration}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button
-                        className={classes.cheeseSiteBtn}
-                        fullWidth
-                        variant="contained"
-                        disableRipple
-                      >
-                        Visit Site
-                      </Button>
-                    </a>
-                    <a
-                      href="https://opencnft.io/BV6pEJykjQi9RX34xRjjH9xdE"
-                      className={classes.noTextDecoration}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button
-                        className={classes.cheeseSiteBtn}
-                        fullWidth
-                        variant="contained"
-                        disableRipple
-                      >
-                        View Sales Data
-                      </Button>
-                    </a>
-                    <a
-                      href="https://cnft.io/marketplace?project=Cardano%20Cheese"
-                      className={classes.noTextDecoration}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button
-                        className={classes.cheeseSiteBtn}
-                        fullWidth
-                        variant="contained"
-                        disableRipple
-                      >
-                        Purchase on CNFT.io
-                      </Button>
-                    </a>
-                  </Grid>
-                </Grid>
-              </Grid>
+              </CardContent>
             </Card>
           </Grid>
-          <Hidden smDown>
-            <Grid item xs={12} md={6}>
-              <a
-                href="https://cardano-cheese.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="images/projectPics/cardano-cheese.jpg"
-                  className={classes.websitePic}
-                />
-              </a>
-            </Grid>
-          </Hidden>
-          <Grid
-            item
-            xs={11}
-            sm={9}
-            md={6}
-            className={classes.projectsMeTextContainer}
-            alignItems="center"
-            justify="center"
-          >
-            <Card
-              className={classes.projectsCardContainer}
-              alignItems="center"
-              justify="center"
-            >
-              <Grid container spacing={2}>
-                <Grid item xs={12}>
-                  <CardContent className={classes.logoContainer}>
-                    <a
-                      href="https://yoga-website.herokuapp.com/"
-                      className={classes.noTextDecoration}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src="images/projectPics/yoga-logo.png"
-                        className={classes.projectLogo}
-                      />
-                    </a>
-                  </CardContent>
-                </Grid>
-                <Grid item xs={12}>
-                  <Typography variant="body2" component="p">
-                    This Full-Stack website was created as a prototype for the
-                    local yoga organization, Lunchtime Yoga for Professionals.
-                    The site allows users to sign up for yoga classes through an
-                    interactive Javascript calendar. Yoga instructors are
-                    provided with a dashboard to create yoga classes and grab
-                    all users contact information. Upon signing up for classes,
-                    an email is sent to the user confirming signup, date, and
-                    location of the class.
-                  </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                  <Typography
-                    variant="body2"
-                    component="p"
-                    className={classes.boldText}
-                  >
-                    Technologies: {"  "}
-                  </Typography>
-                  <Typography variant="body2" component="p">
-                    {" "}
-                    Python, Javascript, JQuery, HTML, CSS, Bootstrap, Axios,
-                    Jinja, Flask, Postgres, SQL Alchemy, Flask-Bcrypt, WTForms,
-                    Font Awesome, Simple Calendar Source Code, SendGrid Email
-                    API
-                  </Typography>
-                </Grid>
-              </Grid>
-              <Grid item xs={12} className={classes.marginTop}>
-                <Typography
-                  variant="body2"
-                  component="p"
-                  className={classes.boldText}
-                >
-                  Repositories: {"  "}
-                </Typography>
-                <a
-                  href="https://github.com/Bolmstead/Yoga-for-Professionals"
-                  className={classes.repoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Typography variant="body2" component="p" display="inline">
-                    {" "}
-                    Full-Stack
-                  </Typography>
-                </a>
-              </Grid>
-              <Grid item xs={12}>
-                <Grid container justify="center">
-                  <Grid item xs={8}>
-                    <a
-                      href="https://yoga-website.herokuapp.com/"
-                      className={classes.noTextDecoration}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button
-                        className={classes.yogaSiteBtn}
-                        fullWidth
-                        variant="contained"
-                        disableRipple
-                      >
-                        Visit Site
-                      </Button>
-                    </a>
-                  </Grid>
-                </Grid>
-              </Grid>
-            </Card>
+
+          <Grid item xs={12} md={6}>
+            <a href="https://wittmeyerandassociates.com/" target="_blank">
+              <img
+                src="images/projectPics/wittmeyer.png"
+                className={classes.websitePic}
+              />
+            </a>
           </Grid>
-          <Hidden smDown>
-            <Grid item xs={12} md={6}>
-              <a
-                href="https://yoga-website.herokuapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="images/projectPics/yoga.png"
-                  className={classes.websitePic}
-                />
-              </a>
-            </Grid>
-          </Hidden>
         </Grid>
       </Container>
     </Grid>
