@@ -82,7 +82,7 @@ export default function Home() {
               component="h6"
               className={classes.caption}
             >
-              I'm a Full-Stack Developer
+              Experienced Full-Stack Developer
             </Typography>
 
 

@@ -33,6 +33,7 @@ function App() {
     }
     fadeInHomeScreen();
   }, []);
+  console.log("hire me :)")
   return (
     <Fade in={fadedIn} {...(fadedIn ? { timeout: 1000 } : {})}>
       <div className={classes.app}>

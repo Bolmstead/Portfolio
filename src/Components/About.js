@@ -20,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: "60px",
     alignItems: "center",
     [theme.breakpoints.up("md")]: {
-      paddingTop: "130px",
-      paddingBottom: "190px",
+      paddingTop: "60px",
+      paddingBottom: "100px",
     },
   },
   aboutTitle: {

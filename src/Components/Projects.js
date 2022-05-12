@@ -58,15 +58,15 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "white",
     borderRadius: "0px",
   },
-  projectLogo: {
+  projectLogoWittmeyer: {
     maxWidth: "300px",
     minWidth: "200px",
   },
-  projectLogoWittmeyer: {
+  projectLogoWittmeyerWittmeyer: {
     maxWidth: "350px",
     minWidth: "200px",
   },
-  projectLogoCheese: {
+  projectLogoWittmeyerCheese: {
     maxWidth: "400px",
     minWidth: "300px",
   },
@@ -174,7 +174,7 @@ export default function Projects() {
                     >
                       <img
                         src="images/projectPics/safety-audit-prep-logo.png"
-                        className={classes.projectLogo}
+                        className={classes.projectLogoWittmeyer}
                       />
                     </a>
                   </CardContent>
@@ -302,7 +302,7 @@ export default function Projects() {
                     >
                       <img
                         src="images/projectPics/freebay-logo.png"
-                        className={classes.projectLogo}
+                        className={classes.projectLogoWittmeyer}
                       />
                     </a>
                   </CardContent>
@@ -415,9 +415,11 @@ export default function Projects() {
             </Grid>
           </Hidden>
 
+
           <Grid
             item
-            xs={12}
+            xs={11}
+            sm={9}
             md={6}
             className={classes.projectsMeTextContainer}
             alignItems="center"
@@ -428,26 +430,25 @@ export default function Projects() {
               alignItems="center"
               justify="center"
             >
-              <CardContent
-                className={classes.logoContainer}
-                style={{ marginBottom: "30px" }}
-              >
-                <a
-                  href="https://wittmeyerandassociates.com/"
-                  className={classes.noTextDecoration}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="images/projectPics/wittmeyer-logo.png"
-                    className={classes.projectLogoWittmeyer}
-                  />
-                </a>
-              </CardContent>
-              <CardContent>
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <CardContent className={classes.logoContainer}>
+                    <a
+                      href="https://freebay.netlify.app/"
+                      className={classes.noTextDecoration}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="images/projectPics/wittmeyer-logo.png"
+                        className={classes.projectLogoWittmeyer}
+                      />
+                    </a>
+                  </CardContent>
+                </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    Built the website for the Wittmeyer and Associates, LLC
+                    I built the website for the Wittmeyer and Associates, LLC
                     lobbying firm using React. Website provides information
                     about the services they offer and built based on the design
                     requested from the client.
@@ -462,33 +463,28 @@ export default function Projects() {
                   </Typography>
                 </Grid>
                 <br />{" "}
-                <Grid container>
-                  <Grid item xs={12}>
-                    <Typography
-                      variant="body2"
-                      component="p"
-                      className={classes.boldText}
-                    >
-                      Technologies: {"  "}
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      component="p"
-                      style={{ marginBottom: "15px" }}
-                    >
-                      {" "}
-                      React, HTML, CSS, Material-UI
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} style={{ marginBottom: "15px" }}>
-                    <Typography
-                      variant="body2"
-                      component="p"
-                      className={classes.boldText}
-                    >
-                      Repositories: {"  "}
-                    </Typography>
-                    <a
+                <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Technologies: {"  "}
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    {" "}
+                    React, HTML, CSS, Material-UI
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Repositories: {"  "}
+                  </Typography>
+                  <a
                       href="https://github.com/Bolmstead/murph-lobby"
                       className={classes.repoLink}
                       target="_blank"
@@ -502,42 +498,47 @@ export default function Projects() {
                         Front End
                       </Typography>
                     </a>
-                  </Grid>
 
-                  <Grid item xs={12}>
-                    <Grid container justify="center">
-                      <Grid item xs={8}>
-                        <a
+                </Grid>
+                <Grid item xs={12}>
+                  <Grid container justify="center">
+                    <Grid item xs={8}>
+                      <a
                           href="https://wittmeyerandassociates.com/"
                           className={classes.noTextDecoration}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          className={classes.freeBaySiteBtn}
+                          fullWidth
+                          variant="contained"
+                          disableRipple
                         >
-                          <Button
-                            className={classes.freeBaySiteBtn}
-                            fullWidth
-                            variant="contained"
-                            disableRipple
-                          >
-                            Visit Site
-                          </Button>
-                        </a>
-                      </Grid>
+                          Visit Site
+                        </Button>
+                      </a>
                     </Grid>
                   </Grid>
                 </Grid>
-              </CardContent>
+              </Grid>
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={6}>
-            <a href="https://wittmeyerandassociates.com/" target="_blank">
-              <img
-                src="images/projectPics/wittmeyer.png"
-                className={classes.websitePic}
-              />
-            </a>
-          </Grid>
+          <Hidden smDown>
+            <Grid item md={6}>
+              <a
+                href="https://wittmeyerandassociates.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/projectPics/wittmeyer.png"
+                  className={classes.websitePic}
+                />
+              </a>
+            </Grid>
+          </Hidden>
         </Grid>
       </Container>
     </Grid>
