@@ -35,12 +35,23 @@ const useStyles = makeStyles((theme) => ({
 export default function Home() {
   const classes = useStyles();
   const [fadedIn, setFadedIn] = React.useState(false);
+  const [windowWidth, setWindowWidth] = React.useState(null);
+  console.log(windowWidth);
 
   useEffect(() => {
     async function fadeInHomeScreen() {
       setFadedIn((prev) => !prev);
     }
     fadeInHomeScreen();
+  }, []);
+
+  useEffect(() => {
+    function handleResize() {
+      let width = Math.min(1200, window.innerWidth - 40);
+      setWindowWidth(width);
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();
   }, []);
 
   return (
@@ -62,8 +73,8 @@ export default function Home() {
             >
               <Typography
                 m={12}
-                variant="h3"
-                component="h3"
+                variant={windowWidth < 407 ? "h4" : "h3"}
+                component={windowWidth < 407 ? "h4" : "h3"}
                 className={classes.firstName}
                 display="inline"
               >
@@ -71,8 +82,8 @@ export default function Home() {
               </Typography>
               <Typography
                 m={12}
-                variant="h3"
-                component="h3"
+                variant={windowWidth < 407 ? "h4" : "h3"}
+                component={windowWidth < 407 ? "h4" : "h3"}
                 className={classes.lastName}
                 display="inline"
               >
