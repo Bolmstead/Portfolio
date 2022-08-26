@@ -39,8 +39,6 @@ function App() {
       <div className={classes.app}>
         <NavigationBar />
         <div className={classes.remainingApp}>
-          <NavigationBarMobile />
-
           <Home />
           <About />
           <Skills />
