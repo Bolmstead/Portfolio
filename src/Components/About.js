@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     paddingBottom: "60px",
     alignItems: "center",
+    minHeight: "80vh",
     [theme.breakpoints.up("md")]: {
       paddingTop: "60px",
       paddingBottom: "100px",
@@ -125,167 +126,158 @@ export default function About() {
 
   return (
     <Grid item xs={12} className={classes.aboutContainer} justify="center">
-      <a id="About">
-        <Container maxWidth="md">
-          <Grid
-            container
-            spacing={5}
-            direction="row"
-            alignItems="center"
-            justify="center"
-          >
-            <Grid item xs={12} className={classes.aboutTitle}>
+      <Container maxWidth="md">
+        <Grid
+          container
+          spacing={5}
+          direction="row"
+          alignItems="center"
+          justify="center"
+        >
+          <Grid item xs={12} className={classes.aboutTitle}>
+            <a id="About">
               <Typography variant="h4" component="h4" className={classes.title}>
                 About me
               </Typography>
-            </Grid>
+            </a>
+          </Grid>
 
-            <Grid
-              item
-              xs={10}
-              sm={6}
-              md={4}
-              className={classes.headshotContainer}
+          <Grid
+            item
+            xs={10}
+            sm={6}
+            md={4}
+            className={classes.headshotContainer}
+            alignItems="center"
+            justify="center"
+          >
+            {" "}
+            <img
+              src="images/headshot.jpg"
+              className={classes.headshotPic}
+            ></img>
+          </Grid>
+
+          <Grid
+            item
+            xs={12}
+            md={8}
+            className={classes.aboutMeTextContainer}
+            alignItems="center"
+            justify="center"
+          >
+            <Card
+              className={classes.aboutCardContainer}
               alignItems="center"
               justify="center"
             >
-              {" "}
-              <img
-                src="images/headshot.jpg"
-                className={classes.headshotPic}
-              ></img>
-            </Grid>
-
-            <Grid
-              item
-              xs={12}
-              md={8}
-              className={classes.aboutMeTextContainer}
-              alignItems="center"
-              justify="center"
-            >
-              <Card
-                className={classes.aboutCardContainer}
-                alignItems="center"
-                justify="center"
-              >
-                <CardContent>
-                  <Typography variant="h4" component="h4">
-                    Who am I?
-                  </Typography>
-                  <Typography variant="body2" component="p">
-                    A Senior Full-Stack Software Engineer working for TEKware, a
-                    software development company in Boise, Idaho. Our current
-                    project is building a CRM website application that enables
-                    managers and employees of trucking companies to complete
-                    their day-to-day tasks. In April of 2021, I graduated from
-                    the Springboard software engineering program refining my
-                    Full-Stack development skills. I also have 4 years
-                    experience in individual & business income tax research and
-                    have passed all 4 sections of the CPA exam.
-                  </Typography>
-                  <br />
-                  <Typography variant="body2" component="p">
-                    I enjoy creating full-stack projects and collaborating with
-                    teams in a professional, trusting environment. Building and
-                    maintaining relationships is something I value and believe
-                    is necessary for a team to thrive. When I'm not coding, I
-                    like to play tennis, snowboard, and make decent attempts at
-                    golf. I am very passionate in cryptocurrencies and NFTs and
-                    believe blockchain is the future. I appreciate you visiting
-                    my site and am open to professional opportunities!
-                  </Typography>
-                  <hr className={classes.lineBreak} />
-                  <Grid container>
-                    <Grid item xs={6}>
+              <CardContent>
+                <Typography variant="h4" component="h4">
+                  Who am I?
+                </Typography>
+                <Typography variant="body2" component="p">
+                  A Lead Full-Stack Software Engineer working for TEKware, a
+                  software development company in Boise, Idaho. Our current
+                  project is building a CRM website app that enables managers of
+                  trucking companies to manage their employees and also
+                  streamlines the application process for most regulatory forms.
+                  In April of 2021, I graduated from the Springboard software
+                  engineering program refining my Full-Stack development skills.
+                  I also have 4 years experience in individual & business income
+                  tax research and have passed all 4 sections of the CPA exam.
+                </Typography>
+                <br />
+                <Typography variant="body2" component="p">
+                  I enjoy creating full-stack projects and collaborating with
+                  teams in a professional, trusting environment. Building and
+                  maintaining relationships is something I value and believe is
+                  necessary for a team to thrive. When I'm not coding, I like to
+                  play tennis, snowboard, and make decent attempts at golf. I appreciate you visiting my site
+                  and am open to professional opportunities!
+                </Typography>
+                <hr className={classes.lineBreak} />
+                <Grid container>
+                  <Grid item xs={6}>
+                    <Typography
+                      variant="body2"
+                      component="p"
+                      display="inline"
+                      className={classes.boldText}
+                    >
+                      From: {"  "}
+                    </Typography>
+                    <Typography variant="body2" component="p" display="inline">
+                      {" "}
+                      Boise, Idaho
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={6}>
+                    <Typography
+                      variant="body2"
+                      component="p"
+                      display="inline"
+                      className={classes.boldText}
+                    >
+                      Email: {"  "}
+                    </Typography>
+                    <a
+                      href="mailto:olms2074@gmail.com"
+                      className={classes.link}
+                    >
                       <Typography
                         variant="body2"
                         component="p"
                         display="inline"
-                        className={classes.boldText}
-                      >
-                        From: {"  "}
-                      </Typography>
-                      <Typography
-                        variant="body2"
-                        component="p"
-                        display="inline"
+                        className={classes.emailLink}
                       >
                         {" "}
-                        Boise, Idaho
+                        olms2074@gmail.com
                       </Typography>
-                    </Grid>
-                    <Grid item xs={6}>
-                      <Typography
-                        variant="body2"
-                        component="p"
-                        display="inline"
-                        className={classes.boldText}
-                      >
-                        Email: {"  "}
-                      </Typography>
-                      <a
-                        href="mailto:olms2074@gmail.com"
-                        className={classes.link}
-                      >
-                        <Typography
-                          variant="body2"
-                          component="p"
-                          display="inline"
-                          className={classes.emailLink}
-                        >
-                          {" "}
-                          olms2074@gmail.com
-                        </Typography>
-                      </a>
-                    </Grid>
+                    </a>
                   </Grid>
-                </CardContent>
-                <CardActions>
-                  <Grid container alignItems="center">
-                    <Grid item xs={6}>
-                      <a href="resume.pdf" download className={classes.link}>
-                        <Button
-                          variant="contained"
-                          className={classes.resumeButton}
-                          startIcon={<GetAppIcon />}
-                        >
-                          Download Resume
-                        </Button>
-                      </a>
-                    </Grid>
-                    <Grid item xs={6} className={classes.iconContainer}>
-                      <a
-                        href="https://www.linkedin.com/in/berkleyolmstead/"
-                        className={classes.contactLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                </Grid>
+              </CardContent>
+              <CardActions>
+                <Grid container alignItems="center">
+                  <Grid item xs={6}>
+                    <a href="resume.pdf" download className={classes.link}>
+                      <Button
+                        variant="contained"
+                        className={classes.resumeButton}
+                        startIcon={<GetAppIcon />}
                       >
-                        <LinkedInIcon className={classes.icon} />
-                      </a>
-                      <a
-                        href="https://github.com/Bolmstead"
-                        className={classes.contactLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <GitHubIcon className={classes.icon} />
-                      </a>
+                        Download Resume
+                      </Button>
+                    </a>
+                  </Grid>
+                  <Grid item xs={6} className={classes.iconContainer}>
+                    <a
+                      href="https://www.linkedin.com/in/berkleyolmstead/"
+                      className={classes.contactLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <LinkedInIcon className={classes.icon} />
+                    </a>
+                    <a
+                      href="https://github.com/Bolmstead"
+                      className={classes.contactLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GitHubIcon className={classes.icon} />
+                    </a>
 
-                      <a
-                        href="tel:208-871-3882"
-                        className={classes.contactLink}
-                      >
-                        <PhoneIcon className={classes.icon} />
-                      </a>
-                    </Grid>
+                    <a href="tel:208-871-3882" className={classes.contactLink}>
+                      <PhoneIcon className={classes.icon} />
+                    </a>
                   </Grid>
-                </CardActions>
-              </Card>
-            </Grid>
+                </Grid>
+              </CardActions>
+            </Card>
           </Grid>
-        </Container>
-      </a>
+        </Grid>
+      </Container>
     </Grid>
   );
 }

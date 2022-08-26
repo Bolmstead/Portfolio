@@ -191,8 +191,8 @@ export default function Projects() {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    Working as a Senior Full-Stack Developer on this project, I
-                    built the manager's homepage dashboard, the UI and necessary
+                    As the Lead Full-Stack Developer on this project, I
+                    have built the manager's homepage dashboard, the UI and necessary
                     backend logic for managers to assign tractor/trailer units
                     to drivers, the functionality for managers to provide
                     privledges for employees, the entire Authorize.NET & Quest

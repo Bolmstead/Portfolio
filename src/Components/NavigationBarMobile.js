@@ -67,7 +67,7 @@ export default function ButtonAppBar() {
     <Hidden mdUp>
 
     <div className={classes.root}>
-      <AppBar position="fixed" className={classes.appBar}>
+      <AppBar position="absolute" className={classes.appBar}>
         <Toolbar>
         <a href="#Home" className={classes.navLink}>
         <Avatar
