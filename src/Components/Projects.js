@@ -242,7 +242,7 @@ export default function Projects() {
                         </Button>
                       </a>
 
-                      <a
+                      {/* <a
                         href="/my_components"
                         className={classes.noTextDecoration}
                       >
@@ -258,7 +258,7 @@ export default function Projects() {
                         >
                           View the Stuff I Made
                         </Button>
-                      </a>
+                      </a> */}
                     </Grid>
                   </Grid>
                 </Grid>
