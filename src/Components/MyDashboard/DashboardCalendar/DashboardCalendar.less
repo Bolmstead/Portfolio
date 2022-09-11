@@ -1,0 +1,114 @@
+@import '../../styles/variables.less';
+
+.dashboard-calendar {
+  padding: 20px;
+  background: #ecf0f5;
+  display: flex;
+
+  .events {
+    background: #fff;
+    padding: 10px;
+    margin-right: 20px;
+    width: 220px;
+
+    .fc-event {
+      width: 200px;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+
+    .add-events {
+      margin-top: 30px;
+      width: 200px;
+
+      .colors {
+        width: 100%;
+
+        .event-color {
+          width: 20px;
+          height: 20px;
+          border-radius: 5px;
+          margin-right: 5px;
+          display: inline-block;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
+  #dashboard_calendar {
+    width: 100%;
+    background: white;
+    padding: 10px;
+  }
+}
+
+.edit-event {
+  .edit-row {
+    margin-bottom: 15px;
+
+    img {
+      margin-right: 15px;
+      height: 30px;
+    }
+
+    .ant-input {
+      width: 90%;
+    }
+
+    textarea {
+      width: 90%;
+    }
+
+    .ant-time-picker {
+      width: 195px;
+    }
+
+    .ant-select {
+      width: 200px;
+    }
+
+    .span {
+      margin-right: 10px;
+      line-height: 30px;
+
+      &.to {
+        margin-left: 10px;
+      }
+    }
+
+    &.checkbox {
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media @tablet-down {
+  .dashboard-calendar {
+    padding: 20px;
+    background: #ecf0f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    .events {
+      background: #fff;
+      padding: 10px;
+      margin-bottom: 20px;
+      margin-right: 0px;
+      width: 300px;
+    }
+  
+    #dashboard_calendar {
+      width: 100%;
+      background: white;
+      padding: 10px;
+    }
+  }
+}

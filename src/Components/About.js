@@ -17,13 +17,10 @@ const useStyles = makeStyles((theme) => ({
   aboutContainer: {
     backgroundColor: `#FCFCFC`,
     width: "100%",
-    paddingBottom: "60px",
     alignItems: "center",
     minHeight: "80vh",
-    [theme.breakpoints.up("md")]: {
-      paddingTop: "60px",
-      paddingBottom: "100px",
-    },
+    paddingTop: "120px"
+
   },
   aboutTitle: {
     marginTop: "0px",
@@ -126,7 +123,7 @@ export default function About() {
 
   return (
     <Grid item xs={12} className={classes.aboutContainer} justify="center">
-      <Container maxWidth="md">
+      <Container maxWidth="md" style={{display: "flex", alignItems: "center"}}>
         <Grid
           container
           spacing={5}
@@ -134,13 +131,6 @@ export default function About() {
           alignItems="center"
           justify="center"
         >
-          <Grid item xs={12} className={classes.aboutTitle}>
-            <a id="About">
-              <Typography variant="h4" component="h4" className={classes.title}>
-                About me
-              </Typography>
-            </a>
-          </Grid>
 
           <Grid
             item

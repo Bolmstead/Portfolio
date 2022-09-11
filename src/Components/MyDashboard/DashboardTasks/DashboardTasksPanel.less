@@ -1,0 +1,114 @@
+@import '../../styles/variables.less';
+
+// List Items
+
+.ant-collapse-header {
+  padding: 0px;
+}
+
+.tasks-list-item {
+  padding: 2px 2px 2px 2px;
+  display: flex;
+  align-items: flex-start;
+
+  .item-date-and-doc {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    .item-date {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 24px;
+      display: inline;
+      font-size: 14px;
+      margin-left: 20px;
+
+      color: #838383;
+    }
+    .item-doc {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 24px;
+      display: inline;
+      font-size: 14px;
+      margin-left: 20px;
+
+      color: #249ee2;
+    }
+  }
+
+  .item-title {
+    width: 70%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    display: inline;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    color: rgba(0, 0, 0, 0.973958);
+  }
+  .expand-arrow-container {
+    width: 5%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    display: inline;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    color: rgba(0, 0, 0, 0.973958);
+  }
+}
+
+.dashboard-panel-red {
+  padding: 0px;
+  border-left: solid 5px #dd4b39;
+}
+
+.dashboard-panel-orange {
+  padding: 0px;
+  border-left: solid 5px #f39c12;
+}
+
+.dashboard-panel-green {
+  padding: 0px;
+  border-left: solid 5px #80b34f;
+}
+
+.sub-list-container {
+  display: flex;
+  width: 100%;
+
+  .left-sub-list-margin {
+    width: 25%;
+  }
+
+  .sub-list-user-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    display: block;
+
+    color: rgba(155, 155, 155, 0.973958);
+
+    .x-delete {
+      color: #dd4b39;
+    }
+  }
+}

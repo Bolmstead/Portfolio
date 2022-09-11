@@ -1,0 +1,83 @@
+@import '../../styles/variables.less';
+
+// Card wrapper and header
+.tasks-card {
+  background-color: #ecf0f5;
+  width: 100%;
+  height: 100%;
+
+  .empty-tasks-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+  }
+
+  .empty-tasks-title {
+    color: gray;
+    font-size: 40 px
+  }
+
+  .header-text {
+    color: white;
+  }
+
+  .view-all-link {
+    color: white;
+  }
+
+  .view-all-link:hover {
+    color: grey;
+  }
+
+  // Task item stylings
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .task-list-container {
+    overflow: auto;
+    width: 100%;
+    max-height: 600px;
+
+    .task-list-item-container {
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+    }
+  }
+
+  // Add task area
+
+  .add-task-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    cursor: pointer;
+    flex-basis: 5%;
+
+
+    .add-task-title {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+
+      color: #80b34f;
+    }
+  }
+}
+
+.dashboard-add-task-modal-container {
+  width: 10%
+}

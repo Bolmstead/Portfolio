@@ -181,9 +181,18 @@ export default function Projects() {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    Safety Audit Prep is an online CRM site built for trucking
-                    companies. The web application functions as a tool for
-                    Employee & Fleet Management, Drug & Alcohol Consortium and
+                    <a
+                      href="https://www.safetyauditprep.net/"
+                      style={{ textDecoration: "none", fontWeight: 600 }}
+                      className={classes.repoLink}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      SafetyAuditPrep.com
+                    </a>{" "}
+                    is an online CRM site built for trucking companies. The web
+                    application functions as a tool for Employee & Fleet
+                    Management, Drug & Alcohol Consortium and
                     Compliance/Registration Management. This site is currently
                     in Beta testing for our client's customers for 90 days
                     before the final product is released.
@@ -191,8 +200,8 @@ export default function Projects() {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    As the Lead Full-Stack Developer on this project, I
-                    have built the manager's homepage dashboard, the UI and necessary
+                    As the Lead Full-Stack Developer on this project, I have
+                    built the manager's homepage dashboard, the UI and necessary
                     backend logic for managers to assign tractor/trailer units
                     to drivers, the functionality for managers to provide
                     privledges for employees, the entire Authorize.NET & Quest
@@ -215,30 +224,6 @@ export default function Projects() {
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
-                  <Typography
-                    variant="body2"
-                    component="p"
-                    className={classes.boldText}
-                  >
-                    Repositories: {"  "}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    component="p"
-                    style={{ color: "#677787" }}
-                    display="inline"
-                  >
-                    <a
-                      className={classes.noTextDecoration}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {" "}
-                      Private
-                    </a>
-                  </Typography>{" "}
-                </Grid>
-                <Grid item xs={12}>
                   <Grid container justify="center">
                     <Grid item xs={8}>
                       <a
@@ -253,7 +238,25 @@ export default function Projects() {
                           variant="contained"
                           disableRipple
                         >
-                          Visit Beta Site
+                          Visit Site
+                        </Button>
+                      </a>
+
+                      <a
+                        href="/my_components"
+                        className={classes.noTextDecoration}
+                      >
+                        <Button
+                          className={classes.freeBaySiteBtn}
+                          style={{
+                            backgroundColor: "orange",
+                            marginTop: "5px",
+                          }}
+                          fullWidth
+                          variant="contained"
+                          disableRipple
+                        >
+                          View the Stuff I Made
                         </Button>
                       </a>
                     </Grid>
@@ -415,7 +418,6 @@ export default function Projects() {
             </Grid>
           </Hidden>
 
-
           <Grid
             item
             xs={11}
@@ -485,27 +487,22 @@ export default function Projects() {
                     Repositories: {"  "}
                   </Typography>
                   <a
-                      href="https://github.com/Bolmstead/murph-lobby"
-                      className={classes.repoLink}
-                      target="_blank"
-                    >
-                      <Typography
-                        variant="body2"
-                        component="p"
-                        display="inline"
-                      >
-                        {" "}
-                        Front End
-                      </Typography>
-                    </a>
-
+                    href="https://github.com/Bolmstead/murph-lobby"
+                    className={classes.repoLink}
+                    target="_blank"
+                  >
+                    <Typography variant="body2" component="p" display="inline">
+                      {" "}
+                      Front End
+                    </Typography>
+                  </a>
                 </Grid>
                 <Grid item xs={12}>
                   <Grid container justify="center">
                     <Grid item xs={8}>
                       <a
-                          href="https://wittmeyerandassociates.com/"
-                          className={classes.noTextDecoration}
+                        href="https://wittmeyerandassociates.com/"
+                        className={classes.noTextDecoration}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
