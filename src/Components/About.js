@@ -1,17 +1,17 @@
-import React from "react";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Container from "@material-ui/core/Container";
-import Button from "@material-ui/core/Button";
-import "./FadeIn.css";
+import Grid from "@material-ui/core/Grid";
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import PhoneIcon from "@material-ui/icons/Phone";
+import React from "react";
+import "./FadeIn.css";
 
 const useStyles = makeStyles((theme) => ({
   aboutContainer: {
@@ -19,8 +19,10 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     alignItems: "center",
     minHeight: "80vh",
-    paddingTop: "120px"
-
+    paddingTop: "120px",
+  },
+  noTextDecoration: {
+    textDecoration: "none",
   },
   aboutTitle: {
     marginTop: "0px",
@@ -33,6 +35,11 @@ const useStyles = makeStyles((theme) => ({
     width: "200px",
     height: "50px",
     borderRadius: "0px",
+  },
+  safetyAuditPrepBtn: {
+    textTransform: "none",
+    marginTop: "15px",
+    marginBottom: "5px",
   },
   homeButtonLink: {
     textTransform: "none",
@@ -108,6 +115,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   iconContainer: {
+    display: "flex",
+    alignItems: "center",
     [theme.breakpoints.down("xs")]: {
       textAlign: "center",
     },
@@ -123,7 +132,10 @@ export default function About() {
 
   return (
     <Grid item xs={12} className={classes.aboutContainer} justify="center">
-      <Container maxWidth="md" style={{display: "flex", alignItems: "center"}}>
+      <Container
+        maxWidth="md"
+        style={{ display: "flex", alignItems: "center" }}
+      >
         <Grid
           container
           spacing={5}
@@ -131,7 +143,6 @@ export default function About() {
           alignItems="center"
           justify="center"
         >
-
           <Grid
             item
             xs={10}
@@ -182,8 +193,9 @@ export default function About() {
                   teams in a professional, trusting environment. Building and
                   maintaining relationships is something I value and believe is
                   necessary for a team to thrive. When I'm not coding, I like to
-                  play tennis, snowboard, and make decent attempts at golf. I appreciate you visiting my site
-                  and am open to professional opportunities!
+                  play tennis, snowboard, and make decent attempts at golf. I
+                  appreciate you visiting my site and am open to professional
+                  opportunities!
                 </Typography>
                 <hr className={classes.lineBreak} />
                 <Grid container>
@@ -200,8 +212,7 @@ export default function About() {
                       {" "}
                       Boise, Idaho
                     </Typography>
-                  </Grid>
-                  <Grid item xs={6}>
+                    <br />
                     <Typography
                       variant="body2"
                       component="p"
@@ -225,21 +236,7 @@ export default function About() {
                       </Typography>
                     </a>
                   </Grid>
-                </Grid>
-              </CardContent>
-              <CardActions>
-                <Grid container alignItems="center">
-                  <Grid item xs={6}>
-                    <a href="resume.pdf" download className={classes.link}>
-                      <Button
-                        variant="contained"
-                        className={classes.resumeButton}
-                        startIcon={<GetAppIcon />}
-                      >
-                        Download Resume
-                      </Button>
-                    </a>
-                  </Grid>
+
                   <Grid item xs={6} className={classes.iconContainer}>
                     <a
                       href="https://www.linkedin.com/in/berkleyolmstead/"
@@ -260,6 +257,39 @@ export default function About() {
 
                     <a href="tel:208-871-3882" className={classes.contactLink}>
                       <PhoneIcon className={classes.icon} />
+                    </a>
+                  </Grid>
+                </Grid>
+              </CardContent>
+              <CardActions>
+                <Grid container alignItems="center">
+                  <Grid item xs={6}>
+                    <a href="resume.pdf" download className={classes.link}>
+                      <Button
+                        variant="contained"
+                        className={classes.resumeButton}
+                        startIcon={<GetAppIcon />}
+                        style={{ width: "200px" }}
+                      >
+                        Download Resume
+                      </Button>
+                    </a>
+                  </Grid>
+                  <Grid item xs={6}>
+                    <a
+                      href="https://my-safetyauditprep-components.netlify.app/"
+                      className={classes.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button
+                        className={classes.resumeButton}
+                        variant="contained"
+                        disableRipple
+                        style={{ width: "200px" }}
+                      >
+                        View My Work!
+                      </Button>
                     </a>
                   </Grid>
                 </Grid>
