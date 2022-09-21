@@ -263,7 +263,7 @@ export default function About() {
               </CardContent>
               <CardActions>
                 <Grid container alignItems="center">
-                  <Grid item xs={6}>
+                  <Grid item xs={12} md={6}>
                     <a href="resume.pdf" download className={classes.link}>
                       <Button
                         variant="contained"
@@ -275,7 +275,7 @@ export default function About() {
                       </Button>
                     </a>
                   </Grid>
-                  <Grid item xs={6}>
+                  <Grid item xs={12} md={6}>
                     <a
                       href="https://my-safetyauditprep-components.netlify.app/"
                       className={classes.link}
