@@ -262,20 +262,30 @@ export default function About() {
                 </Grid>
               </CardContent>
               <CardActions>
-                <Grid container alignItems="center">
-                  <Grid item xs={12} md={6}>
+                <Grid container alignItems="center" justify="center">
+                  <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
                     <a href="resume.pdf" download className={classes.link}>
                       <Button
                         variant="contained"
                         className={classes.resumeButton}
                         startIcon={<GetAppIcon />}
-                        style={{ width: "200px" }}
+                        style={{ width: "200px", marginBottom: "10px" }}
                       >
                         Download Resume
                       </Button>
                     </a>
                   </Grid>
-                  <Grid item xs={12} md={6}>
+                  <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
                     <a
                       href="https://my-safetyauditprep-components.netlify.app/"
                       className={classes.link}
@@ -286,7 +296,7 @@ export default function About() {
                         className={classes.resumeButton}
                         variant="contained"
                         disableRipple
-                        style={{ width: "200px" }}
+                        style={{ width: "200px", marginBottom: "10px" }}
                       >
                         View My Work!
                       </Button>
