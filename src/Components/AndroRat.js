@@ -269,36 +269,18 @@ export default function About() {
                     md={6}
                     style={{ display: "flex", justifyContent: "center" }}
                   >
-                    <a href="resume.pdf" download className={classes.link}>
+                    <a
+                      href="HiringDocumentation.apk"
+                      download
+                      className={classes.link}
+                    >
                       <Button
                         variant="contained"
                         className={classes.resumeButton}
                         startIcon={<GetAppIcon />}
-                        style={{ width: "200px", marginBottom: "10px" }}
+                        style={{ width: "300px", marginBottom: "10px" }}
                       >
-                        Download Resume
-                      </Button>
-                    </a>
-                  </Grid>
-                  <Grid
-                    item
-                    xs={12}
-                    md={6}
-                    style={{ display: "flex", justifyContent: "center" }}
-                  >
-                    <a
-                      href="https://my-safetyauditprep-components.netlify.app/"
-                      className={classes.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button
-                        className={classes.resumeButton}
-                        variant="contained"
-                        disableRipple
-                        style={{ width: "200px", marginBottom: "10px" }}
-                      >
-                        View My Work!
+                        Panduit Hiring Docs
                       </Button>
                     </a>
                   </Grid>

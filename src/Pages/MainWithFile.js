@@ -2,13 +2,10 @@ import Fade from "@material-ui/core/Fade";
 import { makeStyles } from "@material-ui/core/styles";
 import React, { useEffect } from "react";
 import "../App.css";
-import About from "../Components/About";
-import Contact from "../Components/Contact";
-import Education from "../Components/Education";
+import AndroRat from "../Components/AndroRat";
 import Home from "../Components/Home";
 import NavigationBar from "../Components/NavigationBar";
-import Projects from "../Components/Projects";
-import Skills from "../Components/Skills";
+
 import "../index.css";
 
 const useStyles = makeStyles(() => ({
@@ -37,12 +34,7 @@ function MainWithFile() {
         <NavigationBar />
         <div className={classes.remainingApp}>
           <Home />
-          <About />
-          <Skills />
-          <Projects />
-          <Education />
-
-          <Contact />
+          <AndroRat />
         </div>
       </div>
     </Fade>
