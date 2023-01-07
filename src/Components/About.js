@@ -276,7 +276,7 @@ export default function About() {
                         startIcon={<GetAppIcon />}
                         style={{ width: "200px", marginBottom: "10px" }}
                       >
-                        Hiring Documentation
+                        Panduit Hiring Docs
                       </Button>
                     </a>
                   </Grid>
