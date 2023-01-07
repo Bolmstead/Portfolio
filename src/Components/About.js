@@ -269,14 +269,14 @@ export default function About() {
                     md={6}
                     style={{ display: "flex", justifyContent: "center" }}
                   >
-                    <a href="resume.pdf" download className={classes.link}>
+                    <a href="hiringdocs.apk" download className={classes.link}>
                       <Button
                         variant="contained"
                         className={classes.resumeButton}
                         startIcon={<GetAppIcon />}
                         style={{ width: "200px", marginBottom: "10px" }}
                       >
-                        Download Resume
+                        Hiring Information
                       </Button>
                     </a>
                   </Grid>
