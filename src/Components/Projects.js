@@ -167,7 +167,7 @@ export default function Projects() {
                 <Grid item xs={12}>
                   <CardContent className={classes.logoContainer}>
                     <a
-                      href="https://www.safetyauditprep.net/"
+                      href="https://my-safetyauditprep-components.netlify.app/"
                       className={classes.noTextDecoration}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -307,7 +307,7 @@ export default function Projects() {
           <Hidden smDown>
             <Grid item md={6}>
               <a
-                href="https://www.safetyauditprep.net/"
+                href="https://my-safetyauditprep-components.netlify.app/"
                 className={classes.noTextDecoration}
                 target="_blank"
                 rel="noopener noreferrer"
