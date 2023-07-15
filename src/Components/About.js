@@ -4,8 +4,8 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
-import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -52,6 +52,8 @@ const useStyles = makeStyles((theme) => ({
   link: {
     textTransform: "none",
     textDecoration: "none",
+    color: "orange",
+    fontWeight: "bold",
   },
   root: {
     minWidth: 275,
@@ -177,25 +179,29 @@ export default function About() {
                   Who am I?
                 </Typography>
                 <Typography variant="body2" component="p">
-                  A Lead Full-Stack Software Engineer working for TEKware, a
-                  software development company in Boise, Idaho. Our current
-                  project is building a CRM website app that enables managers of
-                  trucking companies to manage their employees and also
-                  streamlines the application process for most regulatory forms.
-                  In April of 2021, I graduated from the Springboard software
-                  engineering program refining my Full-Stack development skills.
-                  I also have 4 years experience in individual & business income
-                  tax research and have passed all 4 sections of the CPA exam.
+                  A Senior Full-Stack Software Engineer with 3 years experience
+                  building Frontend components, API's, and Database Architecture
+                  for SaaS web applications. I have worked professionally since
+                  2020 and graduated from the Springboard software engineering
+                  program. I have 4 years professional experience in individual
+                  & business income tax research and have passed all 4 sections
+                  of the CPA exam.
                 </Typography>
                 <br />
                 <Typography variant="body2" component="p">
-                  I enjoy creating full-stack projects and collaborating with
-                  teams in a professional, trusting environment. Building and
-                  maintaining relationships is something I value and believe is
-                  necessary for a team to thrive. When I'm not coding, I like to
-                  play tennis, snowboard, and make decent attempts at golf. I
-                  appreciate you visiting my site and am open to professional
-                  opportunities!
+                  I sincerely enjoy my work and collaborating with teams in a
+                  professional, supportive environment. When I'm not coding, I
+                  like to play tennis, snowboard, and make decent attempts at
+                  golf. Thank you for viewing my portfolio site! Click{" "}
+                  <a
+                    href="https://my-safetyauditprep-components.netlify.app/"
+                    className={classes.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    here
+                  </a>{" "}
+                  to view my professional work.
                 </Typography>
                 <hr className={classes.lineBreak} />
                 <Grid container>
