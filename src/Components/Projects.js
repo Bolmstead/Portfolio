@@ -4,8 +4,8 @@ import CardContent from "@material-ui/core/CardContent";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
-import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
 import "./FadeIn.css";
 
@@ -90,9 +90,7 @@ const useStyles = makeStyles((theme) => ({
   noTextDecoration: {
     textDecoration: "none",
   },
-  title: {
-    fontWeight: "bold",
-  },
+
   freeBaySiteBtn: {
     textTransform: "none",
     marginTop: "15px",
@@ -175,6 +173,7 @@ export default function Projects() {
                       <img
                         src="images/projectPics/safety-audit-prep-logo.png"
                         className={classes.projectLogoWittmeyer}
+                        alt=""
                       />
                     </a>
                   </CardContent>
@@ -315,6 +314,7 @@ export default function Projects() {
                 <img
                   src="images/projectPics/safety-audit-prep.png"
                   className={classes.websitePic}
+                  alt=""
                 />
               </a>
             </Grid>
@@ -345,6 +345,7 @@ export default function Projects() {
                       <img
                         src="images/projectPics/freebay-logo.png"
                         className={classes.projectLogoWittmeyer}
+                        alt=""
                       />
                     </a>
                   </CardContent>
@@ -452,6 +453,7 @@ export default function Projects() {
                 <img
                   src="images/projectPics/freebay.png"
                   className={classes.websitePic}
+                  alt=""
                 />
               </a>
             </Grid>
@@ -483,6 +485,7 @@ export default function Projects() {
                       <img
                         src="images/projectPics/wittmeyer-logo.png"
                         className={classes.projectLogoWittmeyer}
+                        alt=""
                       />
                     </a>
                   </CardContent>
@@ -571,6 +574,7 @@ export default function Projects() {
                 <img
                   src="images/projectPics/wittmeyer.png"
                   className={classes.websitePic}
+                  alt=""
                 />
               </a>
             </Grid>

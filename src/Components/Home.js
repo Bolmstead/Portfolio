@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
+import React, { useEffect } from "react";
 
 const useStyles = makeStyles((theme) => ({
   homeContainer: {
@@ -34,15 +34,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Home() {
   const classes = useStyles();
-  const [fadedIn, setFadedIn] = React.useState(false);
   const [windowWidth, setWindowWidth] = React.useState(null);
-  console.log(windowWidth);
 
   useEffect(() => {
-    async function fadeInHomeScreen() {
-      setFadedIn((prev) => !prev);
-    }
-    fadeInHomeScreen();
+    console.log("You won't regret hiring me :)");
   }, []);
 
   useEffect(() => {
@@ -64,7 +59,7 @@ export default function Home() {
           direction="row"
           className={classes.overlay}
         >
-          <Grid item xs={12} align="center" justify="center">
+          <Grid item xs={12} align="center">
             <Container
               maxWidth="md"
               align="center"

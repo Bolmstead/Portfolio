@@ -1,10 +1,10 @@
-import React from "react";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+import React from "react";
 import "./FadeIn.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -156,9 +156,7 @@ const useStyles = makeStyles((theme) => ({
   noTextTransform: {
     textTransform: "none",
   },
-  title: {
-    fontWeight: "bold",
-  },
+
   emailLink: {
     color: "#212121",
   },
@@ -196,6 +194,7 @@ export default function About() {
               <img
                 src="images/education/springboard.png"
                 className={classes.springboardLogo}
+                alt=""
               ></img>
             </Grid>
 
@@ -214,7 +213,11 @@ export default function About() {
                 justify="center"
               >
                 <CardContent className={classes.cardContent}>
-                  <Typography variant="h5" component="h5" style={{marginTop: "25px"}}>
+                  <Typography
+                    variant="h5"
+                    component="h5"
+                    style={{ marginTop: "25px" }}
+                  >
                     Springboard Software Engineering Program
                   </Typography>
                   <Typography className={classes.title} color="textSecondary">
@@ -239,7 +242,11 @@ export default function About() {
                 justify="center"
               >
                 <CardContent className={classes.cardContent}>
-                  <Typography variant="h5" component="h5" style={{marginTop: "25px"}}>
+                  <Typography
+                    variant="h5"
+                    component="h5"
+                    style={{ marginTop: "25px" }}
+                  >
                     Passed all 4 sections of the CPA exam
                   </Typography>
                   <Typography className={classes.title} color="textSecondary">
@@ -261,6 +268,7 @@ export default function About() {
               <img
                 src="images/education/cpa.png"
                 className={classes.cpaLogo}
+                alt=""
               ></img>
             </Grid>
 
@@ -276,6 +284,7 @@ export default function About() {
               <img
                 src="images/education/uofi.png"
                 className={classes.vandalLogo}
+                alt=""
               ></img>
             </Grid>
 
@@ -435,6 +444,7 @@ export default function About() {
               <img
                 src="images/education/ghana.png"
                 className={classes.ghanaLogo}
+                alt=""
               ></img>
             </Grid>
           </Grid>

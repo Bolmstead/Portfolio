@@ -1,13 +1,12 @@
-import React, { useState, useRef, useEffect } from "react";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardContent from "@material-ui/core/CardContent";
+import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import Container from "@material-ui/core/Container";
+import React from "react";
 import "./FadeIn.css";
-import CardActionArea from "@material-ui/core/CardActionArea";
 
 const useStyles = makeStyles((theme) => ({
   skillContainer: {
@@ -57,9 +56,6 @@ const useStyles = makeStyles((theme) => ({
   noTextTransform: {
     textTransform: "none",
   },
-  title: {
-    fontWeight: "bold",
-  },
   cardContent: {
     minHeight: "120px",
     textAlign: "center",
@@ -95,7 +91,6 @@ export default function About() {
               sm={6}
               xs={8}
               className={classes.cardContainer}
-              alignItems="center"
               justify="center"
             >
               <Card className={classes.card} variant="outlined">
@@ -105,6 +100,7 @@ export default function About() {
                       className={classes.image}
                       src="images/skillPics/node.jpg"
                       title="logo"
+                      alt=""
                     />
                   </div>
                   <CardContent
@@ -124,10 +120,10 @@ export default function About() {
                       variant="caption"
                       className={classes.skillCaption}
                     >
-                      I develop and maintain Back-End logic using a variety
-                      of technologies such as Node.JS, Express, Python, and
-                      Flask. My back end work using these technologies can be
-                      seen in the Projects section.
+                      I develop and maintain Back-End logic using a variety of
+                      technologies such as Node.JS, Express, Python, and Flask.
+                      My back end work using these technologies can be seen in
+                      the Projects section.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -150,6 +146,7 @@ export default function About() {
                       className={classes.image}
                       src="images/skillPics/sql_mongodb.png"
                       title="logo"
+                      alt=""
                     />
                   </div>
                   <CardContent
@@ -195,6 +192,7 @@ export default function About() {
                       className={classes.image}
                       src="images/skillPics/api.jpg"
                       title="logo"
+                      alt=""
                     />
                   </div>
                   <CardContent
@@ -208,16 +206,16 @@ export default function About() {
                       component="p"
                       fontWeight="fontWeightBold"
                     >
-                      API Development
+                      REST & SOAP APIs
                     </Typography>
                     <Typography
                       variant="caption"
                       className={classes.skillCaption}
                     >
                       I create API routes and models allowing users to create,
-                      retrieve, update, and delete stored data. I also develop code to
-                      communicate with external APIs through various
-                      technologies such as Axios.
+                      retrieve, update, and delete stored data. I also develop
+                      code to communicate with external APIs through various
+                      technologies.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -238,15 +236,12 @@ export default function About() {
                   <div className={classes.imageContainer}>
                     <img
                       className={classes.image}
-                      src="images/skillPics/frontend.jpg"
+                      src="images/skillPics/frontend.png"
                       title="logo"
+                      alt=""
                     />
                   </div>
-                  <CardContent
-                    className={classes.cardContent}
-                    alignItems="center"
-                    justify="center"
-                  >
+                  <CardContent className={classes.cardContent} justify="center">
                     <Typography
                       variant="h6"
                       color="body2"
@@ -259,9 +254,9 @@ export default function About() {
                       variant="caption"
                       className={classes.skillCaption}
                     >
-                      I use HTML, CSS, and Javascript to build attractive
-                      responsive website frontends. This work can be seen in the
-                      Projects section below.
+                      I have professional experience using HTML, CSS, Plain JS,
+                      and React to create attractive responsive website
+                      frontends while also utilizing Redux to manage state.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -282,60 +277,12 @@ export default function About() {
                   <div className={classes.imageContainer}>
                     <img
                       className={classes.image}
-                      src="images/skillPics/react-redux.png"
+                      src="images/skillPics/antdesign.png"
                       title="logo"
+                      alt=""
                     />
                   </div>
-                  <CardContent
-                    className={classes.cardContent}
-                    alignItems="center"
-                    justify="center"
-                  >
-                    <Typography
-                      variant="h6"
-                      color="body2"
-                      component="p"
-                      fontWeight="fontWeightBold"
-                    >
-                      React + Redux
-                    </Typography>
-                    <Typography
-                      variant="caption"
-                      className={classes.skillCaption}
-                    >
-                      Frameworks supporting state management are essential to
-                      building dynamic, interactive apps. I have strong
-                      experience with React as well as the state container,
-                      Redux.
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Grid>
-
-            <Grid
-              item
-              md={4}
-              sm={6}
-              xs={8}
-              className={classes.cardContainer}
-              alignItems="center"
-              justify="center"
-            >
-              <Card className={classes.card} variant="outlined">
-                <CardActionArea>
-                  <div className={classes.imageContainer}>
-                    <img
-                      className={classes.image}
-                      src="images/skillPics/material-ui.png"
-                      title="logo"
-                    />
-                  </div>
-                  <CardContent
-                    className={classes.cardContent}
-                    alignItems="center"
-                    justify="center"
-                  >
+                  <CardContent className={classes.cardContent} justify="center">
                     <Typography
                       variant="h6"
                       color="body2"
@@ -350,7 +297,48 @@ export default function About() {
                     >
                       The look and feel of applications are important in every
                       project. I understand and utilize many CSS frameworks such
-                      as Material UI, Ant Design, and Bootstrap.
+                      as Ant Design, Material UI, and Bootstrap.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+
+            <Grid
+              item
+              md={4}
+              sm={6}
+              xs={8}
+              className={classes.cardContainer}
+              alignItems="center"
+              justify="center"
+            >
+              <Card className={classes.card} variant="outlined">
+                <CardActionArea>
+                  <div className={classes.imageContainer}>
+                    <img
+                      className={classes.image}
+                      src="images/skillPics/salesforce.png"
+                      title="logo"
+                      alt=""
+                    />
+                  </div>
+                  <CardContent className={classes.cardContent} justify="center">
+                    <Typography
+                      variant="h6"
+                      color="body2"
+                      component="p"
+                      fontWeight="fontWeightBold"
+                    >
+                      Salesforce Development
+                    </Typography>
+                    <Typography
+                      variant="caption"
+                      className={classes.skillCaption}
+                    >
+                      Developed in Salesforce working heavily in Building Flows,
+                      Object Schemas, Apex, Testing, LWC, Rest APIs,
+                      Visualforce, SOQL, and point-and-click development.
                     </Typography>
                   </CardContent>
                 </CardActionArea>

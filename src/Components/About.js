@@ -17,7 +17,6 @@ const useStyles = makeStyles((theme) => ({
   aboutContainer: {
     backgroundColor: `#FCFCFC`,
     width: "100%",
-    alignItems: "center",
     minHeight: "80vh",
     paddingTop: "120px",
   },
@@ -27,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
   aboutTitle: {
     marginTop: "0px",
     marginBottom: "0px",
+    fontWeight: "bold",
   },
   aboutMeTextContainer: {},
   homeButton: {
@@ -103,9 +103,7 @@ const useStyles = makeStyles((theme) => ({
   noTextTransform: {
     textTransform: "none",
   },
-  title: {
-    fontWeight: "bold",
-  },
+
   emailLink: {
     color: "#212121",
   },
@@ -118,7 +116,6 @@ const useStyles = makeStyles((theme) => ({
   },
   iconContainer: {
     display: "flex",
-    alignItems: "center",
     [theme.breakpoints.down("xs")]: {
       textAlign: "center",
     },
@@ -134,30 +131,21 @@ export default function About() {
 
   return (
     <Grid item xs={12} className={classes.aboutContainer} justify="center">
-      <Container
-        maxWidth="md"
-        style={{ display: "flex", alignItems: "center" }}
-      >
-        <Grid
-          container
-          spacing={5}
-          direction="row"
-          alignItems="center"
-          justify="center"
-        >
+      <Container maxWidth="md" style={{ display: "flex" }}>
+        <Grid container spacing={5} direction="row" justify="center">
           <Grid
             item
-            xs={10}
+            xs={9}
             sm={6}
             md={4}
             className={classes.headshotContainer}
-            alignItems="center"
-            justify="center"
+            style={{ justifyContent: "center" }}
           >
             {" "}
             <img
               src="images/headshot.jpg"
               className={classes.headshotPic}
+              alt=""
             ></img>
           </Grid>
 
@@ -166,14 +154,9 @@ export default function About() {
             xs={12}
             md={8}
             className={classes.aboutMeTextContainer}
-            alignItems="center"
             justify="center"
           >
-            <Card
-              className={classes.aboutCardContainer}
-              alignItems="center"
-              justify="center"
-            >
+            <Card className={classes.aboutCardContainer} justify="center">
               <CardContent>
                 <Typography variant="h4" component="h4">
                   Who am I?
@@ -181,27 +164,18 @@ export default function About() {
                 <Typography variant="body2" component="p">
                   A Senior Full-Stack Software Engineer with 3 years experience
                   building Frontend components, API's, and Database Architecture
-                  for SaaS web applications. I have worked professionally since
-                  2020 and graduated from the Springboard software engineering
-                  program. I have 4 years professional experience in individual
-                  & business income tax research and have passed all 4 sections
-                  of the CPA exam.
+                  & Management. I have worked professionally since 2020
+                  graduating from the Springboard software engineering program
+                  the same year. I have 4 years professional experience in
+                  individual & business income tax research and have passed all
+                  4 sections of the CPA exam.
                 </Typography>
                 <br />
                 <Typography variant="body2" component="p">
-                  I sincerely enjoy my work and collaborating with teams in a
-                  professional, supportive environment. When I'm not coding, I
-                  like to play tennis, snowboard, and make decent attempts at
-                  golf. Thank you for viewing my portfolio site! Click{" "}
-                  <a
-                    href="https://my-safetyauditprep-components.netlify.app/"
-                    className={classes.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    here
-                  </a>{" "}
-                  to view my professional work.
+                  I sincerely enjoy my work and collaborating with colleagues in
+                  a supportive environment. When I'm not coding, I like to
+                  learn, play raquetball, snowboard, and build random projects.
+                  Thank you for viewing my portfolio site!{" "}
                 </Typography>
                 <hr className={classes.lineBreak} />
                 <Grid container>
@@ -235,7 +209,6 @@ export default function About() {
                         variant="body2"
                         component="p"
                         display="inline"
-                        className={classes.emailLink}
                       >
                         {" "}
                         olms2074@gmail.com
@@ -268,7 +241,7 @@ export default function About() {
                 </Grid>
               </CardContent>
               <CardActions>
-                <Grid container alignItems="center" justify="center">
+                <Grid container justify="center">
                   <Grid
                     item
                     xs={12}
