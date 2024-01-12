@@ -162,7 +162,7 @@ export default function About() {
                   Who am I?
                 </Typography>
                 <Typography variant="body2" component="p">
-                  A Senior Full-Stack Software Engineer with 3 years experience
+                  A Senior Full-Stack Software Developer with 3 years experience
                   building Frontend components, API's, and Database Architecture
                   & Management. I have worked professionally since 2020
                   graduating from the Springboard software engineering program
