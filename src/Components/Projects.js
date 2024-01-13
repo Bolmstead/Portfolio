@@ -188,20 +188,20 @@ export default function Projects() {
                     >
                       TaxRise
                     </a>
-                    . All products I've created are is currently used in
+                    . All products I've created are currently being used in
                     production by our clients and tax professionals.
                   </Typography>
                 </Grid>
                 <br />{" "}
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    I built products such as: a React page and API routes that
-                    enable TaxRise Tax Associates to view/add/edit/delete
-                    financial records uploaded by our clients, the UI and
-                    backend code that enables TaxRise staff to create custom
-                    made questions to appear on clients’ tax questionnaires
-                    dynamically, Salesforce UI and Apex code to enable clients
-                    to add/edit/delete their claimed tax assets.
+                    Some of the projects I've created include: a React page, API
+                    routes, and Database code that enable TaxRise Tax Associates
+                    to view/add/edit/delete financial records uploaded by our
+                    clients. A UI and backend code that enables TaxRise staff to
+                    create custom made questions to appear on clients’ tax
+                    questionnaires dynamically. Salesforce UI and Apex code to
+                    enable clients to add/edit/delete their claimed tax assets.
                   </Typography>
                 </Grid>
                 <br />{" "}
