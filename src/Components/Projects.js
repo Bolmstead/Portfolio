@@ -138,9 +138,9 @@ export default function Projects() {
           justify="center"
         >
           <Grid item xs={12} className={classes.titleContainer}>
-            <a id="Projects">
+            <a id="Experience">
               <Typography variant="h4" component="h4" className={classes.title}>
-                My Projects
+                My Professional Experience
               </Typography>
             </a>
           </Grid>
@@ -178,15 +178,25 @@ export default function Projects() {
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
                     I build Frontends, Backend functionality, and Salesforce
-                    developments for TaxRise which is currently being used
-                    internally and by our clients.
+                    developments for the Tax Remidation company,{" "}
+                    <a
+                      href="https://www.taxrise.net/"
+                      style={{ textDecoration: "none", fontWeight: 600 }}
+                      className={classes.repoLink}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      TaxRise
+                    </a>
+                    . All products I've created are is currently used in
+                    production by our clients and tax professionals.
                   </Typography>
                 </Grid>
                 <br />{" "}
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    I have built products such as: a React page and API routes
-                    that enable TaxRise Tax Associates to view/add/edit/delete
+                    I built products such as: a React page and API routes that
+                    enable TaxRise Tax Associates to view/add/edit/delete
                     financial records uploaded by our clients, the UI and
                     backend code that enables TaxRise staff to create custom
                     made questions to appear on clients’ tax questionnaires
@@ -205,8 +215,9 @@ export default function Projects() {
                   </Typography>
                   <Typography variant="body2" component="p">
                     {" "}
-                    React, Node, Python, Postgres, MySQL, Salesforce: Apex, LWC,
-                    Aura, SOQL, etc.
+                    React, Node, Python, Postgres, MySQL, FastAPI, Express, Ant
+                    Design, Salesforce: Apex, LWCs, Aura Components, SOQL, Flow
+                    Builder, Schema Design, Object Design, etc.
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>

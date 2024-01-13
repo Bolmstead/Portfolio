@@ -73,7 +73,7 @@ export default function PermanentDrawerRight() {
           src="/images/avatar.jpg"
           className={classes.avatar}
         />
-        {["Home", "Skills", "Projects", "Education"].map((text) => (
+        {["Home", "Skills", "Experience", "Education"].map((text) => (
           <a key={text} href={"#" + text} className={classes.navLink}>
             <ListItem button className={classes.listItem} key={text}>
               <ListItemText primary={text} />
