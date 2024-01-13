@@ -38,7 +38,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "0px",
   },
   title: {
-    fontFamily: "Roboto",
     fontWeight: "bold",
   },
   cardContainer: {},
@@ -83,8 +82,87 @@ export default function About() {
               <Typography variant="h4" component="h4" className={classes.title}>
                 My Skills
               </Typography>
+            </Grid>{" "}
+            <Grid
+              item
+              md={4}
+              sm={6}
+              xs={8}
+              className={classes.cardContainer}
+              alignItems="center"
+              justify="center"
+            >
+              <Card className={classes.card} variant="outlined">
+                <CardActionArea>
+                  <div className={classes.imageContainer}>
+                    <img
+                      className={classes.image}
+                      src="images/skillPics/frontend.png"
+                      title="logo"
+                      alt=""
+                    />
+                  </div>
+                  <CardContent className={classes.cardContent} justify="center">
+                    <Typography
+                      variant="h6"
+                      color="body2"
+                      component="p"
+                      fontWeight="fontWeightBold"
+                    >
+                      Frontend Development
+                    </Typography>
+                    <Typography
+                      variant="caption"
+                      className={classes.skillCaption}
+                    >
+                      I have professional experience using HTML, CSS, Plain JS,
+                      and React to create attractive responsive website
+                      frontends while also utilizing Redux to manage state.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
             </Grid>
-
+            <Grid
+              item
+              md={4}
+              sm={6}
+              xs={8}
+              className={classes.cardContainer}
+              alignItems="center"
+              justify="center"
+            >
+              <Card className={classes.card} variant="outlined">
+                <CardActionArea>
+                  <div className={classes.imageContainer}>
+                    <img
+                      className={classes.image}
+                      src="images/skillPics/salesforce.png"
+                      title="logo"
+                      alt=""
+                    />
+                  </div>
+                  <CardContent className={classes.cardContent} justify="center">
+                    <Typography
+                      variant="h6"
+                      color="body2"
+                      component="p"
+                      fontWeight="fontWeightBold"
+                    >
+                      Salesforce
+                    </Typography>
+                    <Typography
+                      variant="caption"
+                      className={classes.skillCaption}
+                    >
+                      Developed in Salesforce working heavily in Building Flows,
+                      Object Schemas, Apex, Testing, LWC, Rest APIs,
+                      Visualforce, SOQL, and point-and-click development.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
             <Grid
               item
               md={4}
@@ -129,7 +207,6 @@ export default function About() {
                 </CardActionArea>
               </Card>
             </Grid>
-
             <Grid
               item
               md={4}
@@ -175,7 +252,6 @@ export default function About() {
                 </CardActionArea>
               </Card>
             </Grid>
-
             <Grid
               item
               md={4}
@@ -221,48 +297,6 @@ export default function About() {
                 </CardActionArea>
               </Card>
             </Grid>
-
-            <Grid
-              item
-              md={4}
-              sm={6}
-              xs={8}
-              className={classes.cardContainer}
-              alignItems="center"
-              justify="center"
-            >
-              <Card className={classes.card} variant="outlined">
-                <CardActionArea>
-                  <div className={classes.imageContainer}>
-                    <img
-                      className={classes.image}
-                      src="images/skillPics/frontend.png"
-                      title="logo"
-                      alt=""
-                    />
-                  </div>
-                  <CardContent className={classes.cardContent} justify="center">
-                    <Typography
-                      variant="h6"
-                      color="body2"
-                      component="p"
-                      fontWeight="fontWeightBold"
-                    >
-                      Frontend Development
-                    </Typography>
-                    <Typography
-                      variant="caption"
-                      className={classes.skillCaption}
-                    >
-                      I have professional experience using HTML, CSS, Plain JS,
-                      and React to create attractive responsive website
-                      frontends while also utilizing Redux to manage state.
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Grid>
-
             <Grid
               item
               md={4}
@@ -298,47 +332,6 @@ export default function About() {
                       The look and feel of applications are important in every
                       project. I understand and utilize many CSS frameworks such
                       as Ant Design, Material UI, and Bootstrap.
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Grid>
-
-            <Grid
-              item
-              md={4}
-              sm={6}
-              xs={8}
-              className={classes.cardContainer}
-              alignItems="center"
-              justify="center"
-            >
-              <Card className={classes.card} variant="outlined">
-                <CardActionArea>
-                  <div className={classes.imageContainer}>
-                    <img
-                      className={classes.image}
-                      src="images/skillPics/salesforce.png"
-                      title="logo"
-                      alt=""
-                    />
-                  </div>
-                  <CardContent className={classes.cardContent} justify="center">
-                    <Typography
-                      variant="h6"
-                      color="body2"
-                      component="p"
-                      fontWeight="fontWeightBold"
-                    >
-                      Salesforce Development
-                    </Typography>
-                    <Typography
-                      variant="caption"
-                      className={classes.skillCaption}
-                    >
-                      Developed in Salesforce working heavily in Building Flows,
-                      Object Schemas, Apex, Testing, LWC, Rest APIs,
-                      Visualforce, SOQL, and point-and-click development.
                     </Typography>
                   </CardContent>
                 </CardActionArea>

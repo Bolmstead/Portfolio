@@ -66,9 +66,12 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 275,
   },
   title: {
-    fontFamily: "Roboto",
     fontWeight: "bold",
-    color: "#FFC220",
+    color: "white",
+  },
+  educationText: {
+    fontWeight: "bold",
+    color: "gray",
   },
   businessPhoto: {
     width: "100%",
@@ -220,7 +223,10 @@ export default function About() {
                   >
                     Springboard Software Engineering Program
                   </Typography>
-                  <Typography className={classes.title} color="textSecondary">
+                  <Typography
+                    className={classes.educationText}
+                    color="textSecondary"
+                  >
                     Certificate of Completion (April 2021)
                   </Typography>
                 </CardContent>
@@ -249,7 +255,10 @@ export default function About() {
                   >
                     Passed all 4 sections of the CPA exam
                   </Typography>
-                  <Typography className={classes.title} color="textSecondary">
+                  <Typography
+                    className={classes.educationText}
+                    color="textSecondary"
+                  >
                     * Not currently an active CPA
                   </Typography>
                 </CardContent>
@@ -307,7 +316,10 @@ export default function About() {
                   <Typography variant="h5" component="h5">
                     University of Idaho (B.S. in Business)
                   </Typography>
-                  <Typography className={classes.title} color="textSecondary">
+                  <Typography
+                    className={classes.educationText}
+                    color="textSecondary"
+                  >
                     Degrees in Accounting (Mar 2012) & Finance (Dec 2012)
                   </Typography>
 
@@ -379,7 +391,10 @@ export default function About() {
                   <Typography variant="h5" component="h5">
                     University of Ghana
                   </Typography>
-                  <Typography className={classes.title} color="textSecondary">
+                  <Typography
+                    className={classes.educationText}
+                    color="textSecondary"
+                  >
                     Study abroad semester (Spring 2010)
                   </Typography>
 

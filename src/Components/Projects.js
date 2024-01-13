@@ -38,7 +38,6 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 275,
   },
   title: {
-    fontFamily: "Roboto",
     fontWeight: "bold",
     paddingTop: "0px",
   },
@@ -118,7 +117,6 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "8px",
   },
   joblyTitle: {
-    fontFamily: "Roboto",
     fontWeight: "bold",
     paddingTop: "0px",
     textDecoration: "none",
@@ -146,7 +144,111 @@ export default function Projects() {
               </Typography>
             </a>
           </Grid>
+          <Grid
+            item
+            xs={11}
+            sm={9}
+            md={6}
+            className={classes.projectsMeTextContainer}
+            alignItems="center"
+            justify="center"
+          >
+            <Card
+              className={classes.projectsCardContainer}
+              alignItems="center"
+              justify="center"
+            >
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <CardContent className={classes.logoContainer}>
+                    <a
+                      href="https://taxrise.com/"
+                      className={classes.noTextDecoration}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="images/projectPics/taxrise-logo.png"
+                        className={classes.projectLogoWittmeyer}
+                        alt="taxrise"
+                      />
+                    </a>
+                  </CardContent>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    I build Frontends, Backend functionality, and Salesforce
+                    developments for TaxRise which is currently being used
+                    internally and by our clients.
+                  </Typography>
+                </Grid>
+                <br />{" "}
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    I have built products such as: a React page and API routes
+                    that enable TaxRise Tax Associates to view/add/edit/delete
+                    financial records uploaded by our clients, the UI and
+                    backend code that enables TaxRise staff to create custom
+                    made questions to appear on clients’ tax questionnaires
+                    dynamically, Salesforce UI and Apex code to enable clients
+                    to add/edit/delete their claimed tax assets.
+                  </Typography>
+                </Grid>
+                <br />{" "}
+                <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Technologies: {"  "}
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    {" "}
+                    React, Node, Python, Postgres, MySQL, Salesforce: Apex, LWC,
+                    Aura, SOQL, etc.
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Grid container justify="center">
+                    <Grid item xs={8}>
+                      <a
+                        href="https://taxrise.com/"
+                        className={classes.noTextDecoration}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          className={classes.freeBaySiteBtn}
+                          fullWidth
+                          variant="contained"
+                          disableRipple
+                        >
+                          Visit Site
+                        </Button>
+                      </a>
+                    </Grid>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Card>
+          </Grid>
 
+          <Hidden smDown>
+            <Grid item md={6}>
+              <a
+                href="https://taxrise.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/projectPics/taxrise.png"
+                  className={classes.websitePic}
+                  alt="taxrise"
+                />
+              </a>
+            </Grid>
+          </Hidden>
           <Grid
             item
             xs={11}
@@ -454,112 +556,6 @@ export default function Projects() {
                   src="images/projectPics/freebay.png"
                   className={classes.websitePic}
                   alt=""
-                />
-              </a>
-            </Grid>
-          </Hidden>
-
-          <Grid
-            item
-            xs={11}
-            sm={9}
-            md={6}
-            className={classes.projectsMeTextContainer}
-            alignItems="center"
-            justify="center"
-          >
-            <Card
-              className={classes.projectsCardContainer}
-              alignItems="center"
-              justify="center"
-            >
-              <Grid container spacing={2}>
-                <Grid item xs={12}>
-                  <CardContent className={classes.logoContainer}>
-                    <a
-                      href="https://taxrise.com/"
-                      className={classes.noTextDecoration}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src="images/projectPics/taxrise-logo.png"
-                        className={classes.projectLogoWittmeyer}
-                        alt="taxrise"
-                      />
-                    </a>
-                  </CardContent>
-                </Grid>
-                <Grid item xs={12}>
-                  <Typography variant="body2" component="p">
-                    I build Frontends, Backend functionality, and Salesforce
-                    developments for TaxRise which is currently being used
-                    internally and by our clients.
-                  </Typography>
-                </Grid>
-                <br />{" "}
-                <Grid item xs={12}>
-                  <Typography variant="body2" component="p">
-                    I have built products such as: a React page and API routes
-                    that enable TaxRise Tax Associates to view/add/edit/delete
-                    financial records uploaded by our clients, the UI and
-                    backend code that enables TaxRise staff to create custom
-                    made questions to appear on clients’ tax questionnaires
-                    dynamically, Salesforce UI and Apex code to enable clients
-                    to add/edit/delete their claimed tax assets.
-                  </Typography>
-                </Grid>
-                <br />{" "}
-                <Grid item xs={12}>
-                  <Typography
-                    variant="body2"
-                    component="p"
-                    className={classes.boldText}
-                  >
-                    Technologies: {"  "}
-                  </Typography>
-                  <Typography variant="body2" component="p">
-                    {" "}
-                    React, Node, Python, Postgres, MySQL, Salesforce: Apex, LWC,
-                    Aura, SOQL, etc.
-                  </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                  <Grid container justify="center">
-                    <Grid item xs={8}>
-                      <a
-                        href="https://taxrise.com/"
-                        className={classes.noTextDecoration}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button
-                          className={classes.freeBaySiteBtn}
-                          fullWidth
-                          variant="contained"
-                          disableRipple
-                        >
-                          Visit Site
-                        </Button>
-                      </a>
-                    </Grid>
-                  </Grid>
-                </Grid>
-              </Grid>
-            </Card>
-          </Grid>
-
-          <Hidden smDown>
-            <Grid item md={6}>
-              <a
-                href="https://taxrise.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="images/projectPics/taxrise.png"
-                  className={classes.websitePic}
-                  alt="taxrise"
                 />
               </a>
             </Grid>

@@ -59,7 +59,6 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 275,
   },
   title: {
-    fontFamily: "Roboto",
     fontWeight: "bold",
     color: "#FFC220",
   },
