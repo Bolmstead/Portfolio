@@ -477,33 +477,36 @@ export default function Projects() {
                 <Grid item xs={12}>
                   <CardContent className={classes.logoContainer}>
                     <a
-                      href="https://freebay.netlify.app/"
+                      href="https://taxrise.com/"
                       className={classes.noTextDecoration}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <img
-                        src="images/projectPics/wittmeyer-logo.png"
+                        src="images/projectPics/taxrise-logo.png"
                         className={classes.projectLogoWittmeyer}
-                        alt=""
+                        alt="taxrise"
                       />
                     </a>
                   </CardContent>
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    I built the website for the Wittmeyer and Associates, LLC
-                    lobbying firm using React. Website provides information
-                    about the services they offer and built based on the design
-                    requested from the client.
+                    I build Frontends, Backend functionality, and Salesforce
+                    developments for TaxRise which is currently being used
+                    internally and by our clients.
                   </Typography>
                 </Grid>
                 <br />{" "}
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    Site utilizes the EmailJS API allowing for potential clients
-                    to contact my client by using the form on the site
-                    (currently inactive). Site is fully mobile responsive.
+                    I have built products such as: a React page and API routes
+                    that enable TaxRise Tax Associates to view/add/edit/delete
+                    financial records uploaded by our clients, the UI and
+                    backend code that enables TaxRise staff to create custom
+                    made questions to appear on clients’ tax questionnaires
+                    dynamically, Salesforce UI and Apex code to enable clients
+                    to add/edit/delete their claimed tax assets.
                   </Typography>
                 </Grid>
                 <br />{" "}
@@ -517,33 +520,15 @@ export default function Projects() {
                   </Typography>
                   <Typography variant="body2" component="p">
                     {" "}
-                    React, HTML, CSS, Material-UI
+                    React, Node, Python, Postgres, MySQL, Salesforce: Apex, LWC,
+                    Aura, SOQL, etc.
                   </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                  <Typography
-                    variant="body2"
-                    component="p"
-                    className={classes.boldText}
-                  >
-                    Repositories: {"  "}
-                  </Typography>
-                  <a
-                    href="https://github.com/Bolmstead/murph-lobby"
-                    className={classes.repoLink}
-                    target="_blank"
-                  >
-                    <Typography variant="body2" component="p" display="inline">
-                      {" "}
-                      Front End
-                    </Typography>
-                  </a>
                 </Grid>
                 <Grid item xs={12}>
                   <Grid container justify="center">
                     <Grid item xs={8}>
                       <a
-                        href="https://wittmeyerandassociates.com/"
+                        href="https://taxrise.com/"
                         className={classes.noTextDecoration}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -567,14 +552,14 @@ export default function Projects() {
           <Hidden smDown>
             <Grid item md={6}>
               <a
-                href="https://wittmeyerandassociates.com/"
+                href="https://taxrise.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="images/projectPics/wittmeyer.png"
+                  src="images/projectPics/taxrise.png"
                   className={classes.websitePic}
-                  alt=""
+                  alt="taxrise"
                 />
               </a>
             </Grid>
