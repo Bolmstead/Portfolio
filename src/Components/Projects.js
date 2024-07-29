@@ -177,8 +177,7 @@ export default function Projects() {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    I build Frontends, Backend functionality, and Salesforce
-                    developments for the Tax Remidation company,{" "}
+                  I built several React components, Node/Python REST API routes, and controller code to interact with Postgres and MySQL Databases that support web applications currently used by
                     <a
                       href="https://www.taxrise.net/"
                       style={{ textDecoration: "none", fontWeight: 600 }}
@@ -186,22 +185,15 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      TaxRise
+                     {" "} TaxRise {" "}
                     </a>
-                    . All products I've created are currently being used in
-                    production by our clients and tax professionals.
+                    Employees and Clients. I taught myself how to develop on the Salesfore Platform through Trailheads and tutorials and have 1 full year of professional Salesforce Development experience.
                   </Typography>
                 </Grid>
                 <br />{" "}
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                    Some of the projects I've created include: a React page, API
-                    routes, and Database code that enable TaxRise Tax Associates
-                    to view/add/edit/delete financial records uploaded by our
-                    clients. A UI and backend code that enables TaxRise staff to
-                    create custom made questions to appear on clients’ tax
-                    questionnaires dynamically. Salesforce UI and Apex code to
-                    enable clients to add/edit/delete their claimed tax assets.
+                  Created products such as: a Full-Stack SERN application that enables TaxRise Tax Associates to view/add/edit/delete financial records uploaded by our clients, Python backend code and React UI that enables TaxRise staff to create questions to dynamically appear on clients’ tax questionnaires, and a Salesforce LWC UI and Apex code to enable clients to add/edit/delete their claimed tax assets.
                   </Typography>
                 </Grid>
                 <br />{" "}
@@ -211,13 +203,26 @@ export default function Projects() {
                     component="p"
                     className={classes.boldText}
                   >
-                    Technologies: {"  "}
+                    Full Stack Technologies: {"  "}
                   </Typography>
                   <Typography variant="body2" component="p">
                     {" "}
-                    React, Node, Python, Postgres, MySQL, FastAPI, Express, Ant
-                    Design, Salesforce: Apex, LWCs, Aura Components, SOQL, Flow
-                    Builder, Schema Design, Object Design, etc.
+                    React, Node, Express, Python, Postgres, MySQL, FastAPI, CSS, Ant
+                    Design, AWS, Bitbucket, Agile, Jira
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Salesforce Technologies: {"  "}
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    {" "}
+                    Gearset, Apex, Apex Testing, LWCs, Aura Components, SOQL, Flow
+                    Builder, Schema Design, Object Design
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
@@ -302,10 +307,9 @@ export default function Projects() {
                     >
                       SafetyAuditPrep.com
                     </a>{" "}
-                    is an online CRM site built for trucking companies. The web
-                    application functions as a tool for Employee & Fleet
-                    Management, Drug & Alcohol Consortium and
-                    Compliance/Registration Management.
+                    is an online CRM site built to manage DOT regulations for trucking companies. The site functions as a tool for Employee & Fleet
+                    Management, Drug & Alcohol Consortium, 
+                    Compliance/Registration Management, and other utilities.
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
@@ -493,8 +497,8 @@ export default function Projects() {
                   </Typography>
                   <Typography variant="body2" component="p">
                     {" "}
-                    Node.JS, Node-PostgreSQL, Express, React, HTML, CSS,
-                    Material-UI, Axios, bcrypt, Python
+                    Node.JS, Postgres, Node-PG, Express, React,
+                    Material-UI, Axios, Python, Web-Scraping
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>

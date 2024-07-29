@@ -197,9 +197,9 @@ export default function About() {
                       variant="caption"
                       className={classes.skillCaption}
                     >
-                      I develop and maintain Back-End logic using a variety of
+                      I build and maintain Backends using a variety of
                       technologies such as Node.JS, Express, Python, and Flask.
-                      My back end work using these technologies can be seen in
+                      My work using these technologies can be seen in
                       the Projects section.
                     </Typography>
                   </CardContent>
@@ -242,9 +242,8 @@ export default function About() {
                       variant="caption"
                       className={classes.skillCaption}
                     >
-                      I am well versed in SQL and MongoDB database development
-                      and refactoring. I enjoy using technologies that interact
-                      with these databases such as Mongoose, Node-PostgreSQL,
+                      I am well versed in SQL and MongoDB databases and have professional experience using technologies that interact
+                      with these databases such as Mongoose, Node-PG,
                       SQL Alchemy, and Sequelize.
                     </Typography>
                   </CardContent>
@@ -322,14 +321,14 @@ export default function About() {
                       component="p"
                       fontWeight="fontWeightBold"
                     >
-                      Front End Design
+                      Frontend Design
                     </Typography>
                     <Typography
                       variant="caption"
                       className={classes.skillCaption}
                     >
                       The look and feel of applications are important in every
-                      project. I understand and utilize many CSS frameworks such
+                      project. I understand CSS and many CSS frameworks such
                       as Ant Design, Material UI, and Bootstrap.
                     </Typography>
                   </CardContent>
