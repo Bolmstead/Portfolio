@@ -162,7 +162,7 @@ export default function About() {
                 </Typography>
                 <Typography variant="body2" component="p">
                   A Full-Stack Software Developer with 4 years experience
-                  building Frontend components, APIs, and Database logic. I specialize in React, Node.js, Python, and SQL & MongoDB Databases and love in them all. I also have about 1 year experience in Salesforce Development and am pursuing the Platform Developer I certification.
+                  building Frontend components, APIs, and Database logic. I specialize in React, Node.js, Python, and SQL & MongoDB Databases and love working in them all. I also have about 1 year experience in Salesforce Development and am pursuing the Platform Developer I certification.
                 </Typography>
                 <br />
                 <Typography variant="body2" component="p">
