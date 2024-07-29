@@ -109,15 +109,14 @@ export default function About() {
                       component="p"
                       fontWeight="fontWeightBold"
                     >
-                      Frontend Development
+                      Frontend
                     </Typography>
                     <Typography
                       variant="caption"
                       className={classes.skillCaption}
                     >
-                      I have professional experience using HTML, CSS, Plain JS,
-                      and React to create attractive responsive website
-                      frontends while also utilizing Redux to manage state.
+                      I have professional experience using HTML, CSS, JS,
+                      and React to create responsive websites. I also understand state management systems like Redux.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -149,14 +148,14 @@ export default function About() {
                       component="p"
                       fontWeight="fontWeightBold"
                     >
-                      Salesforce
+                      Salesforce Development
                     </Typography>
                     <Typography
                       variant="caption"
                       className={classes.skillCaption}
                     >
-                      Developed in Salesforce working heavily in Building Flows,
-                      Object Schemas, Apex, Testing, LWC, Rest APIs,
+                      I've worked heavily in Building Flows,
+                      Object Schemas, Apex, Testing, LWCs, Aura Components, APIs,
                       Visualforce, SOQL, and point-and-click development.
                     </Typography>
                   </CardContent>
@@ -192,7 +191,7 @@ export default function About() {
                       component="p"
                       fontWeight="fontWeightBold"
                     >
-                      Back End Development
+                      Backend
                     </Typography>
                     <Typography
                       variant="caption"

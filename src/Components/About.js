@@ -161,18 +161,12 @@ export default function About() {
                   Who am I?
                 </Typography>
                 <Typography variant="body2" component="p">
-                  A Senior Full-Stack Software Developer with 3 years experience
-                  building Frontend components, API's, and Database Architecture
-                  & Management. I have worked professionally since 2020
-                  graduating from the Springboard software engineering program
-                  the same year. I have 4 years professional experience in
-                  individual & business income tax research and have passed all
-                  4 sections of the CPA exam.
+                  A Full-Stack Software Developer with 4 years experience
+                  building Frontend components, APIs, and Database logic. I specialize in React, Node.js, Python, and SQL & MongoDB Databases and love in them all. I also have about 1 year experience in Salesforce Development and am pursuing the Platform Developer I certification.
                 </Typography>
                 <br />
                 <Typography variant="body2" component="p">
-                  I sincerely enjoy my work and collaborating with colleagues in
-                  a supportive environment. When I'm not coding, I like to
+                  I sincerely enjoy my work and collaborating with my team to find solutions to any problem that arises. When I'm not coding, I like to
                   learn, play raquetball, snowboard, and build random projects.
                   Thank you for viewing my portfolio site!{" "}
                 </Typography>
