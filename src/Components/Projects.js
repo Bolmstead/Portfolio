@@ -94,6 +94,8 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "none",
     marginTop: "15px",
     marginBottom: "5px",
+    backgroundColor: "#FFC220",
+
   },
 
   yogaSiteBtn: {
