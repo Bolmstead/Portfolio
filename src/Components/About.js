@@ -142,7 +142,7 @@ export default function About() {
           >
             {" "}
             <img
-              src="images/headshot.jpg"
+              src="images/headshot2.jpg"
               className={classes.headshotPic}
               alt=""
             ></img>
