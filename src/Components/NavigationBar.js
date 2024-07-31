@@ -70,7 +70,7 @@ export default function PermanentDrawerRight() {
       >
         <Avatar
           alt="Avatar"
-          src="/images/headshot.jpg"
+          src="/images/avatar.jpg"
           className={classes.avatar}
         />
         {["Home", "Skills", "Experience", "Education"].map((text) => (
