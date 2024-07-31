@@ -241,7 +241,7 @@ export default function About() {
                     md={6}
                     style={{ display: "flex", justifyContent: "center" }}
                   >
-                    <a href="resume.pdf" download className={classes.link}>
+                    <a href="2024 Resume.pdf" download className={classes.link}>
                       <Button
                         variant="contained"
                         className={classes.resumeButton}
