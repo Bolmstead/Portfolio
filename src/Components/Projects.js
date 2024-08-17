@@ -95,7 +95,6 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "15px",
     marginBottom: "5px",
     backgroundColor: "#FFC220",
-
   },
 
   yogaSiteBtn: {
@@ -109,9 +108,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "10px",
     marginBottom: "5px",
   },
-
   repoLink: {
-    fontWeight: "Bold",
+    fontWeight: "1000",
     textDecoration: "none",
     color: "#FFC220",
   },
@@ -179,7 +177,10 @@ export default function Projects() {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                  I built several React components, Node/Python REST API routes, and controller code to interact with Postgres and MySQL Databases that support web applications currently used by
+                    I built several React components, Node/Python REST API
+                    routes, and controller code to interact with Postgres and
+                    MySQL Databases that support web applications currently used
+                    by
                     <a
                       href="https://www.taxrise.net/"
                       style={{ textDecoration: "none", fontWeight: 600 }}
@@ -187,15 +188,25 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                     {" "} TaxRise {" "}
+                      {" "}
+                      TaxRise{" "}
                     </a>
-                    Employees and Clients. I taught myself how to develop on the Salesfore Platform through Trailheads and tutorials and have 1 full year of professional Salesforce Development experience.
+                    Employees and Clients. I taught myself how to develop on the
+                    Salesfore Platform through Trailheads and tutorials and have
+                    1 full year of professional Salesforce Development
+                    experience.
                   </Typography>
                 </Grid>
                 <br />{" "}
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
-                  Created products such as: a Full-Stack SERN application that enables TaxRise Tax Associates to view/add/edit/delete financial records uploaded by our clients, Python backend code and React UI that enables TaxRise staff to create questions to dynamically appear on clients’ tax questionnaires, and a Salesforce LWC UI and Apex code to enable clients to add/edit/delete their claimed tax assets.
+                    Created products such as: a Full-Stack SERN application that
+                    enables TaxRise Tax Associates to view/add/edit/delete
+                    financial records uploaded by our clients, Python backend
+                    code and React UI that enables TaxRise staff to create
+                    questions to dynamically appear on clients’ tax
+                    questionnaires, and a Salesforce LWC UI and Apex code to
+                    enable clients to add/edit/delete their claimed tax assets.
                   </Typography>
                 </Grid>
                 <br />{" "}
@@ -209,8 +220,8 @@ export default function Projects() {
                   </Typography>
                   <Typography variant="body2" component="p">
                     {" "}
-                    React, Node, Express, Python, Postgres, MySQL, FastAPI, CSS, Ant
-                    Design, AWS, Bitbucket, Agile, Jira
+                    React, Node, Express, Python, Postgres, MySQL, FastAPI, CSS,
+                    Ant Design, AWS, Bitbucket, Agile, Jira
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
@@ -223,8 +234,8 @@ export default function Projects() {
                   </Typography>
                   <Typography variant="body2" component="p">
                     {" "}
-                    Gearset, Apex, Apex Testing, LWCs, Aura Components, SOQL, Flow
-                    Builder, Schema Design, Object Design
+                    Gearset, Apex, Apex Testing, LWCs, Aura Components, SOQL,
+                    Flow Builder, Schema Design, Object Design
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
@@ -309,8 +320,9 @@ export default function Projects() {
                     >
                       SafetyAuditPrep.com
                     </a>{" "}
-                    is an online CRM site built to manage DOT regulations for trucking companies. The site functions as a tool for Employee & Fleet
-                    Management, Drug & Alcohol Consortium, 
+                    is an online CRM site built to manage DOT regulations for
+                    trucking companies. The site functions as a tool for
+                    Employee & Fleet Management, Drug & Alcohol Consortium,
                     Compliance/Registration Management, and other utilities.
                   </Typography>
                 </Grid>
@@ -456,6 +468,142 @@ export default function Projects() {
                 <Grid item xs={12}>
                   <CardContent className={classes.logoContainer}>
                     <a
+                      href="https://mock-dexscreener.netlify.app/"
+                      className={classes.noTextDecoration}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="images/projectPics/dexScreenerTitle.png"
+                        className={classes.projectLogoWittmeyer}
+                        alt=""
+                      />
+                    </a>
+                  </CardContent>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    Mock DexScreener is a site that displays current
+                    prices/information on cryptocurrency pairs. Users can search
+                    for all types of tokens on most blockchains and see their
+                    price and volume changes based on certain timeframes.
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    Utilized React, React-Bootstrap, Node.js, Express, and the
+                    DexScreener API to retrieve the data. Planning to build upon
+                    the application by adding User Authentication, saved
+                    Favorites, and websockets to update crypto information
+                    automatically.
+                  </Typography>
+                </Grid>
+                <br />{" "}
+                <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Technologies: {"  "}
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    {" "}
+                    Node.JS, Express, React, React-Bootstrap, Axios
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Repositories: {"  "}
+                  </Typography>
+                  <a
+                    href="https://github.com/Bolmstead/mock-dex-screener-frontend"
+                    className={classes.repoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Typography variant="body2" component="p" display="inline">
+                      {" "}
+                      Front End
+                    </Typography>
+                  </a>
+                  <Typography variant="body2" component="p" display="inline">
+                    {" "}
+                    /{" "}
+                  </Typography>
+                  <a
+                    href="https://github.com/Bolmstead/mock-dex-screener-backend"
+                    className={classes.repoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Typography variant="body2" component="p" display="inline">
+                      {" "}
+                      Back End
+                    </Typography>
+                  </a>
+                </Grid>
+                <Grid item xs={12}>
+                  <Grid container justify="center">
+                    <Grid item xs={8}>
+                      <a
+                        href="https://mock-dexscreener.netlify.app/"
+                        className={classes.noTextDecoration}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          className={classes.freeBaySiteBtn}
+                          fullWidth
+                          variant="contained"
+                          disableRipple
+                        >
+                          Visit Site
+                        </Button>
+                      </a>
+                    </Grid>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Card>
+          </Grid>
+          <Hidden smDown>
+            <Grid item md={6}>
+              <a
+                href="https://mock-dexscreener.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/projectPics/dexScreenerPage.png"
+                  className={classes.websitePic}
+                  alt=""
+                />
+              </a>
+            </Grid>
+          </Hidden>
+          <Grid
+            item
+            xs={11}
+            sm={9}
+            md={6}
+            className={classes.projectsMeTextContainer}
+            alignItems="center"
+            justify="center"
+          >
+            <Card
+              className={classes.projectsCardContainer}
+              alignItems="center"
+              justify="center"
+            >
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <CardContent className={classes.logoContainer}>
+                    <a
                       href="https://freebay.netlify.app/"
                       className={classes.noTextDecoration}
                       target="_blank"
@@ -499,8 +647,8 @@ export default function Projects() {
                   </Typography>
                   <Typography variant="body2" component="p">
                     {" "}
-                    Node.JS, Postgres, Node-PG, Express, React,
-                    Material-UI, Axios, Python, Web-Scraping
+                    Node.JS, Postgres, Node-PG, Express, React, Material-UI,
+                    Axios, Python, Web-Scraping
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
