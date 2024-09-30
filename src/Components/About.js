@@ -162,13 +162,17 @@ export default function About() {
                 </Typography>
                 <Typography variant="body2" component="p">
                   A Full-Stack Software Developer with 4 years experience
-                  building Frontend components, APIs, and Database logic. I specialize in React, Node.js, Python, and SQL & MongoDB Databases and love working in them all. I also have about 1 year experience in Salesforce Development and am pursuing the Platform Developer I certification.
+                  building Frontend components, APIs, and Database logic. I
+                  specialize in Typescript, React, Node.js, Python, and SQL &
+                  MongoDB Databases and love working in them all. I also have
+                  about 1 year experience in Salesforce Development.
                 </Typography>
                 <br />
                 <Typography variant="body2" component="p">
-                  I sincerely enjoy my work and collaborating with my team to find solutions to any problem that arises. When I'm not coding, I like to
-                  learn, play raquetball, snowboard, and build random projects.
-                  Thank you for viewing my portfolio site!{" "}
+                  I sincerely enjoy my work and collaborating with my team to
+                  find solutions to any problem that arises. When I'm not
+                  coding, I like to learn, play raquetball, snowboard, and build
+                  random projects. Thank you for viewing my portfolio site!{" "}
                 </Typography>
                 <hr className={classes.lineBreak} />
                 <Grid container>
