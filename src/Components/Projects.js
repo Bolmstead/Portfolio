@@ -468,6 +468,152 @@ export default function Projects() {
                 <Grid item xs={12}>
                   <CardContent className={classes.logoContainer}>
                     <a
+                      href="https://discord.gg/grBcH2zK"
+                      className={classes.noTextDecoration}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="images/projectPics/garden-logo.png"
+                        className={classes.projectLogoWittmeyer}
+                        alt=""
+                      />
+                    </a>
+                  </CardContent>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    <a
+                      href="https://discord.gg/grBcH2zK"
+                      style={{ textDecoration: "none", fontWeight: 600 }}
+                      className={classes.repoLink}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      The Crypto Garden
+                    </a>{" "}
+                    is my paid Discord group that provides real-time
+                    cryptocurrency data, meme trends, and Twitter information.
+                    Provides latest tweets from crypto-related accounts,
+                    movements from insider/whale wallets, latest top 100 TikTok
+                    trends in order to catch memecoin plays, and updates when a
+                    coin has been boosted or Dex Screener information updated.
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" component="p">
+                    Integrated with the{" "}
+                    <a
+                      href="https://docs.dexscreener.com/api/reference"
+                      style={{ textDecoration: "none", fontWeight: 600 }}
+                      className={classes.repoLink}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      {" "}
+                      Dex Screener API
+                    </a>{" "}
+                    to provide Boost and Dex information. The TikTok Trends feed
+                    is scraper code from the{" "}
+                    <a
+                      href="https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en"
+                      style={{ textDecoration: "none", fontWeight: 600 }}
+                      className={classes.repoLink}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      {" "}
+                      TikTok Trends
+                    </a>{" "}
+                    site and only updates when updates when the Trends are
+                    updated.
+                  </Typography>
+                </Grid>
+                <br />{" "}
+                <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Technologies: {"  "}
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    {" "}
+                    Node.JS, CronJobs, Express, Axios, Puppeteer Web-Scraping
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.boldText}
+                  >
+                    Repositories: {"  "}
+                  </Typography>
+
+                  <Typography variant="body2" component="p" display="inline">
+                    {" "}
+                    (Keeping private)
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Grid container justify="center">
+                    <Grid item xs={8}>
+                      <a
+                        href="https://discord.gg/grBcH2zK"
+                        className={classes.noTextDecoration}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          className={classes.freeBaySiteBtn}
+                          fullWidth
+                          variant="contained"
+                          disableRipple
+                        >
+                          Visit Site
+                        </Button>
+                      </a>
+                    </Grid>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Card>
+          </Grid>
+          <Hidden smDown>
+            <Grid item md={6}>
+              <a
+                href="https://discord.gg/grBcH2zK"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/projectPics/garden-page.png"
+                  className={classes.websitePic}
+                  alt=""
+                />
+              </a>
+            </Grid>
+          </Hidden>
+          <Grid
+            item
+            xs={11}
+            sm={9}
+            md={6}
+            className={classes.projectsMeTextContainer}
+            alignItems="center"
+            justify="center"
+          >
+            <Card
+              className={classes.projectsCardContainer}
+              alignItems="center"
+              justify="center"
+            >
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <CardContent className={classes.logoContainer}>
+                    <a
                       href="https://freebay.netlify.app/"
                       className={classes.noTextDecoration}
                       target="_blank"
