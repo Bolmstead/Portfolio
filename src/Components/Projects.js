@@ -450,7 +450,7 @@ export default function Projects() {
               </a>
             </Grid>
           </Hidden>
-          <Grid
+          {/* <Grid
             item
             xs={11}
             sm={9}
@@ -595,7 +595,7 @@ export default function Projects() {
                 />
               </a>
             </Grid>
-          </Hidden>
+          </Hidden> */}
           <Grid
             item
             xs={11}
