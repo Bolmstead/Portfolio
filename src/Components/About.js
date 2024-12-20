@@ -164,8 +164,9 @@ export default function About() {
                   A Full-Stack Software Developer with 4 years experience
                   building Frontend components, APIs, and Database logic. I
                   specialize in Typescript, React, Node.js, Python, and SQL &
-                  MongoDB Databases and love working in them all. I also have
-                  about 1 year experience in Salesforce Development.
+                  MongoDB Databases and love working in them all. I also am very
+                  passionate about cryptocurrency and have built several
+                  projects in the space.
                 </Typography>
                 <br />
                 <Typography variant="body2" component="p">

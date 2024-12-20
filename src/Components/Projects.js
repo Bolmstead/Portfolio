@@ -194,7 +194,7 @@ export default function Projects() {
                     Employees and Clients. I taught myself how to develop on the
                     Salesfore Platform through Trailheads and tutorials and have
                     1 full year of professional Salesforce Development
-                    experience.
+                    experience. 
                   </Typography>
                 </Grid>
                 <br />{" "}
@@ -450,7 +450,7 @@ export default function Projects() {
               </a>
             </Grid>
           </Hidden>
-          {/* <Grid
+          <Grid
             item
             xs={11}
             sm={9}
@@ -468,13 +468,13 @@ export default function Projects() {
                 <Grid item xs={12}>
                   <CardContent className={classes.logoContainer}>
                     <a
-                      href="https://discord.gg/grBcH2zK"
+                      href="https://t.me/+59c5epk5yogyYjVh"
                       className={classes.noTextDecoration}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <img
-                        src="images/projectPics/garden-logo.png"
+                        src="images/projectPics/solana.svg"
                         className={classes.projectLogoWittmeyer}
                         alt=""
                       />
@@ -484,20 +484,21 @@ export default function Projects() {
                 <Grid item xs={12}>
                   <Typography variant="body2" component="p">
                     <a
-                      href="https://discord.gg/grBcH2zK"
+                      href="https://t.me/+59c5epk5yogyYjVh"
                       style={{ textDecoration: "none", fontWeight: 600 }}
                       className={classes.repoLink}
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      The Crypto Garden
+                      The Memecoin Bots
                     </a>{" "}
-                    is my paid Discord group that provides real-time
-                    cryptocurrency data, meme trends, and Twitter information.
-                    Provides latest tweets from crypto-related accounts,
-                    movements from insider/whale wallets, latest top 100 TikTok
-                    trends in order to catch memecoin plays, and updates when a
-                    coin has been boosted or Dex Screener information updated.
+                    is my paid Telegram group that provides real-time
+                    cryptocurrency data and memecoin trends/plays. Provides
+                    instant updates from projects, real time feed for when a new
+                    post is made from the Infinite Backrooms, latest top 100
+                    TikTok trends in order to catch memecoin plays, and updates
+                    when a coin has been boosted or Dex Screener information
+                    updated.
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>
@@ -561,7 +562,7 @@ export default function Projects() {
                   <Grid container justify="center">
                     <Grid item xs={8}>
                       <a
-                        href="https://discord.gg/grBcH2zK"
+                        href="https://t.me/+59c5epk5yogyYjVh"
                         className={classes.noTextDecoration}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -589,13 +590,13 @@ export default function Projects() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="images/projectPics/garden-page.png"
+                  src="images/projectPics/memecoin-bots.png"
                   className={classes.websitePic}
                   alt=""
                 />
               </a>
             </Grid>
-          </Hidden> */}
+          </Hidden>
           <Grid
             item
             xs={11}
